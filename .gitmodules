@@ -1,0 +1,3 @@
+[submodule "djangomapstore"]
+	path = djangomapstore
+	url = https://github.com/ndufrane/djangomapstore

@@ -1,0 +1,30 @@
+version: '3'
+services:
+    db:
+      build: Dockerfiles/postgis/
+      volumes:
+        - ./pg:/var/lib/postgresql
+      # WARNING: THIS IS UNSAFE USE ONLY FOR DEV
+      ports:
+        - "0.0.0.0:5432:5432"
+      environment:
+        - POSTGRES_USER=docker
+        - POSTGRES_PASSWORD=docker
+      restart: on-failure:5
+    django:
+      build: .
+      volumes:
+        - '.:/usr/src/app'
+      command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+      depends_on: 
+        - db
+      ports:
+        - "8000:8000"
+      environment:
+        - DEBUG=True
+        - URBANMAP_DATABASE_NAME=urban_locality_cadastre
+        - URBANMAP_DATABASE_USER=docker
+        - URBANMAP_DATABASE_PASSWORD=docker
+        - URBANMAP_DATABASE_HOST=db
+        - URBANMAP_DATABASE_PORT=5432
+      

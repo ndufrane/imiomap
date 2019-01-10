@@ -27,8 +27,7 @@ class Canu(models.Model):
 
 
 class Capa(models.Model):
-    gid = models.AutoField(primary_key=True)
-    capakey = models.CharField(max_length=17)
+    capakey = models.CharField(primary_key=True, max_length=17)
     casekey = models.CharField(max_length=6, blank=True, null=True)
     the_geom = models.GeometryField(blank=True, null=True)
 
@@ -94,7 +93,7 @@ class Parcels(models.Model):
     exponentletter = models.CharField(max_length=2, blank=True, null=True)
     exponentnumber = models.CharField(max_length=6, blank=True, null=True)
     partnumber = models.CharField(max_length=10, blank=True, null=True)
-    capakey = models.ForeignKey(Capa, on_delete=models.CASCADE)
+    capakey = models.ForeignKey('Capa', db_column='capakey', on_delete=models.CASCADE)
     nature = models.IntegerField(blank=True, null=True)
     descriptprivate = models.CharField(max_length=100, blank=True, null=True)
     block = models.CharField(max_length=20, blank=True, null=True)

@@ -1,0 +1,56 @@
+{
+  "initialExtent": [
+    28113,
+    293222,
+    9253,
+    174613
+  ],
+  "fullExtent": [
+    28113,
+    293222,
+    9253,
+    174613
+  ],
+  "fullExtentLabel": "Cadrer sur la Wallonie",
+  "spatialReference": 31370,
+  "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+  "notificationPosition": "center-down",
+  "zoomMinLimit": 250,
+  "errorMailToAdress": "helpdesk.carto@spw.wallonie.be",
+  "errorMailSubject": "[INCIDENT] API Geoviewer",
+  "mobile": false,
+  "leftRegion": {
+    "width": "310px",
+    "resizable": true,
+    "minimizeable": false,
+    "collapser": {
+      "imageUrl": "/geoviewer/spw/widgets/images/close-arrow.png",
+      "className": "closeArrowWalonmap",
+      "style": {
+        "position": "absolute",
+        "top": 0,
+        "right": 0
+      }
+    }
+  },
+  "rightRegion": {
+    "width": "245px",
+    "resizable": true,
+    "minimizeable": true
+  },
+  "topRegion": {
+    "height": "70px",
+    "minimizeable": false
+  },
+  "bottomRegion": {
+    "height": "380px",
+    "resizable": true,
+    "minimizeable": false
+  },
+  "loadingVerbosity": 1,
+  "proxyPageUrl": "proxy.jsp",
+  "mapLoaderPosition": {
+    "top": "35px",
+    "right": "5px"
+  }
+}

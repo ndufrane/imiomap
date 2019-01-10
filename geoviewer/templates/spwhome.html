@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>map4imio</title>
+		<script type="text/javascript">
+			var dojoConfig = {
+				async: true,
+				parseOnLoad: true,
+				isDebug: true,
+				locale: 'fr',
+				packages: [{
+					name: 'exemple',
+					location: '{% static "widgets" %}'
+				}]
+			};
+		</script>
+		<script type="text/javascript" src="http://geoservices.wallonie.be/geoviewer/4.0/?t=I2PHLK3WBK"></script>
+		<link rel="stylesheet" type="text/css" href="http://geoservices.wallonie.be/geoviewer/4.0/style/"/>
+		<style>
+            #spwViewerDiv {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+            #map {
+                position:absolute;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+			.draw-point {
+				text-align: center;
+				padding: 10px;
+			}
+        </style>
+	</head>
+	<body class="claro">
+		<div id="spwViewerDiv"></div>
+		<script type="text/javascript">
+
+			require(["spw/api/SpwViewer", "dijit/registry", "dojo/ready", "esri/config"],
+					function(SpwViewer, registry, ready, esriConfig){
+				ready(function(){
+					viewer = SpwViewer.getInstance();
+					viewer.placeAt('spwViewerDiv').startup();
+					viewer.on('viewerLoaded', function(){
+						//viewer && viewer.spwMap && viewer.spwMap.esriMap && viewer.spwMap.esriMap._layers && viewer.spwMap.esriMap._layers.SEMAINE_MOB && viewer.spwMap.esriMap._layers.SEMAINE_MOB.redraw();
+					})
+				});
+			});
+		</script>
+	</body>
+</html>
+
+

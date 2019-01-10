@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'urbanmap.apps.UrbanmapConfig',
     'proxy',
     'djangomapstore.apps.DjangomapstoreConfig',
+    'geoviewer.apps.GeoviewerConfig'
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,7 @@ STATICFILES_DIRS = [
 GLOBAL_SETTINGS = {
     'MAP_DEBUG' : False
 }
+
+SERIALIZATION_MODULES = {
+    "geojson": "django.contrib.gis.serializers.geojson"
+ }

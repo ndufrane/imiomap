@@ -1,0 +1,119 @@
+[
+  {
+    "className": "spw/widgets/SpwScaleBar",
+    "config": {
+      "widgetId": "idScaleBar",
+      "activated": true,
+      "inToolbar": false,
+      "solitary": false,
+      "position": "map",
+      "mapPosition": {
+        "bottom": "10px",
+        "left": "45px"
+      }
+    }
+  },
+  {
+    "className": "spw/widgets/SpwNavigation",
+    "config": {
+      "widgetId": "idNavigation",
+      "activated": true,
+      "inToolbar": false,
+      "solitary": false,
+      "position": "map",
+      "tooltipDuration": 2500,
+      "tooltipShowDelay": 300,
+      "mapPosition": {
+        "bottom": "10px",
+        "left": "10px"
+      },
+      "scaleLabels": [
+        {
+          "maxScale": 10000,
+          "label": "Rue"
+        },
+        {
+          "minScale": 10001,
+          "maxScale": 140000,
+          "label": "Commune"
+        },
+        {
+          "minScale": 140001,
+          "maxScale": 1150000,
+          "label": "Province"
+        },
+        {
+          "minScale": 1150001,
+          "label": "Pays"
+        }
+      ]
+    }
+  },
+  {
+    "className": "spw/widgets/SpwQuickAddressSearch",
+    "config": {
+      "widgetId": "SpwQuickAddressSearchId",
+      "widgetTitle": "Localiser",
+      "className": "SpwQuickAddressSearchV3",
+      "position": "none"
+    }
+  },
+  {
+    "className": "spw/widgets/SpwIdentify",
+    "config": {
+      "widgetId": "SpwInfosId",
+      "widgetTitle": "Informations",
+      "position": "panel-light",
+      "iconClass": "infosIcon",
+      "height": "auto",
+      "right": "15px",
+      "top": "85px"
+    }
+  },
+  {
+    "className": "spw/widgets/SpwBaseMapChooser",
+    "config": {
+      "widgetId": "SpwBaseMapChooserId",
+      "position": "none",
+      "style": {
+        "width": "390px"
+      }
+    }
+  },
+  {
+    "className": "spw/widgets/SpwAdvancedToolBar",
+    "config": {
+      "className": "SpwAdvancedToolBar",
+      "position": "map",
+      "mapPosition": {
+        "top": "5px",
+        "left": "5px"
+      },
+      "activated": true,
+      "buttonStyle": {
+        "fontSize": "10px"
+      },
+      "labelPosition": "top",
+      "showLabel": true,
+      "content": [
+        {
+          "widgetId": "SpwQuickAddressSearchId",
+          "integrated": true
+        },
+        {
+          "widgetId": "SpwInfosId",
+          "label": "Infos"
+        },
+        {
+          "label": "Fonds de plan",
+          "content": [
+            {
+              "widgetId": "SpwBaseMapChooserId",
+              "integrated": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

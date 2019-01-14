@@ -1,5 +1,40 @@
 [
   {
+    "className": "urbanmap/ZoomOnParcelAtStartup",
+    "config": {
+      "urbanRestApiUrl": "/urbanmap"
+    }
+  },
+  {
+    "className": "exemple/DrawPoint",
+    "config": {
+      "widgetId": "DrawPointId",
+      "widgetTitle": "Dessiner un point",
+      "position": "panel-light",
+      "top": "150px",
+      "left": "150px",
+      "activated": true,
+      "width": "300px",
+      "height": "auto"
+    }
+  },
+  {
+    "className":"spw/widgets/SpwLegend",
+    "config": {
+        "widgetId":"SpwLegendId",
+        "widgetTitle":"Légende",
+        "position": "panel-light",
+        "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
+        "iconClass": "legendIcon",
+        "reportUrl":"//geoservices.wallonie.be/geoviewer/Report",
+        "width": "400px",
+        "height": "50vh",
+        "right": "15px",
+        "top": "85px",
+        "resizable": true
+    }
+},
+  {
     "className": "spw/widgets/SpwScaleBar",
     "config": {
       "widgetId": "idScaleBar",
@@ -71,6 +106,63 @@
     }
   },
   {
+      "className": "spw/widgets/SpwCoordinatesSearch",
+      "config": {
+          "widgetId":"SpwCoordinatesSearchId",
+    "widgetTitle":"Localiser des coordonnées",
+          "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
+          "position": "none",
+          "projections": [
+              {
+                  "SRID": 31370,
+                  "name": "lambert72",
+                  "type": "decimal",
+                  "exampleX": "263873,6",
+        "exampleY": "143206,8",
+                  "checked": true
+              },
+              {
+                  "SRID": 3812,
+                  "name": "lambert2008",
+                  "type": "decimal",
+                  "exampleX": "763875,1",
+        "exampleY": "643212,2"
+              },
+              {
+                  "SRID": 4326,
+                  "name": "wg84",
+                  "type": "decimal",
+                  "exampleX": "5,977",
+        "exampleY": "50,588"
+              },
+      {
+        "SRID": 4326,
+        "name": "dms",
+        "type": "dms",
+        "exampleX": "5Â° 58' 36,839\"E",
+        "exampleY": "50Â° 35' 17,998\"N"
+      }
+          ],
+
+          "style": {
+              "width": "500px"
+          }
+      }
+  },
+  {
+    "className": "spw/widgets/SpwCadmapSearch",
+    "config": {
+        "widgetId":"SpwCadmapSearchId",
+        "widgetTitle": "Localiser une parcelle",
+        "cadmapApiUrl": "//geoservices.wallonie.be/cadmap/js/SpwCadmapApi.js",
+        "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
+        "position": "none",
+        "style": {
+            "width": "400px"
+        }
+    }
+  },
+  {
     "className": "spw/widgets/SpwBaseMapChooser",
     "config": {
       "widgetId": "SpwBaseMapChooserId",
@@ -101,9 +193,31 @@
           "integrated": true
         },
         {
+          "label":"+",
+          "content": [
+              {
+                  "label": "Adresse",
+                  "content": [{"widgetId":"SpwAddressSearchId","integrated": true}]
+              },
+              {
+                  "label": "CoordonnÃ©es",
+                  "content": [{"widgetId":"SpwCoordinatesSearchId","integrated": true}]
+              },
+              {
+                  "label": "Parcelle cadastrale",
+                  "content": [{"widgetId":"SpwCadmapSearchId","integrated": true}]
+              }
+          ],
+          "className":"otherLocalizeButton"
+        },
+        {
           "widgetId": "SpwInfosId",
           "label": "Infos"
         },
+        {
+          "widgetId": "SpwLegendId",
+          "label":"Légende"
+         },
         {
           "label": "Fonds de plan",
           "content": [

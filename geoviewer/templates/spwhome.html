@@ -12,9 +12,16 @@
 				parseOnLoad: true,
 				isDebug: true,
 				locale: 'fr',
+				configBasePath: '{% static "default/fr" %}',     
 				packages: [{
 					name: 'exemple',
 					location: '{% static "widgets" %}'
+				},{
+					name: 'urbanmap',
+					location: '{% static "urbanmap" %}'
+				},{
+					name: 'utils',
+					location: '{% static "utils" %}'
 				}]
 			};
 		</script>
@@ -40,23 +47,15 @@
 				text-align: center;
 				padding: 10px;
 			}
-        </style>
+		</style>
+
 	</head>
 	<body class="claro">
 		<div id="spwViewerDiv"></div>
 		<script type="text/javascript">
-
-			require(["spw/api/SpwViewer", "dijit/registry", "dojo/ready", "esri/config"],
-					function(SpwViewer, registry, ready, esriConfig){
-				ready(function(){
-					viewer = SpwViewer.getInstance();
-					viewer.placeAt('spwViewerDiv').startup();
-					viewer.on('viewerLoaded', function(){
-						//viewer && viewer.spwMap && viewer.spwMap.esriMap && viewer.spwMap.esriMap._layers && viewer.spwMap.esriMap._layers.SEMAINE_MOB && viewer.spwMap.esriMap._layers.SEMAINE_MOB.redraw();
-					})
-				});
-			});
+			var urbanCapakeyArray = "53040D0666/02_000";
 		</script>
+		<script type="text/javascript" src="{% static 'imiomapspw.js' %}"></script>
 	</body>
 </html>
 

@@ -46,10 +46,10 @@ def get_parcels_by_capakey(request, capakeys):
     # TODO: input check and error handling
     capakeys_parsed = capakeys.split(',')
 
-    capa_qry = Capa.objects.filter(capakey__in=capakeys_parsed).select_related('parcels').aggregate(Max('datesituation'))
+    capa_qry = Capa.objects.filter(capakey__in=capakeys_parsed)
     
     response_geojson = serialize('geojson', capa_qry,
           geometry_field='the_geom',
-          fields=('capakey','propertysituationid'))
+          fields=('capakey'))
     
     return HttpResponse(response_geojson, content_type='application/json')

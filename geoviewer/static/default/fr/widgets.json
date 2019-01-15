@@ -1,4 +1,17 @@
 [
+ {
+    "className": "urbanmap/QueryParcel",
+    "config": {
+      "widgetId": "QueryParcelId",
+      "widgetTitle": "Sélectionner une parcelle",
+      "position": "panel-light",
+      "top": "150px",
+      "left": "150px",
+      "activated": false,
+      "width": "300px",
+      "height": "auto"
+    }
+  },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
@@ -13,7 +26,7 @@
       "position": "panel-light",
       "top": "150px",
       "left": "150px",
-      "activated": true,
+      "activated": false,
       "width": "300px",
       "height": "auto"
     }
@@ -217,6 +230,14 @@
         {
           "widgetId": "SpwLegendId",
           "label":"Légende"
+         },
+         {
+          "widgetId": "DrawPointId",
+          "label":"Drawpoint"
+         },
+         {
+          "widgetId": "QueryParcelId",
+          "label":"Sélectionner une parcelle"
          },
         {
           "label": "Fonds de plan",

@@ -6,7 +6,7 @@ class Cabu(models.Model):
     gid = models.AutoField(primary_key=True)
     recid = models.IntegerField(blank=True, null=True)
     type = models.CharField(max_length=2, blank=True, null=True)
-    the_geom = models.GeometryField(blank=True, null=True, srid=3812)
+    the_geom = models.GeometryField(blank=True, null=True, srid=31370)
 
     class Meta:
         managed = False
@@ -18,7 +18,7 @@ class Canu(models.Model):
     canuan = models.FloatField(blank=True, null=True)
     canutx = models.CharField(max_length=11, blank=True, null=True)
     sheet = models.CharField(max_length=18, blank=True, null=True)
-    the_geom = models.GeometryField(blank=True, null=True, srid=3812)
+    the_geom = models.GeometryField(blank=True, null=True, srid=31370)
     numpolice = models.CharField(max_length=15, blank=True, null=True)
 
     class Meta:
@@ -29,7 +29,7 @@ class Canu(models.Model):
 class Capa(models.Model):
     capakey = models.CharField(primary_key=True, max_length=17)
     casekey = models.CharField(max_length=6, blank=True, null=True)
-    the_geom = models.GeometryField(blank=True, null=True, srid=3812)
+    the_geom = models.GeometryField(blank=True, null=True, srid=31370)
 
     class Meta:
         managed = False

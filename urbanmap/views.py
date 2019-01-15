@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.contrib.gis.geos import GEOSGeometry
 from django.core.serializers import serialize
 from django.db.models import Max
+from django.contrib.gis.gdal import CoordTransform, SpatialReference
 
 from django.views.decorators.http import require_POST, require_GET
 from django.views.decorators.csrf import csrf_exempt
@@ -26,13 +27,14 @@ def get_parcels_light_by_geom(request):
       # TODO: input check and error handling
       geom_wkt = request.POST.get("geom")
       try:
-            input_geometry = GEOSGeometry(geom_wkt)
-            #capa_qry = Capa.objects.filter(the_geom__intersects=input_geometry).select_related('parcels')
-            capa_qry = Parcels.objects.filter(capakey__the_geom__intersects=input_geometry).aggregate(Max('datesituation'))
+            input_geometry = GEOSGeometry(geom_wkt, srid=31370)
+            capa_qry = Capa.objects.filter(the_geom__intersects=input_geometry)
+            #capa_qry = Parcels.objects.filter(capakey__the_geom__intersects=input_geometry).aggregate(Max('datesituation'))
             logger.error(capa_qry)
             response_geojson = serialize('geojson', capa_qry,
-                  geometry_field='parcels__the_geom',
-                  fields=('capakey','propertysituationid'))
+                  geometry_field='the_geom',
+                  srid=31370,
+                  fields=('capakey'))
 
             return HttpResponse(response_geojson, content_type='application/json')
       except TypeError as e:
@@ -50,6 +52,7 @@ def get_parcels_by_capakey(request, capakeys):
     
     response_geojson = serialize('geojson', capa_qry,
           geometry_field='the_geom',
+          srid=31370,
           fields=('capakey'))
     
     return HttpResponse(response_geojson, content_type='application/json')

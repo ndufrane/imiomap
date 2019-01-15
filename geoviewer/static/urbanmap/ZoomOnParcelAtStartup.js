@@ -18,6 +18,8 @@ define([
         // Required Terrformer library reference
         _terrafomer: (typeof Terraformer !== 'undefined') ? Terraformer : null,
 
+        _inSpatialReference : new SpatialReference({wkid: 31370}),
+
         _simplePolygonSym: new SimpleFillSymbol("solid",
                     new SimpleLineSymbol("solid", new Color([50, 50, 50, 0.15]), 1),
                     new Color(0,150,0,1)),
@@ -75,6 +77,7 @@ define([
                     // Create graphic - magically sets the geometry type!
 
                     var graphic = new Graphic(feature, new SimpleFillSymbol());
+                    graphic.geometry.setSpatialReference(this._inSpatialReference);
                     // Add to graphics
                     this.graphs.push(graphic)
                 }
@@ -95,44 +98,9 @@ define([
             this.removeGraphic();
         },
 
-        onDrawChanged: function() {
-            var checked = this._drawButton.get('checked');
-
-            // pour accéder à la carte, il est préférable d'utiliser cette fonction.
-            // Si vous accédez à la map en utilisant la propriété spwMap directement, il
-            // n'est pas sûr que celle-ci soit définie.
-            var map = this.spwViewer.get('spwMap');
-
-            if (checked) {
-                this._handler = on(map, map.events.MapClicked, lang.hitch(this, this.onMapClicked));
-            }
-            else {
-                this._handler && this._handler.remove();
-                this._handler = null;
-            }
-        },
-
-        onMapClicked: function(x, y, srid) {
-            this.removeGraphic();
-
-            // construisons le point sur base des coordonnées et de la référence spatiale
-            var pt = new Point(x, y, new SpatialReference(srid));
-
-            var symbol = new SimpleMarkerSymbol(this.symbol);
-
-            // créons maintenant le graphique qui sera affiché sur la carte
-            // avec une certaine symbologie
-            this.graph = new Graphic(pt, symbol);
-
-            // et on affiche le graphique sur la carte
-            this.spwViewer.get('spwMap').showFeature(this.graph);
-
-            this._drawButton.set('checked', false);
-        },
-
         removeGraphic: function() {
-            this.graph && this.spwViewer.get('spwMap').removeFeature(this.graph);
-            this.graph = null;
+            this.graphs && this.spwViewer.get('spwMap').removeFeature(this.graphs);
+            this.graphs = null;
         }
 
     });

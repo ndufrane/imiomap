@@ -10,7 +10,7 @@ services:
       environment:
         - POSTGRES_USER=docker
         - POSTGRES_PASSWORD=docker
-      restart: on-failure:5
+      #restart: on-failure:5
     django:
       build: .
       volumes:
@@ -27,4 +27,7 @@ services:
         - URBANMAP_DATABASE_PASSWORD=docker
         - URBANMAP_DATABASE_HOST=db
         - URBANMAP_DATABASE_PORT=5432
+    urban:
+      build: Dockerfiles/urban/
+
       

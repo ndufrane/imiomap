@@ -1,4 +1,17 @@
 [
+  {
+    "className": "urbanmap/ParcelIdentity",
+    "config": {
+      "widgetId": "ParcelIdentityId",
+      "widgetTitle": "Carte d'identité parcellaire",
+      "position": "panel-light",
+      "top": "150px",
+      "left": "150px",
+      "activated": false,
+      "width": "300px",
+      "height": "auto"
+    }
+  },
  {
     "className": "urbanmap/QueryParcel",
     "config": {
@@ -16,19 +29,6 @@
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
       "urbanRestApiUrl": "/urbanmap"
-    }
-  },
-  {
-    "className": "exemple/DrawPoint",
-    "config": {
-      "widgetId": "DrawPointId",
-      "widgetTitle": "Dessiner un point",
-      "position": "panel-light",
-      "top": "150px",
-      "left": "150px",
-      "activated": false,
-      "width": "300px",
-      "height": "auto"
     }
   },
   {
@@ -213,7 +213,7 @@
                   "content": [{"widgetId":"SpwAddressSearchId","integrated": true}]
               },
               {
-                  "label": "CoordonnÃ©es",
+                  "label": "Coordonnées",
                   "content": [{"widgetId":"SpwCoordinatesSearchId","integrated": true}]
               },
               {
@@ -232,12 +232,12 @@
           "label":"Légende"
          },
          {
-          "widgetId": "DrawPointId",
-          "label":"Drawpoint"
-         },
-         {
           "widgetId": "QueryParcelId",
           "label":"Sélectionner une parcelle"
+         },
+         {
+           "widgetId": "ParcelIdentityId",
+           "label": "Carte d'identité parcellaire"
          },
         {
           "label": "Fonds de plan",

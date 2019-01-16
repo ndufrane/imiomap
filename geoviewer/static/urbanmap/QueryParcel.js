@@ -123,14 +123,15 @@ define([
                  }
                  
                  lang.hitch(this, this.displayResultAndZoom({ 'features' : this.graphs }));
-                 //this.spwViewer.get('spwMap').showFeatures(this.graphs);
-               
             }));
 
             this._queryParcelButton.set('checked', false);
         },
+
         onDeactivate: function() {
             this.inherited(arguments);
+
+            this._queryParcelButton.set('checked', false);
             this.removeGraphic();
         },
         removeGraphic: function() {

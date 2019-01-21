@@ -1,5 +1,16 @@
-[
-  {
+[{
+  "className": "exemple/DrawPoint",
+  "config": {
+    "widgetId": "DrawPointId",
+    "widgetTitle": "Dessiner un point",
+    "position": "panel-light",
+    "top": "150px",
+    "left": "150px",
+    "activated": true,
+    "width": "300px",
+    "height": "auto"
+  }
+},{
     "className": "spw/widgets/SpwScaleBar",
     "config": {
       "widgetId": "idScaleBar",

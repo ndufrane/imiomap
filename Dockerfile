@@ -2,7 +2,7 @@ FROM python:3.6.7-stretch
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        postgresql-client libgdal-dev \
+        postgresql-client libgdal-dev binutils python-gdal \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/app

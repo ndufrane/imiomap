@@ -9,7 +9,8 @@
       "left": "150px",
       "activated": false,
       "width": "300px",
-      "height": "auto"
+      "height": "auto",
+      "urbanRestApiUrl" : "http://localhost/urbanmap"
     }
   },
  {
@@ -22,13 +23,14 @@
       "left": "150px",
       "activated": false,
       "width": "300px",
-      "height": "auto"
+      "height": "auto",
+      "urbanRestApiUrl" : "http://localhost/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl": "/urbanmap"
+      "urbanRestApiUrl" : "http://localhost/urbanmap"
     }
   },
   {

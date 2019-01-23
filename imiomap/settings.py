@@ -25,7 +25,7 @@ SECRET_KEY = '86a#4!n$m)ue%ykx%p^o5i00l1i^9@@o#ki9bj=gw5gdjpr@ft'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'urbanmap.apps.UrbanmapConfig',
     'proxy',
+    'corsheaders',
     'djangomapstore.apps.DjangomapstoreConfig',
     'geoviewer.apps.GeoviewerConfig'
 ]
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -75,20 +77,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'imiomap.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': os.getenv('URBANMAP_DATABASE_NAME'),
-        'USER': os.getenv('URBANMAP_DATABASE_USER'),
-        'PASSWORD': os.getenv('URBANMAP_DATABASE_PASSWORD'),
-        'HOST': os.getenv('URBANMAP_DATABASE_HOST'),
-        'PORT': os.getenv('URBANMAP_DATABASE_PORT'),
-        'CONN_MAX_AGE': 300
-    }
-}
 
 
 # Password validation
@@ -129,9 +117,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+MEDIA_URL = '/media/'
 
 GLOBAL_SETTINGS = {
     'MAP_DEBUG' : False
@@ -140,3 +134,20 @@ GLOBAL_SETTINGS = {
 SERIALIZATION_MODULES = {
     "geojson": "django.contrib.gis.serializers.geojson"
  }
+
+ #DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+#        'NAME': os.getenv('URBANMAP_DATABASE_NAME'),
+#        'USER': os.getenv('URBANMAP_DATABASE_USER'),
+#        'PASSWORD': os.getenv('URBANMAP_DATABASE_PASSWORD'),
+#        'HOST': os.getenv('URBANMAP_DATABASE_HOST'),
+#        'PORT': os.getenv('URBANMAP_DATABASE_PORT'),
+#        'CONN_MAX_AGE': 300
+#    }
+#}
+
+try:
+    from local_settings import *
+except ImportError:
+    pass

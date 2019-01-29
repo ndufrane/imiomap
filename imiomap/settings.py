@@ -148,6 +148,6 @@ SERIALIZATION_MODULES = {
 #}
 
 try:
-    from local_settings import *
+    from imiomap.local_settings import *
 except ImportError:
     pass

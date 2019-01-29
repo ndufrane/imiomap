@@ -21,10 +21,10 @@ services:
         - "8000:8000"
       environment:
         - DEBUG=True
-        - URBANMAP_DATABASE_NAME=urban_locality_cadastre
-        - URBANMAP_DATABASE_USER=docker
-        - URBANMAP_DATABASE_PASSWORD=docker
-        - URBANMAP_DATABASE_HOST=host.docker.internal
+        - URBANMAP_DATABASE_NAME=urban_lessines_cadastre_2018
+        - URBANMAP_DATABASE_USER=admin
+        - URBANMAP_DATABASE_PASSWORD=
+        - URBANMAP_DATABASE_HOST=172.17.0.1
         - URBANMAP_DATABASE_PORT=5432
     nginx:
       image: nginx:latest

@@ -4,12 +4,12 @@ define([
     'spw/api/SpwBaseWidget',
     'esri/SpatialReference',
     'esri/graphic',"esri/Color", 'esri/symbols/SimpleFillSymbol', 'esri/symbols/SimpleLineSymbol',
-    'dojo/request', 'utils/GeoJsonLayer', "spw/libs/terraformer-1.0.3.min"
+    'dojo/request', "spw/libs/terraformer-1.0.3.min"
 ], function(declare, lang, on,
             SpwBaseWidget,
             SpatialReference,
             Graphic, Color, SimpleFillSymbol, SimpleLineSymbol,
-            request, GeoJsonLayer) {
+            request) {
 
     return declare(SpwBaseWidget, {
 
@@ -81,8 +81,14 @@ define([
                     // Add to graphics
                     this.graphs.push(graphic)
                 }
-                this.spwViewer.get('spwMap').showFeatures(this.graphs);
-                this.spwViewer.get('spwMap').zoomToFeatures(this.graphs);
+                if (this.graphs && this.graphs.length > 0) {
+                    this.spwViewer.get('spwMap').showFeatures(this.graphs);
+                    this.spwViewer.get('spwMap').zoomToFeatures(this.graphs);
+                } else {
+                    console.warn("Zoom to parcels " + urbanCapakeyArray + " dit not return any parcel from database");
+                }   
+
+
               
               }), function(err){
                 console.error(err);

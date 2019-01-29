@@ -99,8 +99,6 @@ define([
 
         onDeactivate: function() {
             this.inherited(arguments);
-
-
             this.removeGraphic();
         },
 

@@ -5,7 +5,6 @@
       "widgetId": "ParcelIdentityId",
       "widgetTitle": "Carte d'identité parcellaire",
       "position": "panel-light",
-
       "activated": false,
       "width": "300px",
       "height": "auto",

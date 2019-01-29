@@ -21,6 +21,7 @@ define([
 
         urbanUrl: "parcelsinfo",
         urbanRestApiUrl : '/urbanmap',
+        active: false,
         
         // méthode appelée automatiquement après la création du widget
         postCreate: function() {
@@ -33,11 +34,21 @@ define([
             this.own(on(this._parcelIdentityButton, 'change', lang.hitch(this, this.onDrawChanged)));
         },
 
+        onActivate: function() {
+            this.inherited(arguments);
+            this.active = true;
+            var map = this.spwViewer.get('spwMap');
+            this._handler = on(map, map.events.MapClicked, lang.hitch(this, this.onMapClicked));
+        },
+
         onDeactivate: function() {
             this.inherited(arguments);
+            this._handler && this._handler.remove();
+            this._handler = null;
 
             this._parcelIdentityButton.set('checked', false);
             this.removeGraphic();
+            this.active = false;
         },
 
         onDrawChanged: function() {
@@ -46,6 +57,7 @@ define([
             // pour accéder à la carte, il est préférable d'utiliser cette fonction.
             // Si vous accédez à la map en utilisant la propriété spwMap directement, il
             // n'est pas sûr que celle-ci soit définie.
+            /*
             var map = this.spwViewer.get('spwMap');
 
             if (checked) {
@@ -55,6 +67,7 @@ define([
                 this._handler && this._handler.remove();
                 this._handler = null;
             }
+             */
         },
 
         onMapClicked: function(x, y, srid) {
@@ -69,11 +82,8 @@ define([
                 }
             }).then(lang.hitch(this, function(data){
                 if(data && data.length > 0) {
-                    request(this.urbanUrl, {
+                    request(this.urbanUrl+"?capakey=" + data[0].pk, {
                         'method' : 'GET',
-                        'data' : {
-                            'capakey' : data
-                        }
                     }).then(lang.hitch(this, function(data){
                         var parcelIdentityDialog = new Dialog({
                             title: "Carte d'identité parcellaire",

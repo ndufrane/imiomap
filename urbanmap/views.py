@@ -9,6 +9,7 @@ from django.views.decorators.http import require_POST, require_GET
 from django.views.decorators.csrf import csrf_exempt
 
 import logging
+import json
 
 from urbanmap.models import Parcels, Capa
 
@@ -36,8 +37,8 @@ def get_parcels_light_by_geom(request):
             
             response_geojson = serialize('geojson', capa_qry,
                   geometry_field='the_geom',
-                  srid=31370,
-                  fields=('capakey'))
+                  srid=31370
+                  )
 
             return HttpResponse(response_geojson, content_type='application/json')
       except TypeError as e:
@@ -85,5 +86,26 @@ def get_parcels_by_capakey(request, capakeys):
             geometry_field='the_geom',
             srid=31370,
             fields=('capakey'))
+      
+      return HttpResponse(response_geojson, content_type='application/json')
+
+@csrf_exempt
+@require_GET
+def get_parcels_infos_by_capakey(request, capakeys):
+      """
+        input :
+            * 0..n capakeys separated by ,
+        process :
+            * search latest parcels info by capakey in database
+        output :
+            * Geojson Feature collection (SRID: 31370)
+      """  
+      # TODO: input check and error handling
+      capakeys_parsed = capakeys.split(',')
+
+      parcels_qry = Parcels.objects.filter(capakey__in=capakeys_parsed)
+      parcels_qry.latest('datesituation')
+      
+      response_geojson = serialize('json', parcels_qry)
       
       return HttpResponse(response_geojson, content_type='application/json')

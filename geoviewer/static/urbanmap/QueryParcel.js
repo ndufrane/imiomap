@@ -30,7 +30,7 @@ define([
 
         "infoTemplate": {
             "title": "Cadastre",
-            "content": "<table><tr><td>Nom commune: </td><td>${NOM_COMMUNE}</td></tr><tr><td>Code INS: </td><td>${COMMUNE}</td></tr><tr><td>Capakey: </td><td>${CAPAKEY}</td></tr><tr><td>Nom division: </td><td>${DIV_NOM}</td></tr><tr><td>Code division: </td><td>${CODE_DIV}</td></tr><tr><td>Section: </td><td>${SECT}</td></tr><tr><td>Radical: </td><td>${RADICAL}</td></tr><tr><td>Bis: </td><td>${BIS}</td></tr><tr><td>Exposant: </td><td>${EXPOSANT}</td></tr><tr><td>Puissance: </td><td>${PUISSANCE}</td></tr><tr><td>Version: </td><td>${VER}</td></tr></table>"
+            "content": "<table><tr><td>Nom commune: </td><td>${NOM_COMMUNE}</td></tr><tr><td>Code INS: </td><td>${COMMUNE}</td></tr><tr><td>Capakey: </td><td>${capakey}</td></tr><tr><td>Nom division: </td><td>${DIV_NOM}</td></tr><tr><td>Code division: </td><td>${divcad}</td></tr><tr><td>date situation: </td><td>${datesituation}</td></tr><tr><td>Radical: </td><td>${RADICAL}</td></tr><tr><td>Bis: </td><td>${BIS}</td></tr><tr><td>Exposant: </td><td>${EXPOSANT}</td></tr><tr><td>Puissance: </td><td>${PUISSANCE}</td></tr><tr><td>Version: </td><td>${VER}</td></tr></table>"
         },
         "infoWindowSize": {
             "width": 400,
@@ -140,6 +140,8 @@ define([
         },
         displayResultAndZoom : function(featureSet){
             if(featureSet.features.length <= 0) return;
+            var urbanMapParcelInfoByCapakeyUrl = this.urbanRestApiUrl + "/" + "parcelsinfo/capakeys/";
+
 
             if(this.removeOnClose){
                 on(this.spwViewer.get('spwMap').get('esriMap').infoWindow, "hide", lang.hitch(this,function(){
@@ -156,7 +158,17 @@ define([
             if(this.infoTemplate != null && this.infoTemplate != ""){
                 var infoTemplate = new InfoTemplate(this.infoTemplate);
                 for(var i=0; i<featureSet.features.length; i++){
-                    featureSet.features[i].setInfoTemplate(infoTemplate);
+                    var currentFeature = featureSet.features[i];
+                    request(urbanMapParcelInfoByCapakeyUrl + currentFeature.attributes.pk).then(lang.hitch(this, function(data){
+                        var response = JSON.parse(data);
+                        if( response && response.length > 0) {
+                            Object.assign(currentFeature.attributes, response[0].fields);
+                        } else {
+                            console.error("No parcel info for " + currentFeature.attributes.pk);
+                        }
+
+                        currentFeature.setInfoTemplate(infoTemplate);
+                    }));
                 }
                 if(this.infoWindowSize != null){
                     this.spwViewer.get('spwMap').resizeInfoWindow(this.infoWindowSize.width,this.infoWindowSize.height);

@@ -26,12 +26,6 @@ define([
         // méthode appelée automatiquement après la création du widget
         postCreate: function() {
             this.inherited(arguments); // appelle la fonction de la classe parente
-
-            // - this.own permet d'enregistrer l'event pour qu'il soit automatiquement supprimé
-            //   à la destruction du widget.
-            // - lang.hitch permet de créer une fonction avec un contexte particulier. Ainsi,
-            //   le this de la fonction correspondera bien au widget
-            this.own(on(this._parcelIdentityButton, 'change', lang.hitch(this, this.onDrawChanged)));
         },
 
         onActivate: function() {
@@ -46,28 +40,8 @@ define([
             this._handler && this._handler.remove();
             this._handler = null;
 
-            this._parcelIdentityButton.set('checked', false);
             this.removeGraphic();
             this.active = false;
-        },
-
-        onDrawChanged: function() {
-            var checked = this._parcelIdentityButton.get('checked');
-
-            // pour accéder à la carte, il est préférable d'utiliser cette fonction.
-            // Si vous accédez à la map en utilisant la propriété spwMap directement, il
-            // n'est pas sûr que celle-ci soit définie.
-            /*
-            var map = this.spwViewer.get('spwMap');
-
-            if (checked) {
-                this._handler = on(map, map.events.MapClicked, lang.hitch(this, this.onMapClicked));
-            }
-            else {
-                this._handler && this._handler.remove();
-                this._handler = null;
-            }
-             */
         },
 
         onMapClicked: function(x, y, srid) {
@@ -94,8 +68,6 @@ define([
                     }));
                 }
             }));
-
-            this._parcelIdentityButton.set('checked', false);
         },
 
         removeGraphic: function() {

@@ -86,10 +86,7 @@ define([
                     this.spwViewer.get('spwMap').zoomToFeatures(this.graphs);
                 } else {
                     console.warn("Zoom to parcels " + urbanCapakeyArray + " dit not return any parcel from database");
-                }   
-
-
-              
+                }    
               }), function(err){
                 console.error(err);
               }, function(evt){

@@ -31,6 +31,9 @@ class Capa(models.Model):
     casekey = models.CharField(max_length=6, blank=True, null=True)
     the_geom = models.GeometryField(blank=True, null=True, srid=31370)
 
+    def natural_key(self):
+        return (self.the_geom)
+
     class Meta:
         managed = False
         db_table = 'capa'
@@ -103,7 +106,7 @@ class Parcels(models.Model):
     matutil = models.CharField(max_length=60, blank=True, null=True)
     nottaxedmatutil = models.CharField(max_length=10, blank=True, null=True)
     niscom = models.BigIntegerField(blank=True, null=True)
-    street_uid = models.ForeignKey(Parcelsstreets, on_delete=models.CASCADE)
+    street_uid = models.ForeignKey(Parcelsstreets, db_column='street_uid', on_delete=models.CASCADE)
     number = models.CharField(max_length=20, blank=True, null=True)
     datesituation = models.DateField(blank=True, null=True)
     group_uid = models.BigIntegerField(blank=True, null=True)

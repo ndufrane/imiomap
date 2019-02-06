@@ -1,12 +1,24 @@
 [
   {
+    "className": "urbanmap/OwnerSearch",
+    "config": {
+      "widgetId": "OwnerSearchId",
+      "widgetTitle": "Recherche par propriétaire",
+      "activated": false,
+      "position": "none",
+      "width": "400px",
+      "height": "auto",
+      "urbanRestApiUrl" : "http://localhost/urbanmap"
+    }
+  },
+  {
     "className": "urbanmap/ParcelIdentity",
     "config": {
       "widgetId": "ParcelIdentityId",
       "widgetTitle": "Carte d'identité parcellaire",
+      "position": "none",
       "activated": false,
-      "width": "300px",
-      "height": "auto",
+      
       "urbanRestApiUrl" : "http://localhost/urbanmap"
     }
   },
@@ -228,8 +240,8 @@
           "label":"+",
           "content": [
               {
-                  "label": "Adresse",
-                  "content": [{"widgetId":"SpwAddressSearchId","integrated": true}]
+                  "label": "Propriétaire",
+                  "content": [{"widgetId":"OwnerSearchId","integrated": true}]
               },
               {
                   "label": "Coordonnées",
@@ -259,7 +271,7 @@
            "label": "Carte d'identité parcellaire"
          },
         {
-          "label": "Fonds de plan",
+          "label": "Fonds de plan2",
           "content": [
             {
               "widgetId": "SpwBaseMapChooserId",

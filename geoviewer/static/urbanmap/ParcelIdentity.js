@@ -3,14 +3,13 @@ define([
     'dojo/_base/declare', 'dojo/_base/lang', 'dojo/on',
     'dojo/text!./templates/ParcelIdentity.html', 'dojo/i18n!./nls/ParcelIdentity',
     'spw/api/SpwBaseTemplatedWidget',
-    'esri/geometry/Point', 'esri/SpatialReference',
     'dijit/Dialog', 'dojo/request',
     // il faut le charger car utilisé dans le template
     // mais nous ne sommes pas obligés de l'utiliser
     'dijit/form/ToggleButton'
 ], function(declare, lang, on,
-            tmpl, labels, _Templated,
-            Point, SpatialReference,
+            tmpl, labels, 
+            _Templated,
             Dialog, request) {
 
     return declare(_Templated, {
@@ -18,10 +17,8 @@ define([
         templateString: tmpl,
 
         labels: labels,
-
         urbanUrl: "parcelsinfo",
         urbanRestApiUrl : '/urbanmap',
-        active: false,
         
         // méthode appelée automatiquement après la création du widget
         postCreate: function() {
@@ -30,7 +27,6 @@ define([
 
         onActivate: function() {
             this.inherited(arguments);
-            this.active = true;
             var map = this.spwViewer.get('spwMap');
             this._handler = on(map, map.events.MapClicked, lang.hitch(this, this.onMapClicked));
         },
@@ -41,7 +37,6 @@ define([
             this._handler = null;
 
             this.removeGraphic();
-            this.active = false;
         },
 
         onMapClicked: function(x, y, srid) {

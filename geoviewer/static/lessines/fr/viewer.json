@@ -1,17 +1,17 @@
 {
   "initialExtent": [
-    28113,
-    293222,
-    9253,
-    174613
+    105000,
+    120000,
+    150000,
+    160000
   ],
   "fullExtent": [
-    28113,
-    293222,
-    9253,
-    174613
+    105000,
+    120000,
+    150000,
+    160000
   ],
-  "fullExtentLabel": "Cadrer sur la Wallonie",
+  "fullExtentLabel": "Cadrer sur lessines",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",
   "notificationPosition": "center-down",

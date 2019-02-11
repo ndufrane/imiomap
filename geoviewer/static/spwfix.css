@@ -1,0 +1,47 @@
+.dojoxFloatingPane.dijitContentPane.light .dojoxFloatingPaneTitle {
+
+    text-transform: uppercase;
+
+    background: none;
+
+    color: #75AEC1;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    padding: 10px;
+
+    border-bottom: none;
+
+    background: none;
+
+}
+
+
+
+.dojoxFloatingPane.dijitContentPane {
+
+   font-family: "Lato", Arial, sans-serif;
+
+   overflow: hidden;
+
+   color: #2F2F2F;
+
+   height: 100%;
+
+   width: 100%;
+
+   margin: 0;
+
+   padding: 0;
+
+   border-radius: 0;
+
+   box-shadow: none;
+
+   border: 1px solid #4f8fa5;
+
+   box-sizing: initial;
+
+}

@@ -65,6 +65,7 @@
         "widgetId":"SpwLegendId",
         "widgetTitle":"Légende",
         "position": "panel-light",
+        "className" : "claro",
         "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
         "iconClass": "legendIcon",
         "reportUrl":"//geoservices.wallonie.be/geoviewer/Report",
@@ -240,8 +241,8 @@
           "label":"+",
           "content": [
               {
-                  "label": "Propriétaire",
-                  "content": [{"widgetId":"OwnerSearchId","integrated": true}]
+                "label": "Propriétaire",
+                "content": [{"widgetId":"OwnerSearchId","integrated": true}]
               },
               {
                   "label": "Coordonnées",
@@ -271,7 +272,7 @@
            "label": "Carte d'identité parcellaire"
          },
         {
-          "label": "Fonds de plan2",
+          "label": "Fonds de plan",
           "content": [
             {
               "widgetId": "SpwBaseMapChooserId",

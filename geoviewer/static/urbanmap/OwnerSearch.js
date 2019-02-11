@@ -50,7 +50,6 @@ define([
             this.inherited(arguments);
             this.currentShapes = [];
             var spwMap = this.spwViewer.get('spwMap');
-            spwMap.on(spwMap.events.MapClicked, lang.hitch(this, this.onSpwMapClick));
         },
  
         onDeactivate: function(){

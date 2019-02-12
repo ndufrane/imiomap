@@ -1,4 +1,5 @@
-.owner-search {
-    text-align: center;
-    padding: 10px;
+.owner-search-table {
+    width: 100%;
+    table-layout: fixed;
+    padding: 7px;
 }

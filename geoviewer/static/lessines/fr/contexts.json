@@ -13,6 +13,6 @@
   {
     "name": "walonmap",
     "label": "WalOnMap",
-    "url": "http://geoportail.valid.wallonie.be/walonmap/#BBOX=${xmin},${xmax},${ymin},${ymax}"
+    "url": "https://geoportail.valid.wallonie.be/walonmap/#BBOX=${xmin},${xmax},${ymin},${ymax}"
   }
 ]

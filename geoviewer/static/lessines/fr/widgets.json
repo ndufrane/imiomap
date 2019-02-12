@@ -8,7 +8,7 @@
       "position": "none",
       "width": "400px",
       "height": "auto",
-      "urbanRestApiUrl" : "http://localhost/urbanmap"
+      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
     }
   },
   {
@@ -19,7 +19,7 @@
       "position": "none",
       "activated": false,
       
-      "urbanRestApiUrl" : "http://localhost/urbanmap"
+      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
     }
   },
  {
@@ -33,13 +33,13 @@
       "activated": false,
       "width": "300px",
       "height": "auto",
-      "urbanRestApiUrl" : "http://localhost/urbanmap"
+      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "http://localhost/urbanmap"
+      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
     }
   },
   {

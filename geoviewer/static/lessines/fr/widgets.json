@@ -8,7 +8,8 @@
       "position": "none",
       "width": "400px",
       "height": "auto",
-      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
+      "className" : "claro",
+      "urbanRestApiUrl" : "http://localhost/urbanmap"
     }
   },
   {
@@ -18,7 +19,7 @@
       "widgetTitle": "Carte d'identité parcellaire",
       "position": "none",
       "activated": false,
-      
+      "className" : "claro",
       "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
     }
   },
@@ -65,7 +66,7 @@
         "widgetId":"SpwLegendId",
         "widgetTitle":"Légende",
         "position": "panel-light",
-        "className" : "claro",
+        
         "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
         "iconClass": "legendIcon",
         "reportUrl":"//geoservices.wallonie.be/geoviewer/Report",
@@ -147,7 +148,18 @@
       "iconClass": "infosIcon",
       "height": "auto",
       "right": "15px",
-      "top": "85px"
+      "top": "85px",
+      "additionalServices": [
+        {
+          "title" : "Matrice Cadastrale",
+          "url": "//localhost/urbanmap/identify_parcel/{x}/{y}",
+          "type": "rest",
+          "geometryFormat" : "geojson",
+          "properties": {
+            "Revenu cadastral": "{cadastralincome}"
+          }
+        }
+      ]
     }
   },
   {

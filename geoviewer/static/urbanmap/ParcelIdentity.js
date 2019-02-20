@@ -1,22 +1,14 @@
 /* ParcelIdentity */
 define([
     'dojo/_base/declare', 'dojo/_base/lang', 'dojo/on',
-    'dojo/text!./templates/ParcelIdentity.html', 'dojo/i18n!./nls/ParcelIdentity',
-    'spw/api/SpwBaseTemplatedWidget',
-    'dijit/Dialog', 'dojo/request',
-    // il faut le charger car utilisé dans le template
-    // mais nous ne sommes pas obligés de l'utiliser
-    'dijit/form/ToggleButton'
+    'spw/api/SpwBaseWidget',
+    'dijit/Dialog', 'dojo/request'
 ], function(declare, lang, on,
-            tmpl, labels, 
             _Templated,
             Dialog, request) {
 
     return declare(_Templated, {
 
-        templateString: tmpl,
-
-        labels: labels,
         urbanUrl: "parcelsinfo",
         urbanRestApiUrl : '/urbanmap',
         

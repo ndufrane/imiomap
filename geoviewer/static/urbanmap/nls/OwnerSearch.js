@@ -1,8 +1,8 @@
 define({
     root: {
         "addressTextbox": "Address",
-        "surnameTextbox": "Firstname",
-        "firstNameTextbox": "Surname"
+        "surnameTextbox": "surname",
+        "firstNameTextbox": "Firstname"
     },
     fr: true
 });

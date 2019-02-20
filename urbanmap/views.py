@@ -8,6 +8,8 @@ from django.contrib.gis.gdal import CoordTransform, SpatialReference
 from django.views.decorators.http import require_POST, require_GET
 from django.views.decorators.csrf import csrf_exempt
 
+from django.contrib.gis.geos import Point
+
 import logging
 import json
 
@@ -109,3 +111,74 @@ def get_parcels_infos_by_capakey(request, capakeys):
       response_geojson = serialize('json', parcels_qry)
       
       return HttpResponse(response_geojson, content_type='application/json')
+
+@csrf_exempt
+@require_POST
+def get_parcels_by_owner(request):
+    surname = request.POST.get("surname", "")
+    firstname = request.POST.get("firstname", "")
+    address = request.POST.get("address", "")
+
+    if surname == "" and firstname == "" and address == "":
+        return HttpResponse(None, content_type='application/json')
+    
+
+    capa_qry = Capa.objects
+
+    if surname != "":
+        capa_qry = capa_qry.filter(parcelinfo__owner__owner_uid__name__icontains=surname)
+    if firstname != "":
+        capa_qry = capa_qry.filter(parcelinfo__owner__owner_uid__firstname__icontains=firstname)
+    if address != "":
+        capa_qry = capa_qry.filter(parcelinfo__owner__owner_uid__street_fr__icontains=address)
+
+    logger.error(capa_qry.count())
+  
+    response_geojson = serialize('geojson', capa_qry.all()[:100],
+            geometry_field='the_geom',
+            srid=31370)
+    
+    return HttpResponse(response_geojson, content_type='application/json')
+
+@csrf_exempt
+@require_GET
+def identify_parcel(request):
+    geometry_json = request.GET.get("geometry")
+    geometry = json.loads(geometry_json)
+    pnt = Point(geometry.x, geometry.y)
+
+    # Faire deux service : 1 identify parcel et un autre pour les proprios
+    capa_qry = Capa.objects.filter(the_geom__intersects=pnt)
+    capa_qry = capa_qry.values(
+        'the_geom',
+        'capakey',
+        'rc__surfacenottaxable',
+        'rc__surfacetaxable',
+        'rc__surfaceverif',
+        'rc__numbercadastralincome',
+        'rc__charcadastralincome',
+        'rc__cadastralincome',
+        'rc__dateendexoneration',
+        'rc__datesituation'
+    )
+
+    geos = []
+    for result in capa_qry.all():
+        feature = {
+            "type": "Feature",
+            "properties": {
+                "capakey": result.pk,
+                "cadastralincome": result.rc__cadastralincome,
+                "datesituation": result.rc__datesituation
+            },
+            "geometry": result._the_geom.geojson
+        }
+        geos.append(feature)
+
+    geometries = {
+        'type': 'FeatureCollection',
+        'features': geos,
+        "crs": {"type": "name", "properties": {"name": "EPSG:31370"}}
+    }
+
+    return HttpResponse(json.dumps(geometries), content_type='application/json')

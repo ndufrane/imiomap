@@ -19,6 +19,7 @@
   "errorMailToAdress": "helpdesk.carto@spw.wallonie.be",
   "errorMailSubject": "[INCIDENT] API Geoviewer",
   "mobile": false,
+  "placementNode": "spwViewerDiv",
   "leftRegion": {
     "width": "310px",
     "resizable": true,

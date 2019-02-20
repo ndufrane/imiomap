@@ -31,7 +31,6 @@
             </td>
         </tr>
     </table>
-    <button data-dojo-type="dijit/form/Button" type="button" onClick="console.log(myForm.getValues())">Get Values from form!</button>
-    <button data-dojo-type="dijit/form/Button" type="submit" name="submitButton" value="Submit">Submit</button>
-    <button data-dojo-type="dijit/form/Button" type="reset">Reset</button>
+    <button data-dojo-type="dijit/form/Button" type="submit" data-dojo-attach-point="_submitOwnerSearchButton" name="submitButton" value="Submit">Rerchercher</button>
+    <button data-dojo-type="dijit/form/Button" type="reset" data-dojo-attach-point="_resetOwnerSearchButton" >Réinitialiser</button>
 </div>

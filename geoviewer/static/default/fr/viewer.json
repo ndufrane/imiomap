@@ -52,5 +52,11 @@
   "mapLoaderPosition": {
     "top": "35px",
     "right": "5px"
-  }
+  },
+  "corsDetection": true,
+  "corsEnabledServers": [
+    "localhost:8000",
+    "localhost",
+    "imiomap.imio-test.be"
+  ]
 }

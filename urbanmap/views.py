@@ -142,43 +142,41 @@ def get_parcels_by_owner(request):
 
 @csrf_exempt
 @require_GET
-def identify_parcel(request):
-    geometry_json = request.GET.get("geometry")
-    geometry = json.loads(geometry_json)
-    pnt = Point(geometry.x, geometry.y)
+def identify_parcel(request, x, y):
+    #geometry_json = request.GET.get("geometry")
+    #geometry = json.loads(geometry_json)
+
+    pnt = Point(float(x), float(y), srid=31370)
 
     # Faire deux service : 1 identify parcel et un autre pour les proprios
     capa_qry = Capa.objects.filter(the_geom__intersects=pnt)
     capa_qry = capa_qry.values(
         'the_geom',
         'capakey',
-        'rc__surfacenottaxable',
-        'rc__surfacetaxable',
-        'rc__surfaceverif',
-        'rc__numbercadastralincome',
-        'rc__charcadastralincome',
-        'rc__cadastralincome',
-        'rc__dateendexoneration',
-        'rc__datesituation'
+        'parcelinfo__rc__surfacenottaxable',
+        'parcelinfo__rc__surfacetaxable',
+        'parcelinfo__rc__surfaceverif',
+        'parcelinfo__rc__numbercadastralincome',
+        'parcelinfo__rc__charcadastralincome',
+        'parcelinfo__rc__cadastralincome',
+        'parcelinfo__rc__dateendexoneration',
+        'parcelinfo__rc__datesituation'
     )
-
     geos = []
     for result in capa_qry.all():
         feature = {
-            "type": "Feature",
-            "properties": {
-                "capakey": result.pk,
-                "cadastralincome": result.rc__cadastralincome,
-                "datesituation": result.rc__datesituation
-            },
-            "geometry": result._the_geom.geojson
+            "layerId": "0",
+            "layerName": "matrice cadastrale",
+            "displayFieldName": "",
+            "capakey": result.get("capakey"),
+            "cadastralincome": result.get("parcelinfo__rc__cadastralincome"),
+            "datesituation": str(result.get("parcelinfo__rc__datesituation")),
+            "geometry": result.get("the_geom").json
         }
         geos.append(feature)
 
-    geometries = {
-        'type': 'FeatureCollection',
-        'features': geos,
-        "crs": {"type": "name", "properties": {"name": "EPSG:31370"}}
+    infos = {
+        'results': geos
     }
 
-    return HttpResponse(json.dumps(geometries), content_type='application/json')
+    return HttpResponse(json.dumps(infos), content_type='application/json')

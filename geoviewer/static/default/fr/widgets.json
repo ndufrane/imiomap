@@ -20,7 +20,7 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
+      "urbanRestApiUrl" : "//localhost/urbanmap"
     }
   },
  {
@@ -34,13 +34,13 @@
       "activated": false,
       "width": "300px",
       "height": "auto",
-      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
+      "urbanRestApiUrl" : "//localhost/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
+      "urbanRestApiUrl" : "//localhost/urbanmap"
     }
   },
   {
@@ -155,8 +155,11 @@
           "url": "//localhost/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
+          "resultProperty" : "results",
+          "geometryProperty": "geometry",
           "properties": {
-            "Revenu cadastral": "{cadastralincome}"
+            "Revenu cadastral": "{cadastralincome} euros",
+            "Date situation": "{datesituation}"
           }
         }
       ]

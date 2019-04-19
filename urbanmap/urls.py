@@ -9,5 +9,5 @@ urlpatterns = [
     re_path('parcels/capakeys/(?P<capakeys>.*)', views.get_parcels_by_capakey, name='get_parcels_by_capakey'),
     re_path('parcelsinfo/capakeys/(?P<capakeys>.*)', views.get_parcels_infos_by_capakey, name='get_parcels_infos_by_capakey'),
     path('parcels/owner_search', views.get_parcels_by_owner, name='get_parcels_by_owner'),
-    path('identify_parcel', views.identify_parcel, name='identify')
+    path('identify_parcel/<str:x>/<str:y>', views.identify_parcel, name='identify')
 ]

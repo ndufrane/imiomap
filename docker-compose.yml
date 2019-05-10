@@ -16,7 +16,8 @@ services:
       volumes:
         - '.:/usr/src/app'
         - static-volume:/usr/src/app/static_root
-      command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+      #command: ["python", "manage.py", "runserver", "0.0.0.0:8001"]
+     # command: ["/usr/src/app/uwsgi.sh"]
       ports:
         - "8000:8000"
       environment:

@@ -155,8 +155,12 @@
           "url": "//localhost/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
+          "resultProperty" : "results",
+          "geometryProperty": "geometry",
           "properties": {
-            "Revenu cadastral": "{cadastralincome}"
+            "CapaKey": "capakey",
+            "Revenu cadastral": "{cadastralincome} euros",
+            "Date situation": "{datesituation}"
           }
         }
       ]

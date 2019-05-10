@@ -144,7 +144,7 @@ class Ownersproperties(models.Model):
     ownerright = models.CharField(max_length=120, blank=True, null=True)
     right_trad = models.CharField(max_length=102, blank=True, null=True)
     managedby = models.CharField(max_length=4, blank=True, null=True)
-    owner_uid = models.ForeignKey(Ownersnames, db_column='owner_uid', on_delete=models.CASCADE, related_name="owner")
+    owner_uid = models.ForeignKey(Ownersnames, db_column='owner_uid', on_delete=models.CASCADE, related_name="fowner")
     partner_uid = models.ForeignKey(Ownersnames, db_column='partner_uid', on_delete=models.CASCADE, related_name="partner")
     coowner = models.CharField(max_length=120, blank=True, null=True)
     anonymousowner = models.CharField(max_length=120, blank=True, null=True)

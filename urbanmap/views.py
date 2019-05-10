@@ -143,12 +143,9 @@ def get_parcels_by_owner(request):
 @csrf_exempt
 @require_GET
 def identify_parcel(request, x, y):
-    #geometry_json = request.GET.get("geometry")
-    #geometry = json.loads(geometry_json)
 
     pnt = Point(float(x), float(y), srid=31370)
 
-    # Faire deux service : 1 identify parcel et un autre pour les proprios
     capa_qry = Capa.objects.filter(the_geom__intersects=pnt)
     capa_qry = capa_qry.values(
         'the_geom',
@@ -174,6 +171,65 @@ def identify_parcel(request, x, y):
             "geometry": result.get("the_geom").json
         }
         geos.append(feature)
+
+    infos = {
+        'results': geos
+    }
+
+    return HttpResponse(json.dumps(infos), content_type='application/json')
+
+@csrf_exempt
+@require_GET
+def identify_owners(request, x, y):
+
+    pnt = Point(float(x), float(y), srid=31370)
+
+    capa_qry = Capa.objects.filter(the_geom__intersects=pnt)
+    capa_qry = capa_qry.order_by('parcelinfo__owner__order')
+    capa_qry = capa_qry.values(
+        'the_geom',
+        'capakey',
+        'parcelinfo__owner__datesituation',
+        'parcelinfo__owner__order',
+        'parcelinfo__owner__ownerright',
+        'parcelinfo__owner__right_trad',
+        'parcelinfo__owner__coowner',
+        'parcelinfo__owner__owner_uid__name',
+        'parcelinfo__owner__owner_uid__firstname',
+        'parcelinfo__owner__owner_uid__birthdate',
+        'parcelinfo__owner__partner_uid__name',
+        'parcelinfo__owner__partner_uid__firstname',
+        'parcelinfo__owner__partner_uid__birthdate',
+    )
+    geos = []
+    cpt = 0
+
+    def ifNRE(data):
+        if data == None:
+            return ""
+        else:
+            return str(data)
+
+    for result in capa_qry.all():
+        feature = {
+            "layerId": str(cpt),
+            "layerName": "propriétaires",
+            "displayFieldName": "",
+            "capakey": result.get("capakey"),
+            "ownerright": ifNRE(result.get("parcelinfo__owner__ownerright", "")),
+            "order": ifNRE(result.get("parcelinfo__owner__order", "")),
+            "righttrad": ifNRE(result.get("parcelinfo__owner__right_trad", "")),
+            "coowner": ifNRE(result.get("parcelinfo__owner__coowner", "")),
+            "owner_name": ifNRE(result.get("parcelinfo__owner__owner_uid__name", "")),
+            "owner_firstname": ifNRE(result.get("parcelinfo__owner__owner_uid__firstname", "")),
+            "owner_birthdate": ifNRE(result.get("parcelinfo__owner__owner_uid__birthdate", "")),
+            "partner_name": ifNRE(result.get("parcelinfo__owner__partner_uid__name", "")),
+            "partner_firstname": ifNRE(result.get("parcelinfo__owner__partner_uid__firstname", "")),
+            "partner_birthdate": ifNRE(result.get("parcelinfo__owner__partner_uid__birthdate", "")),
+            "geometry": result.get("the_geom").json
+        }
+        geos.append(feature)
+        cpt += 1
 
     infos = {
         'results': geos

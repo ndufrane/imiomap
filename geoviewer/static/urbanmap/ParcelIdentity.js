@@ -40,7 +40,8 @@ define([
                 'method' : 'POST',
                 'data' : {
                     'geom' : wktPoint
-                }
+                },
+                handleAs: "json"
             }).then(lang.hitch(this, function(data){
                 if(data && data.length > 0) {
                     request(this.urbanUrl+"?capakey=" + data[0].pk, {

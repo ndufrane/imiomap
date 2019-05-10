@@ -23,20 +23,6 @@
       "urbanRestApiUrl" : "//localhost/urbanmap"
     }
   },
- {
-    "className": "urbanmap/QueryParcel",
-    "config": {
-      "widgetId": "QueryParcelId",
-      "widgetTitle": "Sélectionner une parcelle",
-      "position": "panel-light",
-      "top": "150px",
-      "left": "150px",
-      "activated": false,
-      "width": "300px",
-      "height": "auto",
-      "urbanRestApiUrl" : "//localhost/urbanmap"
-    }
-  },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
@@ -151,15 +137,32 @@
       "top": "85px",
       "additionalServices": [
         {
-          "title" : "Matrice Cadastrale",
+          "title" : "Matrice Cadastrale (Urban)",
           "url": "//localhost/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
           "geometryProperty": "geometry",
           "properties": {
+            "CapaKey": "{capakey}",
             "Revenu cadastral": "{cadastralincome} euros",
             "Date situation": "{datesituation}"
+          }
+        },
+        {
+          "title" : "Proriétaires (Urban)",
+          "url": "//localhost/urbanmap/identify_owners/{x}/{y}",
+          "type": "rest",
+          "geometryFormat" : "geojson",
+          "resultProperty" : "results",
+          "geometryProperty": "geometry",
+          "properties": {
+            "ownerright": "{ownerright}",
+            "Ordre": "{order}",
+            "righttrad": "{righttrad}",
+            "Nom": "{owner_firstname} {owner_name} {owner_birthdate}",
+            "Partenaire": "{partner_firstname} {partner_name} {partner_birthdate}",
+            "coowner": "{coowner}"
           }
         }
       ]

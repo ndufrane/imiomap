@@ -21,7 +21,7 @@ pipeline {
             steps {
                 pushImageToRegistry (
                     env.BUILD_ID,
-                    "iaurban/urbanmap"
+                    "iaurban/imiomap"
                 )
             }
         }

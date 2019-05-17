@@ -11,6 +11,7 @@ RUN pip install -r requirements.txt
 COPY . .
 RUN pip install uwsgi
 RUN chmod +x ./uwsgi.sh
+RUN mkdir static && python manage.py collectstatic --noinput
 EXPOSE 8000
 USER root
 CMD ["./uwsgi.sh"]

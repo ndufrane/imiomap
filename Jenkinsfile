@@ -13,6 +13,7 @@ pipeline {
         stage('Build') {
             agent any
             steps {
+                sh 'git submodule update --init --recursive'
                 sh 'docker-compose build --no-cache'
             }
         }

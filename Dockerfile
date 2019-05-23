@@ -13,5 +13,6 @@ RUN pip install uwsgi
 RUN chmod +x ./uwsgi.sh
 RUN mkdir static && python manage.py collectstatic --noinput
 EXPOSE 8000
-USER root
+RUN chown nobody /usr/src/app -R
+USER nobody
 CMD ["./uwsgi.sh"]

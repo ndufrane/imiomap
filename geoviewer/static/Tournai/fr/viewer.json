@@ -53,5 +53,13 @@
   "mapLoaderPosition": {
     "top": "35px",
     "right": "5px"
-  }
+  },
+  "corsEnabledServers": [
+    "localhost:8000",
+    "localhost",
+    "imiomap.imio-test.be",
+    "imiomap.imio.be",
+    "tournai2018-carto.imio-test.be",
+    "tournai2018-carto.imio.be"
+  ]
 }

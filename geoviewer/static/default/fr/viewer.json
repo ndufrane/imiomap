@@ -1,15 +1,15 @@
 {
   "initialExtent": [
-    28113,
-    293222,
-    9253,
-    174613
+    70000,
+    100000,
+    138000,
+    150000
   ],
   "fullExtent": [
-    28113,
-    293222,
-    9253,
-    174613
+    70000,
+    100000,
+    138000,
+    150000
   ],
   "fullExtentLabel": "Cadrer sur la Wallonie",
   "spatialReference": 31370,

@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'urbanmap.apps.UrbanmapConfig',
     'proxy',
     'corsheaders',
-    'djangomapstore.apps.DjangomapstoreConfig',
     'geoviewer.apps.GeoviewerConfig'
 ]
 

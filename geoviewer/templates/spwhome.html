@@ -11,7 +11,6 @@
 				async: true,
 				parseOnLoad: true,
 				isDebug: true,
-				configBasePath: '{% static "default\fr" %}',
 				locale: 'fr',
 				configBasePath: '{% static "default/fr" %}',     
 				packages: [{
@@ -27,7 +26,9 @@
 			};
 		</script>
 		<script type="text/javascript" src="http://geoservices.wallonie.be/geoviewer/4.0/?t=I2PHLK3WBK"></script>
-		<link rel="stylesheet" type="text/css" href="http://geoservices.wallonie.be/geoviewer/4.0/style/"/>
+		<!--<link rel="stylesheet" type="text/css" href="http://geoservices.wallonie.be/geoviewer/4.0/style/"/>-->
+		<link rel="stylesheet" type="text/css" href='{% static "geoviewer4.css" %}'/>
+		<link rel="stylesheet" type="text/css" href='{% static "spwfix.css" %}'/>
 		<style>
             #spwViewerDiv {
                 position: absolute;

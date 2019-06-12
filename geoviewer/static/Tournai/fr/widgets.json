@@ -263,12 +263,12 @@
                 "content": [{"widgetId":"OwnerSearchId","integrated": true}]
               },
               {
-                  "label": "Coordonnées",
-                  "content": [{"widgetId":"SpwCoordinatesSearchId","integrated": true}]
-              },
-              {
                   "label": "Parcelle cadastrale",
                   "content": [{"widgetId":"SpwCadmapSearchId","integrated": true}]
+              },
+              {
+                "label": "Coordonnées",
+                "content": [{"widgetId":"SpwCoordinatesSearchId","integrated": true}]
               }
           ],
           "className":"otherLocalizeButton"

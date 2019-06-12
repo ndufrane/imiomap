@@ -23,5 +23,4 @@ urlpatterns = [
     re_path('proxy/(?P<url>.*)', proxy_view),
     path('urbanmap/', include('urbanmap.urls')),
     path('spw/', include('geoviewer.urls')),
-    path('', include('djangomapstore.urls')),
 ]

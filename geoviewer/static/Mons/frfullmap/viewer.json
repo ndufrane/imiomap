@@ -11,7 +11,7 @@
     115735,
     136928
   ],
-  "fullExtentLabel": "Cadrer sur tournai",
+  "fullExtentLabel": "Cadrer sur mons",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",
   "notificationPosition": "center-down",
@@ -56,9 +56,9 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "imiomap.imio-test.be",
+    "imiomap.imio-app.be",
     "imiomap.imio.be",
-    "tournai2018-carto.imio-test.be",
-    "tournai2018-carto.imio.be"
+    "mons-carto.imio-app.be",
+    "mons-carto.imio.be"
   ]
 }

@@ -56,9 +56,6 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "imiomap.imio-test.be",
-    "imiomap.imio.be",
-    "tournai2018-carto.imio-test.be",
-    "tournai2018-carto.imio.be"
+    "tournai-carto.imio-app.be"
   ]
 }

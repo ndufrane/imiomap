@@ -56,9 +56,6 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "imiomap.imio-app.be",
-    "imiomap.imio.be",
-    "mons-carto.imio-app.be",
-    "mons-carto.imio.be"
+    "mons-carto.imio-app.be"
   ]
 }

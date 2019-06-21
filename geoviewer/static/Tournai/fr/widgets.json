@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "https://tournai2018-carto.imio-test.be/lu9ruoNa6eelaiSh4ehuec5aa6Paejoo/urbanmap"
+      "urbanRestApiUrl" : "https://tournai-carto.imio-app.be/X3lGdbeEuteX2fV09lTY6PqbfHCoT7uY/urbanmap"
     }
   },
   {
@@ -20,13 +20,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://tournai2018-carto.imio-test.be/lu9ruoNa6eelaiSh4ehuec5aa6Paejoo/urbanmap"
+      "urbanRestApiUrl" : "https://tournai-carto.imio-app.be/X3lGdbeEuteX2fV09lTY6PqbfHCoT7uY/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://tournai2018-carto.imio-test.be/lu9ruoNa6eelaiSh4ehuec5aa6Paejoo/urbanmap"
+      "urbanRestApiUrl" : "https://tournai-carto.imio-app.be/X3lGdbeEuteX2fV09lTY6PqbfHCoT7uY/urbanmap"
     }
   },
   {
@@ -138,7 +138,7 @@
       "additionalServices": [
         {
           "title" : "Matrice Cadastrale (Urban)",
-          "url": "https://tournai2018-carto.imio-test.be/lu9ruoNa6eelaiSh4ehuec5aa6Paejoo/urbanmap/identify_parcel/{x}/{y}",
+          "url": "https://tournai-carto.imio-app.be/X3lGdbeEuteX2fV09lTY6PqbfHCoT7uY/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -151,7 +151,7 @@
         },
         {
           "title" : "Proriétaires (Urban)",
-          "url": "https://tournai2018-carto.imio-test.be/lu9ruoNa6eelaiSh4ehuec5aa6Paejoo/urbanmap/identify_owners/{x}/{y}",
+          "url": "https://tournai-carto.imio-app.be/X3lGdbeEuteX2fV09lTY6PqbfHCoT7uY/urbanmap/identify_owners/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",

@@ -11,7 +11,6 @@
         "hasLegend": true,
         "legendOpen": true,
         "identifiable": true,
-
         "toLoad": true
       }]
   },
@@ -88,7 +87,20 @@
       ]
       
     }]
+  },
+  {
+    "code" : "LOTISSEMENTS SPW",
+    "label" : "LOTISSEMENTS",
+    "mapServices" :[{
+        "serviceId": "LOTISSEMENTS",
+        "label": "LOTISSEMENTS",
+        "type": "AGS_DYNAMIC",
+        "url" : "http://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/LOT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
   }
-  
-  
 ]

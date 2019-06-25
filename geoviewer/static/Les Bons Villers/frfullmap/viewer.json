@@ -1,15 +1,15 @@
 {
   "initialExtent": [
-    112827,
-    140820,
-    115735,
-    136928
+    150000,
+    160000,
+    130000,
+    139000
   ],
   "fullExtent": [
-    112827,
-    140820,
-    115735,
-    136928
+    150000,
+    160000,
+    130000,
+    139000
   ],
   "fullExtentLabel": "Cadrer sur les bons villers",
   "spatialReference": 31370,

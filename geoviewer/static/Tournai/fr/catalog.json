@@ -11,6 +11,7 @@
         "hasLegend": true,
         "legendOpen": true,
         "identifiable": true,
+
         "toLoad": true
       }]
   },
@@ -54,7 +55,7 @@
       "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/PDS/MapServer",
       "inTOC" : true,
       "toLoad": true,
-      "visible": true,
+      "visible": false,
       "hasLegend": true,
       "legendOpen": true,
       "identifiable": true,
@@ -104,16 +105,16 @@
       }]
   },
   {
-    "code" : "CUSTOM TOURNAI",
-    "label" : "CUSTOM TOURNAI",
+    "code" : "IMIO",
+    "label" : "IMIO",
     "mapServices" :[{
         "serviceId": "CUSTOM_TOURNAI",
-        "label": "CUSTOM",
-        "type": "AGS_DYNAMIC",
-        "url" : "https://tournai-geonode.imio-app.be/geoserver/wms",
+        "label": "IMIO Tournai",
+        "type": "WMS",
+        "url" : "http://tournai-geonode.imio-app.be/geoserver/geonode/wms",
         "visible": false,
-        "hasLegend": true,
-        "legendOpen": true,
+        "hasLegend": false,
+        "legendOpen": false,
         "identifiable": true,
         "toLoad": true
       }]

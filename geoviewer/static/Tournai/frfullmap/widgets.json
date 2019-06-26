@@ -63,6 +63,7 @@
         "resizable": true
     }
 },
+
   {
     "className": "spw/widgets/SpwScaleBar",
     "config": {
@@ -75,6 +76,24 @@
         "bottom": "10px",
         "left": "45px"
       }
+    }
+  },
+  {
+    "className":"spw/widgets/SpwPrint",
+    "config": {
+        "widgetId":"SpwPrintId",
+        "widgetTitle":"Imprimer cette vue",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "useCors": true,
+        "iconClass": "printIcon",
+        "style":{
+          "padding": "8px"
+        },
+        "position": "panel-light",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "width": "350px"
     }
   },
   {
@@ -281,6 +300,12 @@
           "widgetId": "SpwLegendId",
           "label":"Légende"
          },
+         {
+          "label":"Imprimer",
+          "widgetId": "SpwPrintId",
+          "className":"printMenuButton",
+          "popupClass": "printMenuPopup"
+          },
          {
           "widgetId": "QueryParcelId",
           "label":"Sélectionner une parcelle"

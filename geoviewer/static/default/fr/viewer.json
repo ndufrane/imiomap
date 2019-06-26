@@ -57,6 +57,8 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "imiomap.imio-test.be"
+    "imiomap.imio-test.be",
+    "geoservices.wallonie.be",
+    "tournai-geonode.imio-app.be"
   ]
 }

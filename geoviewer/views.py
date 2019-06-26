@@ -1,5 +1,7 @@
 
 from django.views.generic.base import TemplateView
+from django.views.decorators.csrf import csrf_exempt
+from proxy.views import proxy_view
 
 class HomePageView(TemplateView):
 
@@ -12,3 +14,11 @@ class HomePageView(TemplateView):
         context = super().get_context_data(**kwargs)
         context.update(settings.GLOBAL_SETTINGS)
         return context
+
+
+
+
+@csrf_exempt
+def proxy(request):
+    requestpath = request.GET.urlencode(safe='/:?')
+    return proxy_view(request, requestpath)

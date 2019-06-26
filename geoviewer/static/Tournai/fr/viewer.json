@@ -49,7 +49,7 @@
     "minimizeable": false
   },
   "loadingVerbosity": 1,
-  "proxyPageUrl": "proxy.jsp",
+  "proxyPageUrl": "https://tournai-carto.imio-app.be/X3lGdbeEuteX2fV09lTY6PqbfHCoT7uY/spw/proxy.jsp",
   "mapLoaderPosition": {
     "top": "35px",
     "right": "5px"

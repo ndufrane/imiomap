@@ -19,4 +19,7 @@ class HomePageView(TemplateView):
 @csrf_exempt
 def proxy(request):
     requestpath = request.GET.urlencode(safe='/:?')
+    print("*")
+    print(requestpath[:-1])
+    print("*")
     return proxy_view(request, requestpath)

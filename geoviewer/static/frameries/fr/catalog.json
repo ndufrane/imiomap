@@ -103,5 +103,20 @@
         "identifiable": true,
         "toLoad": true
       }]
+  },
+  {
+    "code" : "IMIO",
+    "label" : "IMIO",
+    "mapServices" :[{
+        "serviceId": "CUSTOM_FRAMERIES",
+        "label": "IMIO Frameries",
+        "type": "WMS",
+        "url" : "http://frameries-geonode.imio-app.be/geoserver/geonode/wms",
+        "visible": false,
+        "hasLegend": false,
+        "legendOpen": false,
+        "identifiable": true,
+        "toLoad": true
+      }]
   }
 ]

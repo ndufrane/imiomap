@@ -105,6 +105,66 @@
       }]
   },
   {
+    "code" : "AHREM SPW",
+    "label" : "AHREM",
+    "mapServices" :[{
+        "serviceId": "AHREM",
+        "label": "AHREM",
+        "type": "AGS_DYNAMIC",
+        "url" : " https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/AHREM/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "RHW_SIMPLE SPW",
+    "label" : "RHW_SIMPLE",
+    "mapServices" :[{
+        "serviceId": "RHW_SIMPLE",
+        "label": "RHW_SIMPLE",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/RHW_SIMPLE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "CONCESSIONS_MINES_SITUATION_ADMIN SPW",
+    "label" : "CONCESSIONS_MINES_SITUATION_ADMIN",
+    "mapServices" :[{
+        "serviceId": "CONCESSIONS_MINES_SITUATION_ADMIN",
+        "label": "CONCESSIONS_MINES_SITUATION_ADMIN",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/CONCESSIONS_MINES_SITUATION_ADMIN/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "KARST SPW",
+    "label" : "KARST",
+    "mapServices" :[{
+        "serviceId": "KARST",
+        "label": "KARST",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/KARST/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "IMIO",
     "label" : "IMIO",
     "mapServices" :[{

@@ -210,6 +210,81 @@
       }]
   },
   {
+    "code" : "ATLAS_VV_MODIF SPW",
+    "label" : "ATLAS_VV_MODIF",
+    "mapServices" :[{
+        "serviceId": "ATLAS_VV_MODIF",
+        "label": "ATLAS_VV_MODIF",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/ATLAS_VV_MODIF/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SOL SPW",
+    "label" : "SOL",
+    "mapServices" :[{
+        "serviceId": "SOL",
+        "label": "SOL",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/SOL/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BDES_INVENTAIRE SPW",
+    "label" : "BDES_INVENTAIRE",
+    "mapServices" :[{
+        "serviceId": "BDES_INVENTAIRE",
+        "label": "BDES_INVENTAIRE",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/BDES_INVENTAIRE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "CAW SPW",
+    "label" : "CAW",
+    "mapServices" :[{
+        "serviceId": "CAW",
+        "label": "CAW",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/CAW/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BASSINS__BASSINS_PG SPW",
+    "label" : "BASSINS__BASSINS_PG / PASH",
+    "mapServices" :[{
+        "serviceId": "BASSINS__BASSINS_PG",
+        "label": "BASSINS__BASSINS_PG",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/BASSINS__BASSINS_PG/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "IMIO",
     "label" : "IMIO",
     "mapServices" :[{

@@ -26,5 +26,31 @@ pipeline {
                 )
             }
         }
+        stage('Deploy to prod ?') {
+            agent none
+            steps {
+                timeout(time: 24, unit: 'HOURS') {
+                    input (
+                        message: 'Should we deploy to prod ?'
+                    )
+                }
+            }
+            post {
+                aborted {
+                    echo 'In post aborted'
+                }
+                success {
+                    echo 'In post success'
+                }
+            }
+        }
+        stage('Deploying to prod') {
+            agent any
+            steps {
+                sh 'docker pull docker-staging.imio.be/iaurban/imiomap:latest'
+                sh 'docker tag docker-staging.imio.be/iaurban/imiomap:latest docker-prod.imio.be/iaurban/imiomap:latest'
+                sh 'docker push docker-prod.imio.be/iaurban/imiomap:latest'
+            }
+        }
     }
 }

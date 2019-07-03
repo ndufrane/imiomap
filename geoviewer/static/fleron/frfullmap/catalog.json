@@ -165,6 +165,51 @@
       }]
   },
   {
+    "code" : "BC_PAT SPW",
+    "label" : "BC_PAT",
+    "mapServices" :[{
+        "serviceId": "BC_PAT",
+        "label": "BC_PAT",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/BC_PAT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SEVESO SPW",
+    "label" : "SEVESO",
+    "mapServices" :[{
+        "serviceId": "SEVESO",
+        "label": "SEVESO",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/SEVESO/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SAR SPW",
+    "label" : "SAR",
+    "mapServices" :[{
+        "serviceId": "SAR",
+        "label": "SAR",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/SAR/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "IMIO",
     "label" : "IMIO",
     "mapServices" :[{
@@ -180,3 +225,4 @@
       }]
   }
 ]
+

@@ -140,6 +140,60 @@ def get_parcels_by_owner(request):
     
     return HttpResponse(response_geojson, content_type='application/json')
 
+
+@csrf_exempt
+@require_GET
+def identify_parcel_advanced(request, capakeys):
+    """
+        input :
+            * 0..n capakeys separated by ,
+        process :
+            * search latest parcels info by capakey in database
+        output :
+            * Geojson Feature collection (SRID: 31370)
+    """  
+    # TODO: input check and error handling
+    capakeys_parsed = capakeys.split(',')
+
+    parcels_qry = Parcels.objects.filter(capakey__in=capakeys_parsed)
+    parcels_qry = parcels_qry.values(
+        'capakey',
+        'rc__surfacenottaxable',
+        'rc__surfacetaxable',
+        'rc__surfaceverif',
+        'rc__numbercadastralincome',
+        'rc__charcadastralincome',
+        'rc__cadastralincome',
+        'rc__dateendexoneration',
+        'rc__datesituation',
+        'owner__datesituation',
+        'owner__order',
+        'owner__ownerright',
+        'owner__right_trad',
+        'owner__coowner',
+        'owner__owner_uid__name',
+        'owner__owner_uid__firstname',
+        'owner__owner_uid__birthdate',
+        'owner__partner_uid__name',
+        'owner__partner_uid__firstname',
+        'owner__partner_uid__birthdate',  
+    )
+
+    geos = []
+    for result in parcels_qry.all():
+        feature = {
+            "capakey": result.get("capakey"),
+            "cadastralincome": result.get("rc__cadastralincome"),
+            "datesituation": str(result.get("rc__datesituation")),
+        }
+        geos.append(feature)
+
+    infos = {
+        'results': geos
+    }
+
+    return HttpResponse(json.dumps(infos), content_type='application/json')
+
 @csrf_exempt
 @require_GET
 def identify_parcel(request, x, y):

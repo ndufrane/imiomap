@@ -126,6 +126,50 @@
     }
   },
   {
+    "className": "spw/widgets/SpwAdvancedIdentify",
+    "config": {
+      "widgetId": "SpwAdvancedIdentifyId",
+      "widgetTitle": "Enquête",
+      "position": "panel-light",
+      "width": "400px",
+      "height": "50vh",
+      "right": "15px",
+      "top": "85px",
+
+      "widgets": [
+        {
+          "className": "urbanmap/UrbanIdentifyResult",
+          "config": {
+            "widgetId": "SpwAdvancedIdentifyResultid",
+            "position": "panel-light",
+            "width": "400px",
+            "height": "50vh",
+            "top": "85px",
+            "resizable": true,
+            "widgets": [
+              {
+                "className": "urbanmap/UrbanIdentifyResultTable",
+                "config": {
+                  "widgetId": "SpwIdentifyResultTableId",
+                  "urbanRestApiUrl" : "http://localhost/urbanmap",
+                  "widgets": [
+                    {
+                      "className": "spw/widgets/SpwIdentifyResultRow",
+                      "config": {
+                        "widgetId": "SpwIdentifyResultRowId",
+                        "help": true
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }        
+      ]
+    }
+  }, 
+  {
     "className": "spw/widgets/SpwIdentify",
     "config": {
       "widgetId": "SpwInfosId",
@@ -294,6 +338,10 @@
         {
           "widgetId": "SpwInfosId",
           "label": "Infos"
+        },
+        {
+          "widgetId": "SpwAdvancedIdentifyId",
+          "label": "Enquête"
         },
         {
           "widgetId": "SpwLegendId",

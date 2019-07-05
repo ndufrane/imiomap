@@ -346,21 +346,6 @@
       }]
   },
   {
-    "code" : "GCU SPW",
-    "label" : "GCU",
-    "mapServices" :[{
-        "serviceId": "GCU",
-        "label": "GCU",
-        "type": "AGS_DYNAMIC",
-        "url" : " https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/GCU/MapServer",
-        "visible": false,
-        "hasLegend": true,
-        "legendOpen": true,
-        "identifiable": true,
-        "toLoad": true
-      }]
-  },
-  {
     "code" : "IMIO",
     "label" : "IMIO",
     "mapServices" :[{

@@ -111,7 +111,7 @@
         "serviceId": "AHREM",
         "label": "AHREM",
         "type": "AGS_DYNAMIC",
-        "url" : " http://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/AHREM/MapServer",
+        "url" : " https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/AHREM/MapServer",
         "visible": false,
         "hasLegend": true,
         "legendOpen": true,

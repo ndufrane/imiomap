@@ -331,6 +331,21 @@
       }]
   },
   {
+    "code" : "CONSULT_SSOL SPW",
+    "label" : "CONSULT_SSOL",
+    "mapServices" :[{
+        "serviceId": "CONSULT_SSOL",
+        "label": "CONSULT_SSOL",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/CONSULT_SSOL/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "IMIO",
     "label" : "IMIO",
     "mapServices" :[{

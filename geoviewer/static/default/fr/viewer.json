@@ -18,6 +18,7 @@
   "zoomMinLimit": 250,
   "errorMailToAdress": "helpdesk.carto@spw.wallonie.be",
   "errorMailSubject": "[INCIDENT] API Geoviewer",
+  "placementNode": "spwViewerDiv",
   "mobile": false,
   "leftRegion": {
     "width": "310px",

@@ -1,17 +1,17 @@
 {
   "initialExtent": [
-    105000,
-    120000,
-    150000,
-    160000
+    242223,
+    263456,
+    34890,
+    47669
   ],
   "fullExtent": [
-    105000,
-    120000,
-    150000,
-    160000
+    242223,
+    263456,
+    34890,
+    47669
   ],
-  "fullExtentLabel": "Cadrer sur mons",
+  "fullExtentLabel": "Cadrer sur arlon",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",
   "notificationPosition": "center-down",
@@ -19,7 +19,6 @@
   "errorMailToAdress": "helpdesk.carto@spw.wallonie.be",
   "errorMailSubject": "[INCIDENT] API Geoviewer",
   "mobile": false,
-  "placementNode": "spwViewerDiv",
   "leftRegion": {
     "width": "310px",
     "resizable": true,
@@ -49,7 +48,7 @@
     "minimizeable": false
   },
   "loadingVerbosity": 1,
-  "proxyPageUrl": "proxy.jsp",
+  "proxyPageUrl": "https://arlon-carto.imio-app.be/koThair1Ahsij0eeij3jiHejPhoo5EeD/spw/proxy.jsp",
   "mapLoaderPosition": {
     "top": "35px",
     "right": "5px"
@@ -57,6 +56,6 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "mons-carto.imio-app.be"
+    "arlon-carto.imio-app.be"
   ]
 }

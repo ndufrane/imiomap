@@ -11,7 +11,7 @@
     150000,
     160000
   ],
-  "fullExtentLabel": "Cadrer sur lessines",
+  "fullExtentLabel": "Cadrer sur tournai",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",
   "notificationPosition": "center-down",

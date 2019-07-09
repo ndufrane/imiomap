@@ -330,6 +330,156 @@
       }]
   },
   {
+    "code" : "ORTHO_1971 SPW",
+    "label" : "ORTHO_1971",
+    "mapServices" :[{
+        "serviceId": "ORTHO_1971",
+        "label": "ORTHO_1971",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_1971/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ORTHO_1994_2000 SPW",
+    "label" : "ORTHO_1994_2000",
+    "mapServices" :[{
+        "serviceId": "ORTHO_1994_2000",
+        "label": "ORTHO_1994_2000",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_1994_2000/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ORTHO_2001_2003 SPW",
+    "label" : "ORTHO_2001_2003",
+    "mapServices" :[{
+        "serviceId": "ORTHO_2001_2003",
+        "label": "ORTHO_2001_2003",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2001_2003/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ORTHO_2006_2007 SPW",
+    "label" : "ORTHO_2006_2007",
+    "mapServices" :[{
+        "serviceId": "ORTHO_2006_2007",
+        "label": "ORTHO_2006_2007",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2006_2007/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ORTHO_2009_2010 SPW",
+    "label" : "ORTHO_2009_2010",
+    "mapServices" :[{
+        "serviceId": "ORTHO_2009_2010",
+        "label": "ORTHO_2009_2010",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2009_2010/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ORTHO_2012_2013 SPW",
+    "label" : "ORTHO_2012_2013",
+    "mapServices" :[{
+        "serviceId": "ORTHO_2012_2013",
+        "label": "ORTHO_2012_2013",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2012_2013/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ORTHO_2015 SPW",
+    "label" : "ORTHO_2015",
+    "mapServices" :[{
+        "serviceId": "ORTHO_2015",
+        "label": "ORTHO_2015",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2015/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ORTHO_2016 SPW",
+    "label" : "ORTHO_2016",
+    "mapServices" :[{
+        "serviceId": "ORTHO_2016",
+        "label": "ORTHO_2016",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2016/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ORTHO_2017 SPW",
+    "label" : "ORTHO_2017",
+    "mapServices" :[{
+        "serviceId": "ORTHO_2017",
+        "label": "ORTHO_2017",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2017/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ORTHO_2018 SPW",
+    "label" : "ORTHO_2018",
+    "mapServices" :[{
+        "serviceId": "ORTHO_2018",
+        "label": "ORTHO_2018",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2018/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "IMIO",
     "label" : "IMIO",
     "mapServices" :[{

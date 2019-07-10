@@ -2,7 +2,7 @@
 @Library('jenkins-pipeline-scripts') _
 
 pipeline {
-    agent any
+    agent none
     triggers {
         pollSCM('*/3 * * * *')
     }
@@ -29,7 +29,7 @@ pipeline {
         stage('Deploy to prod ?') {
             agent none
             steps {
-                timeout(time: 24, unit: 'HOURS') {
+                timeout(time: 1, unit: 'HOURS') {
                     input (
                         message: 'Should we deploy to prod ?'
                     )

@@ -29,7 +29,7 @@ pipeline {
         stage('Deploy to prod ?') {
             agent none
             steps {
-                timeout(time: 24, unit: 'HOURS') {
+                timeout(time: 1, unit: 'HOURS') {
                     input (
                         message: 'Should we deploy to prod ?'
                     )

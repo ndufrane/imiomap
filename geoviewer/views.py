@@ -2,6 +2,7 @@
 from django.views.generic.base import TemplateView
 from django.views.decorators.csrf import csrf_exempt
 from proxy.views import proxy_view
+from django.http import HttpResponse
 
 class HomePageView(TemplateView):
 
@@ -25,4 +26,10 @@ def proxy(request):
     response = proxy_view(request, requestpath)
     response.__delitem__("Access-Control-Allow-Origin")
 
+    return response
+
+@csrf_exempt
+def csv(request):
+    response = HttpResponse(request.POST.get("csvFileContent"), content_type="text/csv")
+    response['Content-Disposition'] = 'attachment; filename="' +request.POST.get("csvFileName")+'"'
     return response

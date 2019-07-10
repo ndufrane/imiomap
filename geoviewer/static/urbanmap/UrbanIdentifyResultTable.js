@@ -53,6 +53,16 @@ define(["dojo/_base/declare","spw/widgets/SpwIdentifyResultTable", "dojo/text!./
                     var curRes = results[i];
                     if(curRes.layerName == this.PARCEL_LAYERNAME){
                         this._augmentResult(curRes);
+                    } else {
+                        lang.mixin(this._resultRowWidgetConfig, {
+                            _result: results[i],
+                            _spwLayer: this._spwLayer,
+                            _spwIdentifyResultTable: this
+                        });
+                        var spwIdentifyResultRow = new this._resultRowWidgetClass(this._resultRowWidgetConfig);
+                        
+                        domConstruct.place(spwIdentifyResultRow.domNode, this._tbody, "last");
+                        this._spwIdentifyResultRows.push(spwIdentifyResultRow);
                     }                
                 }
             }

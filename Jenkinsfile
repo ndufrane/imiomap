@@ -2,7 +2,7 @@
 @Library('jenkins-pipeline-scripts') _
 
 pipeline {
-    agent any
+    agent none
     triggers {
         pollSCM('*/3 * * * *')
     }

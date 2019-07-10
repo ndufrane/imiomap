@@ -344,12 +344,17 @@
         "toLoad": true,
         "layers": [
           {
-            "layerId": "awans:toli",
+            "layerId": "awans:capa",
             "defaultVisibility": true,
             "identifiable": true
           },
           {
-            "layerId": "awans:geli",
+            "layerId": "geonode:zonagepashawans",
+            "defaultVisibility": true,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:zonagepashawans_1",
             "defaultVisibility": true,
             "identifiable": true
           },

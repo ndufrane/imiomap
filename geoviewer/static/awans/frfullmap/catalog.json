@@ -336,12 +336,29 @@
         "serviceId": "CUSTOM_awans",
         "label": "IMIO awans",
         "type": "WMS",
-        "url" : "http://awans-geonode.imio-app.be/geoserver/geonode/wms",
+        "url" : "http://awans-geonode.imio-app.be/geoserver/wms",
         "visible": false,
         "hasLegend": false,
         "legendOpen": false,
         "identifiable": true,
-        "toLoad": true
+        "toLoad": true,
+        "layers": [
+          {
+            "layerId": "awans:toli",
+            "defaultVisibility": true,
+            "identifiable": true
+          },
+          {
+            "layerId": "awans:geli",
+            "defaultVisibility": true,
+            "identifiable": true
+          },
+          {
+            "layerId": "awans:sscawans",
+            "defaultVisibility": true,
+            "identifiable": true
+          }
+        ]
       }]
   }
 ]

@@ -176,7 +176,7 @@ def identify_parcel_advanced(request, capakeys):
         'owner__owner_uid__birthdate',
         'owner__partner_uid__name',
         'owner__partner_uid__firstname',
-        'owner__partner_uid__birthdate',  
+        'owner__partner_uid__birthdate',
     )
 
     geos = []

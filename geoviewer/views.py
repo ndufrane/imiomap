@@ -22,4 +22,7 @@ def proxy(request):
     if requestpath[-1] == '=':
         requestpath = requestpath[:-1]
 
-    return proxy_view(request, requestpath)
+    response = proxy_view(request, requestpath)
+    response.__delitem__("Access-Control-Allow-Origin")
+
+    return response

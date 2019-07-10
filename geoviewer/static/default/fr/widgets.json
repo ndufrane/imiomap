@@ -140,23 +140,24 @@
         {
           "className": "urbanmap/UrbanIdentifyResult",
           "config": {
-            "widgetId": "SpwAdvancedIdentifyResultid",
+            "widgetId": "UrbanIdentifyResultid",
             "position": "panel-light",
             "width": "400px",
             "height": "50vh",
             "top": "85px",
+            "exportCsvServerUrl": "//localhost/spw/csv",
             "resizable": true,
             "widgets": [
               {
                 "className": "urbanmap/UrbanIdentifyResultTable",
                 "config": {
-                  "widgetId": "SpwIdentifyResultTableId",
+                  "widgetId": "UrbanIdentifyResultTableId",
                   "urbanRestApiUrl" : "http://localhost/urbanmap",
                   "widgets": [
                     {
-                      "className": "spw/widgets/SpwIdentifyResultRow",
+                      "className": "urbanmap/UrbanIdentifyResultRow",
                       "config": {
-                        "widgetId": "SpwIdentifyResultRowId",
+                        "widgetId": "UrbanIdentifyResultRowId",
                         "help": true
                       }
                     }
@@ -204,7 +205,7 @@
             "ownerright": "{ownerright}",
             "Ordre": "{order}",
             "righttrad": "{righttrad}",
-            "Nom": "{owner_firstname} {owner_name} {owner_birthdate}",
+            "Nom": "{datesituation} {owner_firstname} {owner_name} {owner_birthdate}",
             "Partenaire": "{partner_firstname} {partner_name} {partner_birthdate}",
             "coowner": "{coowner}"
           }

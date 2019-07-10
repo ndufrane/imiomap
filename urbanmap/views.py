@@ -5,6 +5,10 @@ from django.core.serializers import serialize
 from django.db.models import Max
 from django.contrib.gis.gdal import CoordTransform, SpatialReference
 
+from django.contrib.postgres.aggregates import StringAgg
+from django.db.models.functions import Cast, Concat
+from django.db.models import TextField, CharField, Value as V
+
 from django.views.decorators.http import require_POST, require_GET
 from django.views.decorators.csrf import csrf_exempt
 
@@ -148,44 +152,36 @@ def identify_parcel_advanced(request, capakeys):
         input :
             * 0..n capakeys separated by ,
         process :
-            * search latest parcels info by capakey in database
+            * search parcelsinfo for given capakey
         output :
-            * Geojson Feature collection (SRID: 31370)
+            * list
     """  
     # TODO: input check and error handling
     capakeys_parsed = capakeys.split(',')
 
     parcels_qry = Parcels.objects.filter(capakey__in=capakeys_parsed)
+    
+    parcels_qry = parcels_qry.annotate(
+        owner_names_agg=StringAgg(Concat('owner__owner_uid__firstname', V(' '),'owner__owner_uid__name', V(' ('),'owner__owner_uid__birthdate', V(')'), output_field=CharField()),delimiter=';')
+    )
+    
+    
     parcels_qry = parcels_qry.values(
         'capakey',
-        'rc__surfacenottaxable',
-        'rc__surfacetaxable',
-        'rc__surfaceverif',
-        'rc__numbercadastralincome',
-        'rc__charcadastralincome',
         'rc__cadastralincome',
-        'rc__dateendexoneration',
+        'nature__nature_fr',
         'rc__datesituation',
-        'owner__datesituation',
-        'owner__order',
-        'owner__ownerright',
-        'owner__right_trad',
-        'owner__coowner',
-        'owner__owner_uid__name',
-        'owner__owner_uid__firstname',
-        'owner__owner_uid__birthdate',
-        'owner__partner_uid__name',
-        'owner__partner_uid__firstname',
-        'owner__partner_uid__birthdate',
+        'owner_names_agg'
     )
-
+    
     geos = []
     for result in parcels_qry.all():
         feature = {
             "capakey": result.get("capakey"),
-            "cadastralincome": result.get("rc__cadastralincome"),
+            "nature": str(result.get("nature__nature_fr")),
             "datesituation": str(result.get("rc__datesituation")),
-        }
+            "owner": result.get("owner_names_agg")
+     }
         geos.append(feature)
 
     infos = {
@@ -270,6 +266,7 @@ def identify_owners(request, x, y):
             "layerName": "propriétaires",
             "displayFieldName": "",
             "capakey": result.get("capakey"),
+            "datesituation": ifNRE(result.get("parcelinfo__owner__datesituation")),
             "ownerright": ifNRE(result.get("parcelinfo__owner__ownerright", "")),
             "order": ifNRE(result.get("parcelinfo__owner__order", "")),
             "righttrad": ifNRE(result.get("parcelinfo__owner__right_trad", "")),

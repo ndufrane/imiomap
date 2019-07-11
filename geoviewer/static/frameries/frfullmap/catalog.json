@@ -17,10 +17,10 @@
   },
   {
     "code" : "PICC",
-    "label" : "PICC",
+    "label" : "Projet Informatique de Cartographie Continue",
     "mapServices" :[{
         "serviceId": "PICC",
-        "label": "PICC SPW",
+        "label": "Projet Informatique de Cartographie Continue",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/TOPOGRAPHIE/PICC_VDIFF/MapServer",
         "visible": false,
@@ -32,10 +32,10 @@
   },
   {
     "code" : "Alea inondation SPW",
-    "label" : "Alea inondation",
+    "label" : "Aléa inondation",
     "mapServices" :[{
         "serviceId": "EAU_ALEA",
-        "label": "EAU ALEA",
+        "label": "Aléa inondation",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/ALEA_2016/MapServer",
         "visible": false,
@@ -92,10 +92,10 @@
 
   {
     "code" : "LOTISSEMENTS SPW",
-    "label" : "LOTISSEMENTS",
+    "label" : "Lotissements",
     "mapServices" :[{
         "serviceId": "LOTISSEMENTS",
-        "label": "LOTISSEMENTS",
+        "label": "Lotissements",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/LOT/MapServer",
         "visible": false,
@@ -107,10 +107,10 @@
   },
   {
     "code" : "AHREM SPW",
-    "label" : "AHREM",
+    "label" : "Arbres et haies remarquables",
     "mapServices" :[{
         "serviceId": "AHREM",
-        "label": "AHREM",
+        "label": "Arbres et haies remarquables",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/AHREM/MapServer",
         "visible": false,
@@ -122,10 +122,10 @@
   },
   {
     "code" : "RHW_SIMPLE SPW",
-    "label" : "RHW_SIMPLE",
+    "label" : "Réseau Hydrographique Wallon Simple",
     "mapServices" :[{
         "serviceId": "RHW_SIMPLE",
-        "label": "RHW_SIMPLE",
+        "label": "Réseau Hydrographique Wallon Simple",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/RHW_SIMPLE/MapServer",
         "visible": false,
@@ -137,10 +137,10 @@
   },
   {
     "code" : "CONCESSIONS_MINES_SITUATION_ADMIN SPW",
-    "label" : "CONCESSIONS_MINES_SITUATION_ADMIN",
+    "label" : "Concessions minières",
     "mapServices" :[{
         "serviceId": "CONCESSIONS_MINES_SITUATION_ADMIN",
-        "label": "CONCESSIONS_MINES_SITUATION_ADMIN",
+        "label": "Concessions minières",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/CONCESSIONS_MINES_SITUATION_ADMIN/MapServer",
         "visible": false,
@@ -152,10 +152,10 @@
   },
   {
     "code" : "KARST SPW",
-    "label" : "KARST",
+    "label" : "Atlas du karst",
     "mapServices" :[{
         "serviceId": "KARST",
-        "label": "KARST",
+        "label": "Atlas du karst",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/KARST/MapServer",
         "visible": false,
@@ -167,10 +167,10 @@
   },
   {
     "code" : "BC_PAT SPW",
-    "label" : "BC_PAT",
+    "label" : "Bien pastillé",
     "mapServices" :[{
         "serviceId": "BC_PAT",
-        "label": "BC_PAT",
+        "label": "Bien pastillé",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/BC_PAT/MapServer",
         "visible": false,
@@ -182,10 +182,10 @@
   },
   {
     "code" : "SEVESO SPW",
-    "label" : "SEVESO",
+    "label" : "Seveso",
     "mapServices" :[{
         "serviceId": "SEVESO",
-        "label": "SEVESO",
+        "label": "Seveso",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/SEVESO/MapServer",
         "visible": false,
@@ -197,10 +197,10 @@
   },
   {
     "code" : "SAR SPW",
-    "label" : "SAR",
+    "label" : "Site à réaménager",
     "mapServices" :[{
         "serviceId": "SAR",
-        "label": "SAR",
+        "label": "Site à réaménager",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/SAR/MapServer",
         "visible": false,
@@ -212,10 +212,10 @@
   },
   {
     "code" : "ATLAS_VV_MODIF SPW",
-    "label" : "ATLAS_VV_MODIF",
+    "label" : "Atlas des voiries vicinales de 1841 et modifications",
     "mapServices" :[{
         "serviceId": "ATLAS_VV_MODIF",
-        "label": "ATLAS_VV_MODIF",
+        "label": "Atlas des voiries vicinales de 1841 et modifications",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/ATLAS_VV_MODIF/MapServer",
         "visible": false,
@@ -227,10 +227,10 @@
   },
   {
     "code" : "SOL SPW",
-    "label" : "SOL",
+    "label" : "CoDT - Schéma d'Orientation Local (SOL)",
     "mapServices" :[{
         "serviceId": "SOL",
-        "label": "SOL",
+        "label": "CoDT - Schéma d'Orientation Local (SOL)",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/SOL/MapServer",
         "visible": false,
@@ -242,10 +242,10 @@
   },
   {
     "code" : "BDES_INVENTAIRE SPW",
-    "label" : "BDES_INVENTAIRE",
+    "label" : "Etat des sols",
     "mapServices" :[{
         "serviceId": "BDES_INVENTAIRE",
-        "label": "BDES_INVENTAIRE",
+        "label": "Etat des sols",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/BDES_INVENTAIRE/MapServer",
         "visible": false,
@@ -257,10 +257,10 @@
   },
   {
     "code" : "CAW SPW",
-    "label" : "CAW",
+    "label" : "Carte archéologique",
     "mapServices" :[{
         "serviceId": "CAW",
-        "label": "CAW",
+        "label": "Carte archéologique",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/CAW/MapServer",
         "visible": false,
@@ -272,10 +272,10 @@
   },
   {
     "code" : "BASSINS__BASSINS_PG SPW",
-    "label" : "BASSINS__BASSINS_PG / PASH",
+    "label" : "Bassins versants du Plan de gestion",
     "mapServices" :[{
         "serviceId": "BASSINS__BASSINS_PG",
-        "label": "BASSINS__BASSINS_PG",
+        "label": "Bassins versants du Plan de gestion",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/BASSINS__BASSINS_PG/MapServer",
         "visible": false,
@@ -287,10 +287,10 @@
   },
   {
     "code" : "ZIP SPW",
-    "label" : "ZIP",
+    "label" : "Zones d'Initiative Privilégiée (ZIP)",
     "mapServices" :[{
         "serviceId": "ZIP",
-        "label": "ZIP",
+        "label": "Zones d'Initiative Privilégiée (ZIP)",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/ZIP/MapServer",
         "visible": false,
@@ -302,10 +302,10 @@
   },
   {
     "code" : "ISA SPW",
-    "label" : "ISA",
+    "label" : "Inventaire des sites à réaménager (ISA)",
     "mapServices" :[{
         "serviceId": "ISA",
-        "label": "ISA",
+        "label": "Inventaire des sites à réaménager (ISA)",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/ISA/MapServer",
         "visible": false,
@@ -317,10 +317,10 @@
   },
   {
     "code" : "ZDE SPW",
-    "label" : "ZDE",
+    "label" : "Zones de distribution en eau (ZDE - version 2016)",
     "mapServices" :[{
         "serviceId": "ZDE",
-        "label": "ZDE",
+        "label": "Zones de distribution en eau (ZDE - version 2016)",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/ZDE/MapServer",
         "visible": false,
@@ -332,10 +332,10 @@
   },
   {
     "code" : "CONSULT_SSOL SPW",
-    "label" : "CONSULT_SSOL",
+    "label" : "Zones de consultation de la DRIGM",
     "mapServices" :[{
         "serviceId": "CONSULT_SSOL",
-        "label": "CONSULT_SSOL",
+        "label": "Zones de consultation de la DRIGM",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/CONSULT_SSOL/MapServer",
         "visible": false,

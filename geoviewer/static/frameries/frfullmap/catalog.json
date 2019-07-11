@@ -11,8 +11,19 @@
         "hasLegend": true,
         "legendOpen": true,
         "identifiable": true,
-
-        "toLoad": true
+        "toLoad": true,
+        "layers": [
+            {
+              "layerId": 0,
+              "defaultVisibility": true,
+              "identifiable": true
+            },
+            {
+              "layerId": 1,
+              "defaultVisibility": true,
+              "identifiable": true
+            }
+          ]
       }]
   },
   {
@@ -86,7 +97,7 @@
           "identifiable": true
         }
       ]
-      
+
     }]
   },
 

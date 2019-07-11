@@ -34,8 +34,7 @@
         "checked": false
       }
     ],
-    "imagePath": "./FondCarte_100.png",
-    "selected": true
+    "imagePath": "./FondCarte_100.png"
   },
   {
     "baseMapName": "Vue aérienne",
@@ -87,6 +86,7 @@
         "url": "https://geoservices.wallonie.be/arcgis/rest/services/IGN/LIMITE_REGION/MapServer"
       }
     ],
-    "imagePath": "./FondCarte_100.png"
+    "imagePath": "./FondCarte_100.png",
+    "selected": true
   }
 ]

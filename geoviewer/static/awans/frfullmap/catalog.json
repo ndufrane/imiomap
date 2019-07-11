@@ -296,21 +296,6 @@
       }]
   },
   {
-    "code" : "ORTHO_1994_2000 SPW",
-    "label" : "Orthophotos 1994-2000",
-    "mapServices" :[{
-        "serviceId": "ORTHO_1994_2000",
-        "label": "Orthophotos 1994-2000",
-        "type": "AGS_DYNAMIC",
-        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_1994_2000/MapServer",
-        "visible": false,
-        "hasLegend": true,
-        "legendOpen": true,
-        "identifiable": true,
-        "toLoad": true
-      }]
-  },
-  {
     "code" : "ORTHO_2009_2010 SPW",
     "label" : "Orthophotos 2009-2010",
     "mapServices" :[{
@@ -356,26 +341,22 @@
         "layers": [
           {
             "layerId": "geonode:zonagepashawans",
-            "label": "Zonage PASH Awans",
             "defaultVisibility": true,
             "identifiable": true
           },
           {
             "layerId": "geonode:zonagepashawans_1",
-            "label": "Zonage PASH Awans (1)",
             "defaultVisibility": true,
             "identifiable": true
           },
           {
             "layerId": "awans:sscawans",
-            "label": "SSC Awans",
             "defaultVisibility": true,
             "identifiable": true
           },
           {
             "layerId": "geonode:ccue",
             "defaultVisibility": true,
-            "label": "CCUE Awans",
             "identifiable": true
           }
         ]

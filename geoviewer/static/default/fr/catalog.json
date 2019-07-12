@@ -118,5 +118,20 @@
         "identifiable": true,
         "toLoad": true
       }]
+  },
+  {
+    "code" : "Elyx",
+    "label" : "Elyx",
+    "mapServices" :[{
+        "serviceId": "ELYX_LIEGE",
+        "label": "Elyx Liège",
+        "type": "WMS",
+        "url" : "http://e-services.liege.be:8101/ElyxRouter/rest/WMS",
+        "visible": false,
+        "hasLegend": false,
+        "legendOpen": false,
+        "identifiable": true,
+        "toLoad": true
+      }]
   }
 ]

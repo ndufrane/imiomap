@@ -60,6 +60,7 @@
     "localhost",
     "imiomap.imio-test.be",
     "geoservices.wallonie.be",
-    "tournai-geonode.imio-app.be"
+    "tournai-geonode.imio-app.be",
+    "e-services.liege.be"
   ]
 }

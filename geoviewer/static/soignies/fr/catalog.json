@@ -11,8 +11,19 @@
         "hasLegend": true,
         "legendOpen": true,
         "identifiable": true,
-
-        "toLoad": true
+        "toLoad": true,
+        "layers": [
+            {
+              "layerId": 0,
+              "defaultVisibility": true,
+              "identifiable": true
+            },
+            {
+              "layerId": 1,
+              "defaultVisibility": true,
+              "identifiable": true
+            }
+          ]
       }]
   },
   {
@@ -341,7 +352,84 @@
         "hasLegend": false,
         "legendOpen": false,
         "identifiable": true,
-        "toLoad": true
+        "toLoad": true,
+        "layers": [
+          {
+            "layerId": "geonode:ContraintesDeflate",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "soignies:MesureAmenagementDeflate",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "soignies:ContraintesFusionJpeg",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "soignies:Orientationsplanologiques",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "soignies:MesuresAmenagFusion",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "soignies:Contraintes",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "soignies:airespaysageres-byte-deflate",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:voiries",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:voiries_2",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:tec",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:sncb",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:ps",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:limite_commune",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:carrefour",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:arret",
+            "defaultVisibility": false,
+            "identifiable": true
+          }
+        ]
       }]
   }
 ]

@@ -157,7 +157,7 @@
 
       "widgets": [
         {
-          "className": "https://brainelechateau-carto.imio-app.be/Kahnahp5aido2Waibui5EideIev3thi6/UrbanIdentifyResult",
+          "className": "urbanmap/UrbanIdentifyResult",
           "config": {
             "widgetId": "UrbanIdentifyResultid",
             "position": "panel-light",
@@ -168,13 +168,13 @@
             "resizable": true,
             "widgets": [
               {
-                "className": "https://brainelechateau-carto.imio-app.be/Kahnahp5aido2Waibui5EideIev3thi6/UrbanIdentifyResultTable",
+                "className": "urbanmap/UrbanIdentifyResultTable",
                 "config": {
                   "widgetId": "UrbanIdentifyResultTableId",
                   "urbanRestApiUrl" : "https://brainelechateau-carto.imio-app.be/Kahnahp5aido2Waibui5EideIev3thi6/urbanmap",
                   "widgets": [
                     {
-                      "className": "https://brainelechateau-carto.imio-app.be/Kahnahp5aido2Waibui5EideIev3thi6/UrbanIdentifyResultRow",
+                      "className": "urbanmap/UrbanIdentifyResultRow",
                       "config": {
                         "widgetId": "UrbanIdentifyResultRowId",
                         "help": true

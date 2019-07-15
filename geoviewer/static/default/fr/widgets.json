@@ -126,9 +126,9 @@
     }
   },
   {
-    "className": "spw/widgets/SpwAdvancedIdentify",
+    "className": "urbanmap/UrbanIdentify",
     "config": {
-      "widgetId": "SpwAdvancedIdentifyId",
+      "widgetId": "UrbanIdentifyId",
       "widgetTitle": "Enquête",
       "position": "panel-light",
       "width": "400px",
@@ -341,7 +341,7 @@
           "label": "Infos"
         },
         {
-          "widgetId": "SpwAdvancedIdentifyId",
+          "widgetId": "UrbanIdentifyId",
           "label": "Enquête"
         },
         {

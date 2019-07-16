@@ -27,6 +27,66 @@
       }]
   },
   {
+    "code" : "LIDAXE",
+    "label" : "Axes de ruissellement concentré (LIDAXE)",
+    "mapServices" :[{
+        "serviceId": "LIDAXE",
+        "label": "Axes de ruissellement concentré (LIDAXE)",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/LIDAXES/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ERRUISSOL__RUISSELLEMENT_CONCENTRE",
+    "label" : "ERRUISSOL - Risque de ruissellement concentré",
+    "mapServices" :[{
+        "serviceId": "ERRUISSOL__RUISSELLEMENT_CONCENTRE",
+        "label": "ERRUISSOL - Risque de ruissellement concentré",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/ERRUISSOL__RUISSELLEMENT_CONCENTRE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ERRUISSOL__RUISSELLEMENT_DIFFUS",
+    "label" : "ERRUISSOL - Risque de ruissellement diffus",
+    "mapServices" :[{
+        "serviceId": "ERRUISSOL__RUISSELLEMENT_DIFFUS",
+        "label": "ERRUISSOL - Risque de ruissellement diffus",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/ERRUISSOL__RUISSELLEMENT_DIFFUS/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "CONSNAT",
+    "label" : "Périmètres de conservation de la nature",
+    "mapServices" :[{
+        "serviceId": "CONSNAT",
+        "label": "Périmètres de conservation de la nature",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/CONSNAT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "PICC",
     "label" : "Projet Informatique de Cartographie Continue",
     "mapServices" :[{
@@ -198,6 +258,21 @@
         "label": "Réseau Natura 2000 en vigueur",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PASH_GrandPublic SPW",
+    "label" : "Plans d'Assainissement par Sous-bassin Hydrographique (PASH)",
+    "mapServices" :[{
+        "serviceId": "PASH_GrandPublic",
+        "label": "Plans d'Assainissement par Sous-bassin Hydrographique (PASH)",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://sig.spge.be/server/rest/services/WebPash/PASH_GrandPublic/MapServer",
         "visible": false,
         "hasLegend": true,
         "legendOpen": true,

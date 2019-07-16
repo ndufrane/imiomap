@@ -57,7 +57,6 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "liege2018-carto.imio-test.be",
-    "e-services.liege.be"
+    "liege2018-carto.imio-test.be"
   ]
 }

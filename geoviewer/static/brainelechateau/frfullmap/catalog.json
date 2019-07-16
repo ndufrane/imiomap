@@ -266,13 +266,13 @@
       }]
   },
   {
-    "code" : "PASH_GrandPublic SPW",
-    "label" : "Plans d'Assainissement par Sous-bassin Hydrographique (PASH)",
+    "code" : "ZonagePASH_Pro SPW",
+    "label" : "Zonage PASH Pro",
     "mapServices" :[{
-        "serviceId": "PASH_GrandPublic",
-        "label": "Plans d'Assainissement par Sous-bassin Hydrographique (PASH)",
+        "serviceId": "ZonagePASH_Pro",
+        "label": "Zonage PASH Pro",
         "type": "AGS_DYNAMIC",
-        "url" : "https://sig.spge.be/server/rest/services/WebPash/PASH_GrandPublic/MapServer",
+        "url" : "https://sig.spge.be/server/rest/services/WebPash/ZonagePASH_Pro/MapServer",
         "visible": false,
         "hasLegend": true,
         "legendOpen": true,

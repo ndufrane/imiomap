@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "https://liege-carto.imio-app.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap"
+      "urbanRestApiUrl" : "https://liege2018-carto.imio-test.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap"
     }
   },
   {
@@ -20,13 +20,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://liege-carto.imio-app.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap"
+      "urbanRestApiUrl" : "https://liege2018-carto.imio-test.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://liege-carto.imio-app.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap"
+      "urbanRestApiUrl" : "https://liege2018-carto.imio-test.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap"
     }
   },
   {
@@ -46,6 +46,24 @@
         }
     }
 },
+{
+  "className":"spw/widgets/SpwPrint",
+  "config": {
+      "widgetId":"SpwPrintId",
+      "widgetTitle":"Imprimer cette vue",
+      "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+      "useCors": true,
+      "iconClass": "printIcon",
+      "style":{
+        "padding": "8px"
+      },
+      "position": "panel-light",
+      "height": "auto",
+      "right": "15px",
+      "top": "85px",
+      "width": "350px"
+  }
+},
   {
     "className":"spw/widgets/SpwLegend",
     "config": {
@@ -63,7 +81,6 @@
         "resizable": true
     }
 },
-
   {
     "className": "spw/widgets/SpwScaleBar",
     "config": {
@@ -76,24 +93,6 @@
         "bottom": "10px",
         "left": "45px"
       }
-    }
-  },
-  {
-    "className":"spw/widgets/SpwPrint",
-    "config": {
-        "widgetId":"SpwPrintId",
-        "widgetTitle":"Imprimer cette vue",
-        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
-        "useCors": true,
-        "iconClass": "printIcon",
-        "style":{
-          "padding": "8px"
-        },
-        "position": "panel-light",
-        "height": "auto",
-        "right": "15px",
-        "top": "85px",
-        "width": "350px"
     }
   },
   {
@@ -157,7 +156,7 @@
       "additionalServices": [
         {
           "title" : "Matrice Cadastrale (Urban)",
-          "url": "https://liege-carto.imio-app.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap/identify_parcel/{x}/{y}",
+          "url": "https://liege2018-carto.imio-test.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -170,7 +169,7 @@
         },
         {
           "title" : "Proriétaires (Urban)",
-          "url": "https://liege-carto.imio-app.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap/identify_owners/{x}/{y}",
+          "url": "https://liege2018-carto.imio-test.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap/identify_owners/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",

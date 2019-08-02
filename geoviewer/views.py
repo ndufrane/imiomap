@@ -1,8 +1,8 @@
 
 from django.views.generic.base import TemplateView
 from django.views.decorators.csrf import csrf_exempt
-from proxy.views import proxy_view
 from django.http import HttpResponse
+from geoviewer.proxy import proxy_view
 
 class HomePageView(TemplateView):
 

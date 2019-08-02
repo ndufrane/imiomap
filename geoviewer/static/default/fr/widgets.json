@@ -281,6 +281,19 @@
     }
   },
   {
+    "className":"spw/widgets/SpwMeasure",
+    "config": {
+        "widgetId":"SpwMeasureId",
+        "widgetTitle":"Mesurer",
+        "position": "panel-light",
+        "iconClass": "mesureIcon",
+        "height":"auto",
+        "right": "15px",
+        "top": "85px",
+        "profileServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/GEOTRAITEMENT/Profil/GPServer/Profil"
+    }
+},
+  {
     "className":"spw/widgets/SpwPrint",
     "config": {
         "widgetId":"SpwPrintId",
@@ -362,6 +375,10 @@
            "widgetId": "ParcelIdentityId",
            "label": "Carte d'identité parcellaire"
          },
+         {
+          "widgetId": "SpwMeasureId",
+          "label":"Mesurer"
+      },
         {
           "label": "Fonds de plan",
           "content": [

@@ -7,7 +7,7 @@
         "label": "Cadastre SPW",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/CADMAP_PARCELLES/MapServer",
-        "visible": false,
+        "visible": true,
         "hasLegend": true,
         "legendOpen": true,
         "identifiable": true,
@@ -97,7 +97,7 @@
           "identifiable": true
         }
       ]
-      
+
     }]
   },
   {
@@ -347,7 +347,7 @@
         "serviceId": "CUSTOM_FLERON",
         "label": "IMIO Fléron",
         "type": "WMS",
-        "url" : "http://fleron-geonode.imio-app.be/geoserver/geonode/wms",
+        "url" : "http://fleron-geonode.imio-app.be/geoserver/wms",
         "visible": false,
         "hasLegend": false,
         "legendOpen": false,
@@ -431,25 +431,25 @@
           },
           {
             "layerId": "geonode:fleron_ssc_38_aires_Perim",
-            "label": "GCU périmètres",
+            "displayLabel": "GCU périmètres",
             "defaultVisibility": false,
             "identifiable": true
           },
           {
             "layerId": "geonode:fleron_ssc_34_affectation_P",
-            "label": "SDC périmètres",
+            "displayLabel": "SDC périmètres",
             "defaultVisibility": false,
             "identifiable": true
           },
           {
             "layerId": "geonode:fleron_ssc_34_affectation_Zones",
-            "label": "SDC zones",
+            "displayLabel": "SDC zones",
             "defaultVisibility": false,
             "identifiable": true
           },
           {
             "layerId": "geonode:fleron_ssc_38_aires_Zones",
-            "label": "GCU zones",
+            "displayLabel": "GCU zones",
             "defaultVisibility": false,
             "identifiable": true
           }

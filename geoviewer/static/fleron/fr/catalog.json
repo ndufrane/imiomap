@@ -11,7 +11,18 @@
         "hasLegend": true,
         "legendOpen": true,
         "identifiable": true,
-
+        "layers": [
+          {
+            "layerId": 0,
+            "defaultVisibility": true,
+            "identifiable": true
+          },
+          {
+            "layerId": 1,
+            "defaultVisibility": true,
+            "identifiable": true
+          }
+        ],
         "toLoad": true
       }]
   },
@@ -341,7 +352,108 @@
         "hasLegend": false,
         "legendOpen": false,
         "identifiable": true,
-        "toLoad": true
+        "toLoad": true,
+        "layers": [
+          {
+            "layerId": "geonode:svaals",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:surfpedo",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:ligne_crete",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:pentree",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:peri_cibe",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:peri_densitepart",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:peri_lht",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:peri_natura2000",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:peri_pointvue",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:peri_risqueaffminier",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:reservation",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:sadesa",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:sclasses",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:sresecologique",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:svaals5",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:fleron_ssc_38_aires_Perim",
+            "label": "GCU périmètres",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:fleron_ssc_34_affectation_P",
+            "label": "SDC périmètres",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:fleron_ssc_34_affectation_Zones",
+            "label": "SDC zones",
+            "defaultVisibility": false,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:fleron_ssc_38_aires_Zones",
+            "label": "GCU zones",
+            "defaultVisibility": false,
+            "identifiable": true
+          }
+        ]
       }]
   }
 ]

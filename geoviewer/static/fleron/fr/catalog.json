@@ -443,7 +443,7 @@
         "legendOpen": false,
         "identifiable": true,
         "toLoad": true,
-        "layers": [
+        "identifiedLayers": [
           {
             "layerId": "geonode:svaals",
             "defaultVisibility": false,

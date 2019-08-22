@@ -11,7 +11,7 @@
     143047,
     145954
   ],
-  "fullExtentLabel": "Cadrer sur brainlecomte",
+  "fullExtentLabel": "Cadrer sur brainelecomte",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",
   "notificationPosition": "center-down",
@@ -49,7 +49,7 @@
     "minimizeable": false
   },
   "loadingVerbosity": 1,
-  "proxyPageUrl": "https://brainlecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/spw/proxy.jsp",
+  "proxyPageUrl": "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/spw/proxy.jsp",
   "mapLoaderPosition": {
     "top": "35px",
     "right": "5px"
@@ -57,6 +57,6 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "brainlecomte-carto.imio-app.be"
+    "brainelecomte-carto.imio-app.be"
   ]
 }

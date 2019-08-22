@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "https://brainlecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap"
+      "urbanRestApiUrl" : "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap"
     }
   },
   {
@@ -20,13 +20,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://brainlecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap"
+      "urbanRestApiUrl" : "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://brainlecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap"
+      "urbanRestApiUrl" : "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap"
     }
   },
   {
@@ -156,7 +156,7 @@
       "additionalServices": [
         {
           "title" : "Matrice Cadastrale (Urban)",
-          "url": "https://brainlecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap/identify_parcel/{x}/{y}",
+          "url": "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -169,7 +169,7 @@
         },
         {
           "title" : "Proriétaires (Urban)",
-          "url": "https://brainlecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap/identify_owners/{x}/{y}",
+          "url": "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap/identify_owners/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",

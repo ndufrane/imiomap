@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap"
+      "urbanRestApiUrl" : "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap"
     }
   },
   {
@@ -20,13 +20,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap"
+      "urbanRestApiUrl" : "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap"
+      "urbanRestApiUrl" : "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap"
     }
   },
   {
@@ -156,7 +156,7 @@
       "additionalServices": [
         {
           "title" : "Matrice Cadastrale (Urban)",
-          "url": "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap/identify_parcel/{x}/{y}",
+          "url": "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -169,7 +169,7 @@
         },
         {
           "title" : "Proriétaires (Urban)",
-          "url": "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap/identify_owners/{x}/{y}",
+          "url": "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap/identify_owners/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",

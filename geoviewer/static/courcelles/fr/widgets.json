@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap"
+      "urbanRestApiUrl" : "https://fleron-carto.imio-app.be/vuzo0ohshai1iu9pahf7kadeiku5wiev/urbanmap"
     }
   },
   {
@@ -20,13 +20,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap"
+      "urbanRestApiUrl" : "https://fleron-carto.imio-app.be/vuzo0ohshai1iu9pahf7kadeiku5wiev/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap"
+      "urbanRestApiUrl" : "https://fleron-carto.imio-app.be/vuzo0ohshai1iu9pahf7kadeiku5wiev/urbanmap"
     }
   },
   {
@@ -45,42 +45,24 @@
           "items": []
         }
     }
-},
-{
-  "className":"spw/widgets/SpwPrint",
-  "config": {
-      "widgetId":"SpwPrintId",
-      "widgetTitle":"Imprimer cette vue",
-      "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
-      "useCors": true,
-      "iconClass": "printIcon",
-      "style":{
-        "padding": "8px"
-      },
-      "position": "panel-light",
-      "height": "auto",
-      "right": "15px",
-      "top": "85px",
-      "width": "350px"
-  }
-},
+  },
   {
-    "className":"spw/widgets/SpwLegend",
-    "config": {
-        "widgetId":"SpwLegendId",
-        "widgetTitle":"Légende",
-        "position": "panel-light",
-        
-        "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
-        "iconClass": "legendIcon",
-        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
-        "width": "400px",
-        "height": "50vh",
-        "right": "15px",
-        "top": "85px",
-        "resizable": true
-    }
-},
+      "className":"spw/widgets/SpwLegend",
+      "config": {
+          "widgetId":"SpwLegendId",
+          "widgetTitle":"Légende",
+          "position": "panel-light",
+
+          "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
+          "iconClass": "legendIcon",
+          "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+          "width": "400px",
+          "height": "50vh",
+          "right": "15px",
+          "top": "85px",
+          "resizable": true
+      }
+  },
   {
     "className": "spw/widgets/SpwScaleBar",
     "config": {
@@ -93,6 +75,24 @@
         "bottom": "10px",
         "left": "45px"
       }
+    }
+  },
+  {
+    "className":"spw/widgets/SpwPrint",
+    "config": {
+        "widgetId":"SpwPrintId",
+        "widgetTitle":"Imprimer cette vue",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "useCors": true,
+        "iconClass": "printIcon",
+        "style":{
+          "padding": "8px"
+        },
+        "position": "panel-light",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "width": "350px"
     }
   },
   {
@@ -156,7 +156,7 @@
       "additionalServices": [
         {
           "title" : "Matrice Cadastrale (Urban)",
-          "url": "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap/identify_parcel/{x}/{y}",
+          "url": "https://fleron-carto.imio-app.be/vuzo0ohshai1iu9pahf7kadeiku5wiev/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -169,7 +169,7 @@
         },
         {
           "title" : "Proriétaires (Urban)",
-          "url": "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap/identify_owners/{x}/{y}",
+          "url": "https://fleron-carto.imio-app.be/vuzo0ohshai1iu9pahf7kadeiku5wiev/urbanmap/identify_owners/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -184,24 +184,6 @@
           }
         }
       ]
-    }
-  },
-  {
-    "className":"spw/widgets/SpwPrint",
-    "config": {
-        "widgetId":"SpwPrintId",
-        "widgetTitle":"Imprimer cette vue",
-        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
-        "useCors": true,
-        "iconClass": "printIcon",
-        "style":{
-          "padding": "8px"
-        },
-        "position": "panel-light",
-        "height": "auto",
-        "right": "15px",
-        "top": "85px",
-        "width": "350px"
     }
   },
   {
@@ -330,6 +312,10 @@
           "widgetId": "SpwLegendId",
           "label":"Légende"
          },
+        {
+          "widgetId": "SpwMeasureId",
+          "label":"Mesurer"
+        },
          {
           "label":"Imprimer",
           "widgetId": "SpwPrintId",

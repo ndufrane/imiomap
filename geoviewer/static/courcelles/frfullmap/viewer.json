@@ -1,17 +1,17 @@
 {
   "initialExtent": [
-    131354,
-    136359,
-    143047,
-    145954
+    239365,
+    249981,
+    142903,
+    149068
   ],
   "fullExtent": [
-    131354,
-    136359,
-    143047,
-    145954
+    239365,
+    249981,
+    142903,
+    149068
   ],
-  "fullExtentLabel": "Cadrer sur courcelles",
+  "fullExtentLabel": "Cadrer sur fleron",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",
   "notificationPosition": "center-down",
@@ -48,7 +48,7 @@
     "minimizeable": false
   },
   "loadingVerbosity": 1,
-  "proxyPageUrl": "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/spw/proxy.jsp",
+  "proxyPageUrl": "https://fleron-carto.imio-app.be/vuzo0ohshai1iu9pahf7kadeiku5wiev/spw/proxy.jsp",
   "mapLoaderPosition": {
     "top": "35px",
     "right": "5px"
@@ -56,6 +56,6 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "courcelles-carto.imio-app.be"
+    "fleron-carto.imio-app.be"
   ]
 }

@@ -329,21 +329,25 @@
         {
           "widgetId": "SpwLegendId",
           "label":"Légende"
+        },
+        {
+          "widgetId": "SpwMeasureId",
+          "label":"Mesurer"
          },
-         {
+        {
           "label":"Imprimer",
           "widgetId": "SpwPrintId",
           "className":"printMenuButton",
           "popupClass": "printMenuPopup"
-          },
-         {
+        },
+        {
           "widgetId": "QueryParcelId",
           "label":"Sélectionner une parcelle"
-         },
-         {
+        },
+        {
            "widgetId": "ParcelIdentityId",
            "label": "Carte d'identité parcellaire"
-         },
+        },
         {
           "label": "Fonds de plan",
           "content": [

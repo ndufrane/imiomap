@@ -330,6 +330,10 @@
           "widgetId": "SpwLegendId",
           "label":"Légende"
          },
+        {
+          "widgetId": "SpwMeasureId",
+          "label":"Mesurer"
+        },
          {
           "label":"Imprimer",
           "widgetId": "SpwPrintId",

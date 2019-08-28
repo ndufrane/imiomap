@@ -144,6 +144,51 @@
     }
   },
   {
+    "className": "urbanmap/UrbanIdentify",
+    "config": {
+      "widgetId": "UrbanIdentifyId",
+      "widgetTitle": "Enquête",
+      "position": "panel-light",
+      "width": "400px",
+      "height": "50vh",
+      "right": "15px",
+      "top": "85px",
+
+      "widgets": [
+        {
+          "className": "urbanmap/UrbanIdentifyResult",
+          "config": {
+            "widgetId": "UrbanIdentifyResultid",
+            "position": "panel-light",
+            "width": "400px",
+            "height": "50vh",
+            "top": "85px",
+            "exportCsvServerUrl": "https://brainelechateau-carto.imio-app.be/Kahnahp5aido2Waibui5EideIev3thi6/spw/csv",
+            "resizable": true,
+            "widgets": [
+              {
+                "className": "urbanmap/UrbanIdentifyResultTable",
+                "config": {
+                  "widgetId": "UrbanIdentifyResultTableId",
+                  "urbanRestApiUrl" : "https://brainelechateau-carto.imio-app.be/Kahnahp5aido2Waibui5EideIev3thi6/urbanmap",
+                  "widgets": [
+                    {
+                      "className": "urbanmap/UrbanIdentifyResultRow",
+                      "config": {
+                        "widgetId": "UrbanIdentifyResultRowId",
+                        "help": true
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
     "className": "spw/widgets/SpwIdentify",
     "config": {
       "widgetId": "SpwInfosId",
@@ -325,6 +370,10 @@
         {
           "widgetId": "SpwInfosId",
           "label": "Infos"
+        },
+        {
+          "widgetId": "UrbanIdentifyId",
+          "label": "Enquête"
         },
         {
           "widgetId": "SpwLegendId",

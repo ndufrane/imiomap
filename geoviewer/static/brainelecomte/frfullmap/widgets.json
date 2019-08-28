@@ -163,14 +163,14 @@
             "width": "400px",
             "height": "50vh",
             "top": "85px",
-            "exportCsvServerUrl": "https://brainelechateau-carto.imio-app.be/Kahnahp5aido2Waibui5EideIev3thi6/spw/csv",
+            "exportCsvServerUrl": "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/spw/csv",
             "resizable": true,
             "widgets": [
               {
                 "className": "urbanmap/UrbanIdentifyResultTable",
                 "config": {
                   "widgetId": "UrbanIdentifyResultTableId",
-                  "urbanRestApiUrl" : "https://brainelechateau-carto.imio-app.be/Kahnahp5aido2Waibui5EideIev3thi6/urbanmap",
+                  "urbanRestApiUrl" : "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap",
                   "widgets": [
                     {
                       "className": "urbanmap/UrbanIdentifyResultRow",

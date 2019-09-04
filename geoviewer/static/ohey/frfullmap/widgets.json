@@ -397,6 +397,10 @@
            "widgetId": "ParcelIdentityId",
            "label": "Carte d'identité parcellaire"
         },
+         {
+          "widgetId": "SpwMeasureId",
+          "label":"Mesurer"
+         },
         {
           "label": "Fonds de plan",
           "content": [

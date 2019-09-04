@@ -144,6 +144,51 @@
     }
   },
   {
+    "className": "urbanmap/UrbanIdentify",
+    "config": {
+      "widgetId": "UrbanIdentifyId",
+      "widgetTitle": "Enquête",
+      "position": "panel-light",
+      "width": "400px",
+      "height": "50vh",
+      "right": "15px",
+      "top": "85px",
+
+      "widgets": [
+        {
+          "className": "urbanmap/UrbanIdentifyResult",
+          "config": {
+            "widgetId": "UrbanIdentifyResultid",
+            "position": "panel-light",
+            "width": "400px",
+            "height": "50vh",
+            "top": "85px",
+            "exportCsvServerUrl": "https://liege2018-carto.imio-app.be/202c4E0p612jfN7w0sf204V841Bn791L/spw/csv",
+            "resizable": true,
+            "widgets": [
+              {
+                "className": "urbanmap/UrbanIdentifyResultTable",
+                "config": {
+                  "widgetId": "UrbanIdentifyResultTableId",
+                  "urbanRestApiUrl" : "https://liege2018-carto.imio-app.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap",
+                  "widgets": [
+                    {
+                      "className": "urbanmap/UrbanIdentifyResultRow",
+                      "config": {
+                        "widgetId": "UrbanIdentifyResultRowId",
+                        "help": true
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
     "className": "spw/widgets/SpwIdentify",
     "config": {
       "widgetId": "SpwInfosId",
@@ -307,6 +352,10 @@
         {
           "widgetId": "SpwInfosId",
           "label": "Infos"
+        },
+        {
+          "widgetId": "UrbanIdentifyId",
+          "label": "Enquête"
         },
         {
           "widgetId": "SpwLegendId",

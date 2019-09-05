@@ -11,6 +11,7 @@
     118897,
     122636
   ],
+  "placementNode": "spwViewerDiv",
   "fullExtentLabel": "Cadrer sur dour",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",

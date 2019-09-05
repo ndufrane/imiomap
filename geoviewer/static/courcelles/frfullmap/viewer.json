@@ -11,6 +11,7 @@
     125753,
     131918
   ],
+  "placementNode": "spwViewerDiv",
   "fullExtentLabel": "Cadrer sur courcelles",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",

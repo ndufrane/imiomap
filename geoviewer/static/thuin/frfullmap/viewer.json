@@ -11,6 +11,7 @@
     112872,
     115338
   ],
+  "placementNode": "spwViewerDiv",
   "fullExtentLabel": "Cadrer sur thuin",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",

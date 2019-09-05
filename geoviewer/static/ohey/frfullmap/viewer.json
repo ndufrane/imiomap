@@ -11,6 +11,7 @@
     124256,
     125489
   ],
+  "placementNode": "spwViewerDiv",
   "fullExtentLabel": "Cadrer sur ohey",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",

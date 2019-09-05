@@ -11,6 +11,7 @@
     150707,
     153173
   ],
+  "placementNode": "spwViewerDiv",
   "fullExtentLabel": "Cadrer sur brainelechateau",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",

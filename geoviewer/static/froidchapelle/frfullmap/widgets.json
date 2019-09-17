@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "https://froidchappelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap"
+      "urbanRestApiUrl" : "https://froidchapelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap"
     }
   },
   {
@@ -20,13 +20,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://froidchappelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap"
+      "urbanRestApiUrl" : "https://froidchapelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://froidchappelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap"
+      "urbanRestApiUrl" : "https://froidchapelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap"
     }
   },
   {
@@ -46,24 +46,6 @@
         }
     }
 },
-{
-  "className":"spw/widgets/SpwPrint",
-  "config": {
-      "widgetId":"SpwPrintId",
-      "widgetTitle":"Imprimer cette vue",
-      "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
-      "useCors": true,
-      "iconClass": "printIcon",
-      "style":{
-        "padding": "8px"
-      },
-      "position": "panel-light",
-      "height": "auto",
-      "right": "15px",
-      "top": "85px",
-      "width": "350px"
-  }
-},
   {
     "className":"spw/widgets/SpwLegend",
     "config": {
@@ -81,6 +63,7 @@
         "resizable": true
     }
 },
+
   {
     "className": "spw/widgets/SpwScaleBar",
     "config": {
@@ -93,6 +76,24 @@
         "bottom": "10px",
         "left": "45px"
       }
+    }
+  },
+  {
+    "className":"spw/widgets/SpwPrint",
+    "config": {
+        "widgetId":"SpwPrintId",
+        "widgetTitle":"Imprimer cette vue",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "useCors": true,
+        "iconClass": "printIcon",
+        "style":{
+          "padding": "8px"
+        },
+        "position": "panel-light",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "width": "350px"
     }
   },
   {
@@ -144,6 +145,51 @@
     }
   },
   {
+    "className": "urbanmap/UrbanIdentify",
+    "config": {
+      "widgetId": "UrbanIdentifyId",
+      "widgetTitle": "Enquête",
+      "position": "panel-light",
+      "width": "400px",
+      "height": "50vh",
+      "right": "15px",
+      "top": "85px",
+
+      "widgets": [
+        {
+          "className": "urbanmap/UrbanIdentifyResult",
+          "config": {
+            "widgetId": "UrbanIdentifyResultid",
+            "position": "panel-light",
+            "width": "400px",
+            "height": "50vh",
+            "top": "85px",
+            "exportCsvServerUrl": "https://froidchapelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/spw/csv",
+            "resizable": true,
+            "widgets": [
+              {
+                "className": "urbanmap/UrbanIdentifyResultTable",
+                "config": {
+                  "widgetId": "UrbanIdentifyResultTableId",
+                  "urbanRestApiUrl" : "https://froidchapelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap",
+                  "widgets": [
+                    {
+                      "className": "urbanmap/UrbanIdentifyResultRow",
+                      "config": {
+                        "widgetId": "UrbanIdentifyResultRowId",
+                        "help": true
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
     "className": "spw/widgets/SpwIdentify",
     "config": {
       "widgetId": "SpwInfosId",
@@ -156,7 +202,7 @@
       "additionalServices": [
         {
           "title" : "Matrice Cadastrale (Urban)",
-          "url": "https://froidchappelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap/identify_parcel/{x}/{y}",
+          "url": "https://froidchapelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -169,7 +215,7 @@
         },
         {
           "title" : "Proriétaires (Urban)",
-          "url": "https://froidchappelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap/identify_owners/{x}/{y}",
+          "url": "https://froidchapelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/urbanmap/identify_owners/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -307,6 +353,10 @@
         {
           "widgetId": "SpwInfosId",
           "label": "Infos"
+        },
+        {
+          "widgetId": "UrbanIdentifyId",
+          "label": "Enquête"
         },
         {
           "widgetId": "SpwLegendId",

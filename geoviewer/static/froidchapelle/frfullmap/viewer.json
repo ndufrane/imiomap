@@ -11,7 +11,8 @@
     91926,
     95625
   ],
-  "fullExtentLabel": "Cadrer sur froidchappelle",
+  "placementNode": "spwViewerDiv",
+  "fullExtentLabel": "Cadrer sur froidchapelle",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",
   "notificationPosition": "center-down",
@@ -19,7 +20,6 @@
   "errorMailToAdress": "helpdesk.carto@spw.wallonie.be",
   "errorMailSubject": "[INCIDENT] API Geoviewer",
   "mobile": false,
-  "placementNode": "spwViewerDiv",
   "leftRegion": {
     "width": "310px",
     "resizable": true,
@@ -49,7 +49,7 @@
     "minimizeable": false
   },
   "loadingVerbosity": 1,
-  "proxyPageUrl": "https://froidchappelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/spw/proxy.jsp",
+  "proxyPageUrl": "https://froidchapelle-carto.imio-app.be/aighibum0ruishoo9ath2ohv5aeJiel3/spw/proxy.jsp",
   "mapLoaderPosition": {
     "top": "35px",
     "right": "5px"
@@ -57,6 +57,6 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "froidchappelle-carto.imio-app.be"
+    "froidchapelle-carto.imio-app.be"
   ]
 }

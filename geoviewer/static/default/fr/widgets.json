@@ -144,7 +144,7 @@
       "height": "50vh",
       "right": "15px",
       "top": "85px",
-
+      "urbanRestApiUrl" : "http://localhost/urbanmap",
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

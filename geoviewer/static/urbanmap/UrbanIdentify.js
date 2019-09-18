@@ -3,6 +3,8 @@ define(["dojo/_base/declare","spw/widgets/SpwAdvancedIdentify", "dojo/_base/lang
 
 	return declare("imio.widget.UrbanIdentify", [SpwAdvancedIdentify], {
 
+		iconClass: "publicSurveyIcon",
+
 		identify: function (geom, report) {
 			this._generateReport = (report === true);
 

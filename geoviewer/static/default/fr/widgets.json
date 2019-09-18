@@ -11,6 +11,15 @@
       "className" : "claro",
       "urbanRestApiUrl" : "http://localhost/urbanmap"
     }
+  },{
+    "className": "urbanmap/UrbanHome",
+    "config": {
+      "widgetId": "UrbanHomeId",
+      "widgetTitle": "Retour à urban",
+      "activated": false,
+      "className" : "claro",
+      "urbanRestApiUrl" : "http://localhost/urbanmap"
+    }
   },
   {
     "className": "urbanmap/ParcelIdentity",
@@ -331,6 +340,10 @@
           "widgetId": "SpwQuickAddressSearchId",
           "integrated": true
         },
+        {
+          "widgetId": "UrbanHomeId",
+          "label":"Urban"
+         },
         {
           "label":"+",
           "content": [

@@ -45,3 +45,13 @@
    box-sizing: initial;
 
 }
+
+.homeIcon {
+    background-image: url('/static/urbanmap/styles/home-3-32.png');
+    background-repeat: no-repeat;
+}
+
+.publicSurveyIcon {
+    background-image: url('/static/urbanmap/styles/icons8-enquete-32.png');
+    background-repeat: no-repeat;
+}

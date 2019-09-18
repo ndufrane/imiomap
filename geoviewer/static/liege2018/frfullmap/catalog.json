@@ -38,7 +38,7 @@
         "hasLegend": false,
         "legendOpen": false,
         "identifiable": true,
-        "toLoad": true,
+        "toLoad": false,
         "layers": [
               {
                 "layerId": 0,

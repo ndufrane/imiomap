@@ -11,6 +11,7 @@
     143721,
     147459
   ],
+  "placementNode": "spwViewerDiv",
   "fullExtentLabel": "Cadrer sur dison",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",

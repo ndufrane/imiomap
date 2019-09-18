@@ -11,6 +11,7 @@
     76041,
     90408
   ],
+  "placementNode": "spwViewerDiv",
   "fullExtentLabel": "Cadrer sur viroinval",
   "spatialReference": 31370,
   "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",

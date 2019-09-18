@@ -34,11 +34,11 @@
         "label": "Elyx Liège",
         "type": "WMS",
         "url" : "http://e-services.liege.be:8101/ElyxRouter/rest/WMS",
-        "visible": false,
-        "hasLegend": false,
-        "legendOpen": false,
+        "visible": true,
+        "hasLegend": true,
+        "legendOpen": true,
         "identifiable": true,
-        "toLoad": false,
+        "toLoad": true,
         "layers": [
               {
                 "layerId": 0,
@@ -47,12 +47,12 @@
               },
               {
                 "layerId": 1,
-                "defaultVisibility": false,
+                "defaultVisibility": true,
                 "identifiable": true
               },
               {
                 "layerId": 2,
-                "defaultVisibility": false,
+                "defaultVisibility": true,
                 "identifiable": true
               }
             ]

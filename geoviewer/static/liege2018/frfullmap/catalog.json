@@ -41,17 +41,22 @@
         "toLoad": true,
         "layers": [
               {
-                "layerId": 0,
+                "layerId": "ZONESACTIONS",
                 "defaultVisibility": true,
                 "identifiable": true
               },
               {
-                "layerId": 1,
+                "layerId": "VDL_OTANL",
                 "defaultVisibility": true,
                 "identifiable": true
               },
               {
-                "layerId": 2,
+                "layerId": "VDL_OTANBUFF",
+                "defaultVisibility": false,
+                "identifiable": true
+              },
+              {
+                "layerId": "VDL_HTBUFF30",
                 "defaultVisibility": true,
                 "identifiable": true
               }

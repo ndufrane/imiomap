@@ -339,12 +339,12 @@
       "showLabel": true,
       "content": [
         {
-          "widgetId": "SpwQuickAddressSearchId",
-          "integrated": true
-        },
-        {
           "widgetId": "UrbanHomeId",
           "label":"Urban"
+        },
+        {
+          "widgetId": "SpwQuickAddressSearchId",
+          "integrated": true
         },
         {
           "label":"+",

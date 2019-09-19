@@ -153,7 +153,7 @@
       "height": "50vh",
       "right": "15px",
       "top": "85px",
-
+      "urbanRestApiUrl" : "https://liege2018-carto.imio-test.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap",
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

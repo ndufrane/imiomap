@@ -154,7 +154,7 @@
       "height": "50vh",
       "right": "15px",
       "top": "85px",
-
+	  "urbanRestApiUrl" : "https://quevy-carto.imio-app.be/bayahweL6eesh7Womah7IeV6joht8hoo/urbanmap",
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

@@ -145,6 +145,51 @@
     }
   },
   {
+    "className": "urbanmap/UrbanIdentify",
+    "config": {
+      "widgetId": "UrbanIdentifyId",
+      "widgetTitle": "Enquête",
+      "position": "panel-light",
+      "width": "400px",
+      "height": "50vh",
+      "right": "15px",
+      "top": "85px",
+	  "urbanRestApiUrl" : "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap",
+      "widgets": [
+        {
+          "className": "urbanmap/UrbanIdentifyResult",
+          "config": {
+            "widgetId": "UrbanIdentifyResultid",
+            "position": "panel-light",
+            "width": "400px",
+            "height": "50vh",
+            "top": "85px",
+            "exportCsvServerUrl": "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/spw/csv",
+            "resizable": true,
+            "widgets": [
+              {
+                "className": "urbanmap/UrbanIdentifyResultTable",
+                "config": {
+                  "widgetId": "UrbanIdentifyResultTableId",
+                  "urbanRestApiUrl" : "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap",
+                  "widgets": [
+                    {
+                      "className": "urbanmap/UrbanIdentifyResultRow",
+                      "config": {
+                        "widgetId": "UrbanIdentifyResultRowId",
+                        "help": true
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
     "className": "spw/widgets/SpwIdentify",
     "config": {
       "widgetId": "SpwInfosId",
@@ -308,6 +353,10 @@
         {
           "widgetId": "SpwInfosId",
           "label": "Infos"
+        },
+        {
+          "widgetId": "UrbanIdentifyId",
+          "label": "Enquête"
         },
         {
           "widgetId": "SpwLegendId",

@@ -154,7 +154,7 @@
       "height": "50vh",
       "right": "15px",
       "top": "85px",
-
+	  "urbanRestApiUrl" : "https://lessines-carto.imio-app.be/vQkdHC1Kj1X1N16AOUA5EnqN4e6t665X/urbanmap",
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

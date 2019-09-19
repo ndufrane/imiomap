@@ -46,8 +46,8 @@
 
 }
 
-span[widgetid=dijit_form_ToggleButton_6]{
-    margin-right:  7px;
+span[widgetid="dijit_form_ToggleButton_6"]{
+    margin-right:  7px !important;
 }
 
 .homeIcon {

@@ -11,7 +11,8 @@
       "className" : "claro",
       "urbanRestApiUrl" : "http://localhost/urbanmap"
     }
-  },{
+  },
+  {
     "className": "urbanmap/UrbanHome",
     "config": {
       "widgetId": "UrbanHomeId",
@@ -343,7 +344,7 @@
         {
           "widgetId": "UrbanHomeId",
           "label":"Urban"
-         },
+        },
         {
           "label":"+",
           "content": [

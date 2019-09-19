@@ -49,6 +49,7 @@
 .homeIcon {
     background-image: url('/static/urbanmap/styles/home-3-32.png');
     background-repeat: no-repeat;
+    margin-right:  7px;
 }
 
 .publicSurveyIcon {

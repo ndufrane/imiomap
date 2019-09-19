@@ -42,12 +42,12 @@
         "layers": [
               {
                 "layerId": "ZONESACTIONS",
-                "defaultVisibility": true,
+                "defaultVisibility": false,
                 "identifiable": true
               },
               {
                 "layerId": "VDL_OTANL",
-                "defaultVisibility": true,
+                "defaultVisibility": false,
                 "identifiable": true
               },
               {
@@ -97,7 +97,7 @@
               },
               {
                 "layerId": "rues_nom",
-                "defaultVisibility": false,
+                "defaultVisibility": true,
                 "identifiable": true
               },
               {
@@ -137,7 +137,7 @@
               },
               {
                 "layerId": "numeros_police",
-                "defaultVisibility": false,
+                "defaultVisibility": true,
                 "identifiable": true
               },
               {

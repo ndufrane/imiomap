@@ -13,6 +13,16 @@
     }
   },
   {
+    "className": "urbanmap/UrbanHome",
+    "config": {
+      "widgetId": "UrbanHomeId",
+      "widgetTitle": "Retour à urban",
+      "activated": false,
+      "className" : "claro",
+      "urbanRestApiUrl" : "https://rebecq-carto.imio-app.be/geiRi9haejei0vaphie4ais9oofief2o/urbanmap"
+    }
+  },
+  {
     "className": "urbanmap/ParcelIdentity",
     "config": {
       "widgetId": "ParcelIdentityId",
@@ -328,6 +338,10 @@
       "labelPosition": "top",
       "showLabel": true,
       "content": [
+        {
+          "widgetId": "UrbanHomeId",
+          "label":"Urban"
+        },
         {
           "widgetId": "SpwQuickAddressSearchId",
           "integrated": true

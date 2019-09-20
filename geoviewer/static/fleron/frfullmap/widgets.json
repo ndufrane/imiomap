@@ -13,6 +13,16 @@
     }
   },
   {
+    "className": "urbanmap/UrbanHome",
+    "config": {
+      "widgetId": "UrbanHomeId",
+      "widgetTitle": "Retour à urban",
+      "activated": false,
+      "className" : "claro",
+      "urbanRestApiUrl" : "https://fleron-carto.imio-app.be/vuzo0ohshai1iu9pahf7kadeiku5wiev/urbanmap"
+    }
+  },
+  {
     "className": "urbanmap/ParcelIdentity",
     "config": {
       "widgetId": "ParcelIdentityId",
@@ -328,6 +338,10 @@
       "labelPosition": "top",
       "showLabel": true,
       "content": [
+        {
+          "widgetId": "UrbanHomeId",
+          "label":"Urban"
+        },
         {
           "widgetId": "SpwQuickAddressSearchId",
           "integrated": true

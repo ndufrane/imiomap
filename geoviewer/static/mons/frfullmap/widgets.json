@@ -13,6 +13,16 @@
     }
   },
   {
+    "className": "urbanmap/UrbanHome",
+    "config": {
+      "widgetId": "UrbanHomeId",
+      "widgetTitle": "Retour à urban",
+      "activated": false,
+      "className" : "claro",
+      "urbanRestApiUrl" : "https://mons-carto.imio-app.be/ahGheu7keichieyoo8ooqui0haiJah1h/urbanmap"
+    }
+  },
+  {
     "className": "urbanmap/ParcelIdentity",
     "config": {
       "widgetId": "ParcelIdentityId",
@@ -309,6 +319,10 @@
       "labelPosition": "top",
       "showLabel": true,
       "content": [
+        {
+          "widgetId": "UrbanHomeId",
+          "label":"Urban"
+        },
         {
           "widgetId": "SpwQuickAddressSearchId",
           "integrated": true

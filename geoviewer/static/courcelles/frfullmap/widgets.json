@@ -13,6 +13,16 @@
     }
   },
   {
+    "className": "urbanmap/UrbanHome",
+    "config": {
+      "widgetId": "UrbanHomeId",
+      "widgetTitle": "Retour à urban",
+      "activated": false,
+      "className" : "claro",
+      "urbanRestApiUrl" : "https://courcelles-carto.imio-app.be/G702398M8x6041v2XF7Zp319I4E4ruYo/urbanmap"
+    }
+  },
+  {
     "className": "urbanmap/ParcelIdentity",
     "config": {
       "widgetId": "ParcelIdentityId",
@@ -328,6 +338,10 @@
       "labelPosition": "top",
       "showLabel": true,
       "content": [
+        {
+          "widgetId": "UrbanHomeId",
+          "label":"Urban"
+        },
         {
           "widgetId": "SpwQuickAddressSearchId",
           "integrated": true

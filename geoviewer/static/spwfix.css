@@ -50,6 +50,17 @@ span[widgetid="dijit_form_ToggleButton_6"]{
     margin-right:  7px !important;
 }
 
+#dijit_form_ToggleButton_2_label {
+    visibility: hidden;
+    line-height: 0;
+}
+
+#dijit_form_ToggleButton_2_label::after {
+    content: 'Parcelle';
+    visibility: visible;
+    display: block;
+}
+
 .homeIcon {
     background-image: url('/static/urbanmap/styles/home-3-32.png');
     background-repeat: no-repeat;

@@ -336,6 +336,7 @@
         "fontSize": "10px"
       },
       "labelPosition": "top",
+      "hideOnPrint": true,
       "showLabel": true,
       "content": [
         {

@@ -307,6 +307,7 @@
     "className": "spw/widgets/SpwAdvancedToolBar",
     "config": {
       "className": "SpwAdvancedToolBar",
+      "hideOnPrint": true,
       "position": "map",
       "mapPosition": {
         "top": "5px",

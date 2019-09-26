@@ -46,12 +46,12 @@
 
 }
 
-#dijit_form_ToggleButton_2_label {
+span[title="Point"] span[data-dojo-attach-point="containerNode"]:after{
     visibility: hidden;
     line-height: 0;
 }
 
-#dijit_form_ToggleButton_2_label::after {
+span[title="Point"] span[data-dojo-attach-point="containerNode"]:after {
     content: 'Parcelle';
     visibility: visible;
     display: block;

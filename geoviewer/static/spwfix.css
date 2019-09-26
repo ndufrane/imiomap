@@ -46,7 +46,7 @@
 
 }
 
-span[title="Point"] span[data-dojo-attach-point="containerNode"]:after{
+span[title="Point"] span[data-dojo-attach-point="containerNode"]{
     visibility: hidden;
     line-height: 0;
 }

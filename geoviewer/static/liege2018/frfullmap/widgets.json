@@ -119,7 +119,7 @@
         "useCors": true,
         "iconClass": "contextsIcon",
         "style":{
-          "padding": "8px"
+          "margin": "7px"
         },
         "position": "panel-light",
         "height": "auto",

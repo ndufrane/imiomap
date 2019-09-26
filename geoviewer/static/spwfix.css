@@ -46,6 +46,10 @@
 
 }
 
+.dijitToolbar .dijitToggleButton:first-of-type{
+    margin-right: 7px;
+}
+
 span[title="Point"] span[data-dojo-attach-point="containerNode"]{
     visibility: hidden;
     line-height: 0;

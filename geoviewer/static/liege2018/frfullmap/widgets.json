@@ -41,9 +41,9 @@
   },
   {
     "className":"spw/widgets/SpwMapDataController",
-    "allowSelectionEmpty" : "false",
     "config": {
         "activated": true,
+        "allowSelectionEmpty" : "false",
         "position": "left",
         "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
         "style": {
@@ -104,18 +104,14 @@
         "height": "auto",
         "right": "15px",
         "top": "85px",
-        "width": "350px",
-        "reportParams": {
-          "reportTitle" : "iA Urban Rapport",
-          "header" : "iA Urban Header 1"
-        }
+        "width": "350px"
     }
   },
   {
-    "className":"spw/widgets/SpwReport",
+    "className":"spw/widgets/SpwSnapshots",
     "config": {
-        "widgetId":"SpwReportId",
-        "widgetTitle":"Créer un rapport",
+        "widgetId":"SpwSnapshotsId",
+        "widgetTitle":"Instantanés",
         "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
         "useCors": true,
         "iconClass": "printIcon",
@@ -407,8 +403,8 @@
           "popupClass": "printMenuPopup"
           },
         {
-          "label":"Rapport",
-          "widgetId": "SpwReportId"
+          "label":"Instantanés",
+          "widgetId": "SpwSnapshotsId"
         },
          {
           "widgetId": "QueryParcelId",

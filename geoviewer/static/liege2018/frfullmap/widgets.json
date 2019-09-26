@@ -18,6 +18,9 @@
       "widgetId": "UrbanHomeId",
       "widgetTitle": "Retour à urban",
       "activated": false,
+      "style":{
+        "margin-right":  "7px !important"
+      },
       "className" : "claro",
       "urbanRestApiUrl" : "https://liege2018-carto.imio-test.be/202c4E0p612jfN7w0sf204V841Bn791L/urbanmap"
     }
@@ -122,7 +125,7 @@
         "height": "auto",
         "right": "15px",
         "top": "85px",
-        "width": "400px"
+        "width": "450px"
     }
   },
   {

@@ -76,7 +76,7 @@
         "top": "85px",
         "resizable": true
     }
-},
+  },
 
   {
     "className": "spw/widgets/SpwScaleBar",
@@ -409,10 +409,10 @@
           "label":"Instantanés",
           "widgetId": "SpwSnapshotsId"
         },
-         {
+        {
           "widgetId": "QueryParcelId",
           "label":"Sélectionner une parcelle"
-         },
+        },
          {
            "widgetId": "ParcelIdentityId",
            "label": "Carte d'identité parcellaire"

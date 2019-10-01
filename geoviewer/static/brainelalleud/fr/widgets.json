@@ -78,6 +78,24 @@
     }
   },
   {
+    "className":"spw/widgets/SpwSnapshots",
+    "config": {
+        "widgetId":"SpwSnapshotsId",
+        "widgetTitle":"Instantanés",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "useCors": true,
+        "iconClass": "contextsIcon",
+        "style":{
+          "margin": "7px"
+        },
+        "position": "panel-light",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "width": "450px"
+    }
+  },
+  {
     "className": "spw/widgets/SpwNavigation",
     "config": {
       "widgetId": "idNavigation",
@@ -296,9 +314,13 @@
           "label":"Légende"
          },
          {
+          "label":"Instantanés",
+          "widgetId": "SpwSnapshotsId"
+        },
+        {
           "widgetId": "QueryParcelId",
           "label":"Sélectionner une parcelle"
-         },
+        },
          {
            "widgetId": "ParcelIdentityId",
            "label": "Carte d'identité parcellaire"

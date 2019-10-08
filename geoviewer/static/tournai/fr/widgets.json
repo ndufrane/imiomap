@@ -270,6 +270,7 @@
         "iconClass": "mesureIcon",
         "height": "auto",
         "right": "15px",
+        "top": "0px",
         "profileServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/GEOTRAITEMENT/Profil/GPServer/Profil"
     }
   },

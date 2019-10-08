@@ -269,7 +269,9 @@
         "position": "panel-light",
         "iconClass": "mesureIcon",
         "right": "15px",
-        "style": "position:absolute;top:0;left:0;width:100px;height:100px;",
+        "style": {
+          "top": "15px"
+        },
         "profileServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/GEOTRAITEMENT/Profil/GPServer/Profil"
     }
   },

@@ -276,6 +276,20 @@
     }
   },
   {
+    "className":"spw/widgets/SpwDraw",
+    "config": {
+        "widgetId":"SpwDrawId",
+        "widgetTitle":"Dessiner",
+        "position": "panel-light",
+        "iconClass": "drawIcon",
+        "enableMyDrawings": true,
+        "height":"auto",
+        "right": "15px",
+        "top": "85px",
+        "width":"320px"
+    }
+  },
+  {
     "className": "spw/widgets/SpwBaseMapChooser",
     "config": {
       "widgetId": "SpwBaseMapChooserId",
@@ -354,6 +368,10 @@
           "widgetId": "SpwMeasureId",
           "label":"Mesurer"
          },
+        {
+          "widgetId": "SpwDrawId",
+          "label":"Dessiner"
+        },
         {
           "label": "Fonds de plan",
           "content": [

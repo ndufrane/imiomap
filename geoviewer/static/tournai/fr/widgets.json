@@ -268,9 +268,8 @@
         "widgetTitle": "Mesurer",
         "position": "panel-light",
         "iconClass": "mesureIcon",
-        "height": "auto",
         "right": "15px",
-        "top": "0px",
+        "style": "position:absolute;top:0;left:0;width:100px;height:100px;",
         "profileServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/GEOTRAITEMENT/Profil/GPServer/Profil"
     }
   },

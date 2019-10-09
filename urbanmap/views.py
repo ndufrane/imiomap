@@ -203,7 +203,6 @@ def identify_parcel(request, x, y):
         'parcelinfo__rc__surfacenottaxable',
         'parcelinfo__rc__surfacetaxable',
         'parcelinfo__rc__surfaceverif',
-        'parcels_imp__street_situation',
         'parcelinfo__rc__numbercadastralincome',
         'parcelinfo__rc__charcadastralincome',
         'parcelinfo__rc__cadastralincome',
@@ -218,7 +217,6 @@ def identify_parcel(request, x, y):
             "displayFieldName": "",
             "capakey": result.get("capakey"),
             "cadastralincome": result.get("parcelinfo__rc__cadastralincome"),
-            "street_situation": result.get("parcels_imp__street_situation"),
             "datesituation": str(result.get("parcelinfo__rc__datesituation")),
             "geometry": result.get("the_geom").json
         }

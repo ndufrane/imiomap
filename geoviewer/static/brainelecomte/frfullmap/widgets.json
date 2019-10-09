@@ -237,13 +237,6 @@
           "properties": {
             "CapaKey": "{capakey}",
             "Revenu cadastral": "{cadastralincome} euros",
-            "Situation rue": "{street_situation}",
-            "Surface non taxable": "{surfacenottaxable}",
-            "Surface taxable": "{surfacetaxable}",
-            "Surface vérifiée": "{surfaceverif}",
-            "Surface construite": "{builtsurface}",
-            "Type de construction": "{constructiontype}",
-            "Année de construction": "{constructionyear}",
             "Date situation": "{datesituation}"
           }
         },

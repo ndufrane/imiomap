@@ -44,6 +44,8 @@ define(["dojo/_base/declare","spw/widgets/SpwIdentifyResultTable", "dojo/text!./
             if(Has("ie")) {
                 Style.set(this.footerDiv, "paddingBottom", "20px");
             }
+
+            this.uploadCsvForm.acceptCharset = "UTF-8";
         },
 
         _addResults:function(results) {

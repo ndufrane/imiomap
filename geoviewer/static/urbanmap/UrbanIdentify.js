@@ -43,8 +43,7 @@ define(["dojo/_base/declare", 'dojo/on', 'dojo/request', "esri/geometry/geometry
 			if (this.btPoint.get("checked")) {
 				this.disableCurrentBt();
 				this.onCopyParcelActivate();
-				//var spatRef = this.spwViewer.get("spatialReference");
-				//this._polygoneGraph.setGeometry(new Polygon(spatRef));
+
 				this._currentGraph = this._polygoneGraph;
 				this.isFirstAfterActivation = true;
 				this._currentBt = this.btPoint;		

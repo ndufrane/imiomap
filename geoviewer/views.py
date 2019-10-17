@@ -10,7 +10,6 @@ class HomePageView(TemplateView):
 
     def get_context_data(self, **kwargs):
         from django.conf import settings
-
     
         context = super().get_context_data(**kwargs)
         context.update(settings.GLOBAL_SETTINGS)
@@ -30,6 +29,6 @@ def proxy(request):
 
 @csrf_exempt
 def csv(request):
-    response = HttpResponse(request.POST.get("csvFileContent"), content_type="text/csv")
+    response = HttpResponse(request.POST.get("csvFileContent"), content_type="text/csv", charset="UTF-8")
     response['Content-Disposition'] = 'attachment; filename="' +request.POST.get("csvFileName")+'"'
     return response

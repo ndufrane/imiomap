@@ -280,7 +280,7 @@
       "className": "spw/widgets/SpwCoordinatesSearch",
       "config": {
           "widgetId":"SpwCoordinatesSearchId",
-    "widgetTitle":"Localiser des coordonnées",
+          "widgetTitle":"Localiser des coordonnées",
           "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
           "position": "none",
           "projections": [

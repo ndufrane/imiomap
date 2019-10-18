@@ -43,8 +43,7 @@ define(["dojo/_base/declare", 'dojo/on', 'dojo/request', "esri/geometry/geometry
 			if (this.btPoint.get("checked")) {
 				this.disableCurrentBt();
 				this.onCopyParcelActivate();
-				//var spatRef = this.spwViewer.get("spatialReference");
-				//this._polygoneGraph.setGeometry(new Polygon(spatRef));
+
 				this._currentGraph = this._polygoneGraph;
 				this.isFirstAfterActivation = true;
 				this._currentBt = this.btPoint;		
@@ -124,7 +123,7 @@ define(["dojo/_base/declare", 'dojo/on', 'dojo/request', "esri/geometry/geometry
 					this._identifyResultWidget.onActivate();
 				}
 			}
-			//var geom = this._currentGraph.geometry;
+
 			if (this.cbUseBuffer.get("checked")) {
 				if (this.isGlobalBufferMode()) {
 					this.bufferGlobal(geom, this.nsGlobalBuffer.get('value'));
@@ -144,7 +143,6 @@ define(["dojo/_base/declare", 'dojo/on', 'dojo/request', "esri/geometry/geometry
 				buffParms.distances = [buff];
 				buffParms.unit = GeometryService.UNIT_METER;
 				this.geometryService.buffer(buffParms, lang.hitch(this, function (geoms) {
-					//this._resultGraph
 					this._currentGraph.setGeometry(geoms[0]);
                     this.onDrawEnded(geoms[0]);
 					this.globalIdentify(geoms[0]);

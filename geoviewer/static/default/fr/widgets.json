@@ -143,6 +143,41 @@
         }
       ]
     }
+  }, {
+    "className": "spw/widgets/SpwReport",
+    "config": {
+        "widgetId": "SpwReportId",
+        "widgetTitle": "Créer un rapport",
+        "position": "panel-light",
+        "iconClass": "reportIcon",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "addressLabel": "Adresse approximative",
+        "ignoreFields": ["OBJECTID", "SHAPE","GEOM","GEOM.AREA","GEOM.LEN","SHAPE.LEN","SHAPE.AREA"],
+        "geolocalisationApiUrl": "//geoservices.wallonie.be/geolocalisation/js/SpwGeolocalisationApi.js",
+        "cadmapApiUrl": "//geoservices.wallonie.be/cadmap/js/SpwCadmapApi.js",
+        "reportParams": {
+            "reportTitle": "Géoportail de la Wallonie",
+            "url": "//geoservices.wallonie.be/geoviewer/templates/JasperTemplate.jrxml",
+            "jasperServerUrl" : "//geoservices.wallonie.be/geoviewer/Report"
+        },
+        "rosaceUrl": "images/templates/rosaces.png",
+        "identificationMethods": [
+            {
+                "type": "point",
+                "label": "A partir d'un point (cliquez sur un point ou un objet de la carte)"
+            },{
+                "type": "polygon",
+                "label": "A partir d'un polygone (cliquez pour commencer à tracer)"
+            },{
+                "type": "layer",
+                "url": "//geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/CADMAP_PARCELLES/MapServer",
+                "layerId": 0,
+                "label": "A partir d'une parcelle cadastrale (cliquez sur un point de la parcelle voulue)"
+            }
+        ]
+    }
   },
   {
     "className": "spw/widgets/SpwQuickAddressSearch",
@@ -245,7 +280,7 @@
       "className": "spw/widgets/SpwCoordinatesSearch",
       "config": {
           "widgetId":"SpwCoordinatesSearchId",
-    "widgetTitle":"Localiser des coordonnées",
+          "widgetTitle":"Localiser des coordonnées",
           "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
           "position": "none",
           "projections": [
@@ -433,6 +468,12 @@
         {
           "widgetId": "SpwDrawId",
           "label":"Dessiner"
+        },
+        {
+          "label":"Créer un rapport",
+          "widgetId": "SpwReportId",
+          "className":"reportMenuButton",
+          "popupClass": "printMenuPopup"
         },
          {
           "label": "Fonds de plan",

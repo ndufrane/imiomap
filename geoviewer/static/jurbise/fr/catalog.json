@@ -27,6 +27,66 @@
       }]
   },
   {
+    "code" : "ZIP SPW",
+    "label" : "Zone Initiative Privilégiée",
+    "mapServices" :[{
+        "serviceId": "ZIP",
+        "label": "Zone Initiative Privilégiée",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/ZIP/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "RENOV_URB SPW",
+    "label" : "Rénovation urbaine",
+    "mapServices" :[{
+        "serviceId": "RENOV_URB",
+        "label": "Rénovation urbaine",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/RENOV_URB/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "REVIT_URB SPW",
+    "label" : "Revitalisation urbaine",
+    "mapServices" :[{
+        "serviceId": "REVIT_URB",
+        "label": "Revitalisation urbaine",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/REVIT_URB/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "NATURA2000 SPW",
+    "label" : "Réseau Natura 2000 en vigueur",
+    "mapServices" :[{
+        "serviceId": "NATURA2000",
+        "label": "Réseau Natura 2000 en vigueur",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "LIDAXE",
     "label" : "Axes de ruissellement concentré (LIDAXE)",
     "mapServices" :[{

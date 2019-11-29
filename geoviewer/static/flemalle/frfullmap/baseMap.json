@@ -34,7 +34,7 @@
         "checked": false
       }
     ],
-    "imagePath": "../../FDC.jpg",
+    "imagePath": "./static_root/FDC.jpg",
     "selected": true
   },
   {
@@ -74,7 +74,7 @@
         "checked": false
       }
     ],
-    "imagePath": "../../FondPhoto_100.png"
+    "imagePath": "./static_root/FondPhoto_100.png"
   },
   {
     "baseMapName": "Aucun",
@@ -87,6 +87,6 @@
         "url": "https://geoservices.wallonie.be/arcgis/rest/services/IGN/LIMITE_REGION/MapServer"
       }
     ],
-    "imagePath": "../../FondNone.png"
+    "imagePath": "./static_root/FondNone.png"
   }
 ]

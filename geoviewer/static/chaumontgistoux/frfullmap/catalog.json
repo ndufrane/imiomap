@@ -117,6 +117,81 @@
       }]
   },
   {
+    "code" : "NATURA2000 SPW",
+    "label" : "Réseau Natura 2000 en vigueur",
+    "mapServices" :[{
+        "serviceId": "NATURA2000",
+        "label": "Réseau Natura 2000 en vigueur",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PAT_EXC SPW",
+    "label" : "Patrimoine - Biens exceptionnels - Série",
+    "mapServices" :[{
+        "serviceId": "PAT_EXC",
+        "label": "Patrimoine - Biens exceptionnels - Série",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/PAT_EXC/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PROTECT_CAPT SPW",
+    "label" : "Protection des captages - Série",
+    "mapServices" :[{
+        "serviceId": "PROTECT_CAPT",
+        "label": "Protection des captages - Série",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/PROTECT_CAPT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ATLAS_HYDRO SPW",
+    "label" : "Atlas des cours d'eau non navigable",
+    "mapServices" :[{
+        "serviceId": "ATLAS_HYDRO",
+        "label": "Atlas des cours d'eau non navigable",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/ATLAS_HYDRO/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "GRU SPW",
+    "label" : "CoDT - Guide Régional d'Urbanisme (GRU)",
+    "mapServices" :[{
+        "serviceId": "GRU",
+        "label": "CoDT - Guide Régional d'Urbanisme (GRU)",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/GRU/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "PLAN_SECTEUR",
     "label" : "Plan de secteur",
     "mapServices" :[{
@@ -192,10 +267,10 @@
   },
   {
     "code" : "BC_PAT SPW",
-    "label" : "Bien pastillé",
+    "label" : "Patrimoine biens classés en zones de protection",
     "mapServices" :[{
         "serviceId": "BC_PAT",
-        "label": "Bien pastillé",
+        "label": "Patrimoine biens classés en zones de protection",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/BC_PAT/MapServer",
         "visible": false,
@@ -252,12 +327,57 @@
   },
   {
     "code" : "BDES_INVENTAIRE SPW",
-    "label" : "Etat des sols",
+    "label" : "Etat des sols inventaire des terrains pollués et potentiellement pollués",
     "mapServices" :[{
         "serviceId": "BDES_INVENTAIRE",
         "label": "Etat des sols",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/BDES_INVENTAIRE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ZI_2016 SPW",
+    "label" : "Zones inondables Directive inondation 2007/60/CE version 2016",
+    "mapServices" :[{
+        "serviceId": "ZI_2016",
+        "label": "Zones inondables Directive inondation 2007/60/CE version 2016",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/ZI_2016/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "CADMAP_2017_PARCELLES SPW",
+    "label" : "Plan parcellaire cadastral situation au 01/01/2017 (cadmap 2017)",
+    "mapServices" :[{
+        "serviceId": "CADMAP_2017_PARCELLES",
+        "label": "Plan parcellaire cadastral situation au 01/01/2017 (cadmap 2017)",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/CADMAP_2017_PARCELLES/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PAT_LSTSAV SPW",
+    "label" : "Patrimoine biens en liste de sauvegarde",
+    "mapServices" :[{
+        "serviceId": "PAT_LSTSAV",
+        "label": "Patrimoine biens en liste de sauvegarde",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/PAT_LSTSAV/MapServer",
         "visible": false,
         "hasLegend": true,
         "legendOpen": true,

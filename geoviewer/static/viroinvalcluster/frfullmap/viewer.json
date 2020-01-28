@@ -49,7 +49,7 @@
     "minimizeable": false
   },
   "loadingVerbosity": 1,
-  "proxyPageUrl": "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/spw/proxy.jsp",
+  "proxyPageUrl": "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/spw/proxy.jsp",
   "mapLoaderPosition": {
     "top": "35px",
     "right": "5px"
@@ -57,6 +57,6 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "viroinvalcluster-carto.imio-app.be"
+    "viroinvalcluster-carto.imio-test.be"
   ]
 }

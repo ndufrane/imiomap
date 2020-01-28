@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
+      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
     }
   },
   {
@@ -20,13 +20,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
+      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
+      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
     }
   },
   {
@@ -174,7 +174,7 @@
       "additionalServices": [
         {
           "title" : "Matrice Cadastrale (Urban)",
-          "url": "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap/identify_parcel/{x}/{y}",
+          "url": "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -187,7 +187,7 @@
         },
         {
           "title" : "Proriétaires (Urban)",
-          "url": "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap/identify_owners/{x}/{y}",
+          "url": "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap/identify_owners/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",

@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
+      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
     }
   },
   {
@@ -19,7 +19,7 @@
       "widgetTitle": "Retour à urban",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
+      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
     }
   },
   {
@@ -30,13 +30,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
+      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
+      "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap"
     }
   },
   {
@@ -182,7 +182,7 @@
       "height": "50vh",
       "right": "15px",
       "top": "85px",
-	  "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap",
+	  "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap",
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",
@@ -192,14 +192,14 @@
             "width": "400px",
             "height": "50vh",
             "top": "85px",
-            "exportCsvServerUrl": "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/spw/csv",
+            "exportCsvServerUrl": "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/spw/csv",
             "resizable": true,
             "widgets": [
               {
                 "className": "urbanmap/UrbanIdentifyResultTable",
                 "config": {
                   "widgetId": "UrbanIdentifyResultTableId",
-                  "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap",
+                  "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap",
                   "widgets": [
                     {
                       "className": "urbanmap/UrbanIdentifyResultRow",
@@ -230,7 +230,7 @@
       "additionalServices": [
         {
           "title" : "Matrice Cadastrale (Urban)",
-          "url": "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap/identify_parcel/{x}/{y}",
+          "url": "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -243,7 +243,7 @@
         },
         {
           "title" : "Proriétaires (Urban)",
-          "url": "https://viroinvalcluster-carto.imio-app.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap/identify_owners/{x}/{y}",
+          "url": "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap/identify_owners/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",

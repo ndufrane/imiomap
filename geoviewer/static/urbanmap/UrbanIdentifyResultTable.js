@@ -11,7 +11,7 @@ define(["dojo/_base/declare","spw/widgets/SpwIdentifyResultTable", "dojo/text!./
             {name: "capakey", type: "esriFieldTypeString", alias: "CAPAKEY", length: 17, domain: null},
             {name: "nature", type: "esriFieldTypeString", alias: "nature", length: 17, domain: null},
             {name: "datesituation", type: "esriFieldTypeString", alias: "datesituation", length: 17, domain: null},
-            {name: "owner", type: "esriFieldTypeString", alias: "proprio", length: 17, domain: null},
+            {name: "owner", type: "esriFieldTypeString", alias: "proprio", length: 50, domain: null}
         ],
  
         _postCreate: function() {

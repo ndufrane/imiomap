@@ -162,7 +162,23 @@ def identify_parcel_advanced(request, capakeys):
     parcels_qry = Parcels.objects.filter(capakey__in=capakeys_parsed)
     
     parcels_qry = parcels_qry.annotate(
-        owner_names_agg=StringAgg(Concat('owner__owner_uid__firstname', V(' '),'owner__owner_uid__name', V(' ('),'owner__owner_uid__birthdate', V(')'), output_field=CharField()),delimiter=';')
+        #owner_names_agg=StringAgg(Concat('owner__owner_uid__firstname', V(' '),'owner__owner_uid__name', V(' ('),'owner__owner_uid__birthdate', V(')'), output_field=CharField()),delimiter=';'),
+        owner_addrs_agg=StringAgg(
+            Concat(
+                'owner__owner_uid__officialid', V(' '),
+                'owner__owner_uid__firstname', V(' '),
+                'owner__owner_uid__name', V(' ('),'owner__owner_uid__birthdate', V(')'),
+                V(' Adr: '),
+                'owner__owner_uid__country', V(' '),
+                'owner__owner_uid__zipcode', V(' '),
+                'owner__owner_uid__municipality_fr', V(' '),
+                'owner__owner_uid__street_fr', V(' '),
+                'owner__owner_uid__number', V(' '),
+                'owner__owner_uid__boxnumber', V(' ')
+                ,output_field=CharField()
+            )
+            ,delimiter=';'
+        )
     )
     
     
@@ -171,7 +187,7 @@ def identify_parcel_advanced(request, capakeys):
         'rc__cadastralincome',
         'nature__nature_fr',
         'rc__datesituation',
-        'owner_names_agg'
+        'owner_addrs_agg'
     )
     
     geos = []
@@ -180,7 +196,7 @@ def identify_parcel_advanced(request, capakeys):
             "capakey": result.get("capakey"),
             "nature": str(result.get("nature__nature_fr")),
             "datesituation": str(result.get("rc__datesituation")),
-            "owner": result.get("owner_names_agg")
+            "owner": result.get("owner_addrs_agg")
      }
         geos.append(feature)
 

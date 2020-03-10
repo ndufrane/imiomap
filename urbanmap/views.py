@@ -263,6 +263,12 @@ def identify_owners(request, x, y):
         'parcelinfo__owner__owner_uid__name',
         'parcelinfo__owner__owner_uid__firstname',
         'parcelinfo__owner__owner_uid__birthdate',
+        'parcelinfo__owner__owner_uid__country',
+        'parcelinfo__owner__owner_uid__zipcode',
+        'parcelinfo__owner__owner_uid__municipality_fr',
+        'parcelinfo__owner__owner_uid__street_fr',
+        'parcelinfo__owner__owner_uid__number',
+        'parcelinfo__owner__owner_uid__boxnumber',
         'parcelinfo__owner__partner_uid__name',
         'parcelinfo__owner__partner_uid__firstname',
         'parcelinfo__owner__partner_uid__birthdate',
@@ -275,6 +281,16 @@ def identify_owners(request, x, y):
             return ""
         else:
             return str(data)
+
+    def buildAddress(result):
+        adr = ifNRE(result.get('parcelinfo__owner__owner_uid__country', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__zipcode', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__municipality_fr', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__street_fr', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__number', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__boxnumber', "")) + " "
+        return adr
+
 
     for result in capa_qry.all():
         feature = {
@@ -290,6 +306,7 @@ def identify_owners(request, x, y):
             "owner_name": ifNRE(result.get("parcelinfo__owner__owner_uid__name", "")),
             "owner_firstname": ifNRE(result.get("parcelinfo__owner__owner_uid__firstname", "")),
             "owner_birthdate": ifNRE(result.get("parcelinfo__owner__owner_uid__birthdate", "")),
+            "owner_address": buildAddress(result),
             "partner_name": ifNRE(result.get("parcelinfo__owner__partner_uid__name", "")),
             "partner_firstname": ifNRE(result.get("parcelinfo__owner__partner_uid__firstname", "")),
             "partner_birthdate": ifNRE(result.get("parcelinfo__owner__partner_uid__birthdate", "")),

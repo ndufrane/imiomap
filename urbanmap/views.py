@@ -162,7 +162,23 @@ def identify_parcel_advanced(request, capakeys):
     parcels_qry = Parcels.objects.filter(capakey__in=capakeys_parsed)
     
     parcels_qry = parcels_qry.annotate(
-        owner_names_agg=StringAgg(Concat('owner__owner_uid__firstname', V(' '),'owner__owner_uid__name', V(' ('),'owner__owner_uid__birthdate', V(')'), output_field=CharField()),delimiter=';')
+        #owner_names_agg=StringAgg(Concat('owner__owner_uid__firstname', V(' '),'owner__owner_uid__name', V(' ('),'owner__owner_uid__birthdate', V(')'), output_field=CharField()),delimiter=';'),
+        owner_addrs_agg=StringAgg(
+            Concat(
+                'owner__owner_uid__officialid', V(' '),
+                'owner__owner_uid__firstname', V(' '),
+                'owner__owner_uid__name', V(' ('),'owner__owner_uid__birthdate', V(')'),
+                V(' Adr: '),
+                'owner__owner_uid__country', V(' '),
+                'owner__owner_uid__zipcode', V(' '),
+                'owner__owner_uid__municipality_fr', V(' '),
+                'owner__owner_uid__street_fr', V(' '),
+                'owner__owner_uid__number', V(' '),
+                'owner__owner_uid__boxnumber', V(' ')
+                ,output_field=CharField()
+            )
+            ,delimiter=';'
+        )
     )
     
     
@@ -171,7 +187,7 @@ def identify_parcel_advanced(request, capakeys):
         'rc__cadastralincome',
         'nature__nature_fr',
         'rc__datesituation',
-        'owner_names_agg'
+        'owner_addrs_agg'
     )
     
     geos = []
@@ -180,7 +196,7 @@ def identify_parcel_advanced(request, capakeys):
             "capakey": result.get("capakey"),
             "nature": str(result.get("nature__nature_fr")),
             "datesituation": str(result.get("rc__datesituation")),
-            "owner": result.get("owner_names_agg")
+            "owner": result.get("owner_addrs_agg")
      }
         geos.append(feature)
 
@@ -247,6 +263,12 @@ def identify_owners(request, x, y):
         'parcelinfo__owner__owner_uid__name',
         'parcelinfo__owner__owner_uid__firstname',
         'parcelinfo__owner__owner_uid__birthdate',
+        'parcelinfo__owner__owner_uid__country',
+        'parcelinfo__owner__owner_uid__zipcode',
+        'parcelinfo__owner__owner_uid__municipality_fr',
+        'parcelinfo__owner__owner_uid__street_fr',
+        'parcelinfo__owner__owner_uid__number',
+        'parcelinfo__owner__owner_uid__boxnumber',
         'parcelinfo__owner__partner_uid__name',
         'parcelinfo__owner__partner_uid__firstname',
         'parcelinfo__owner__partner_uid__birthdate',
@@ -259,6 +281,16 @@ def identify_owners(request, x, y):
             return ""
         else:
             return str(data)
+
+    def buildAddress(result):
+        adr = ifNRE(result.get('parcelinfo__owner__owner_uid__country', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__zipcode', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__municipality_fr', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__street_fr', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__number', "")) + " "
+        adr += ifNRE(result.get('parcelinfo__owner__owner_uid__boxnumber', "")) + " "
+        return adr
+
 
     for result in capa_qry.all():
         feature = {
@@ -274,6 +306,7 @@ def identify_owners(request, x, y):
             "owner_name": ifNRE(result.get("parcelinfo__owner__owner_uid__name", "")),
             "owner_firstname": ifNRE(result.get("parcelinfo__owner__owner_uid__firstname", "")),
             "owner_birthdate": ifNRE(result.get("parcelinfo__owner__owner_uid__birthdate", "")),
+            "owner_address": buildAddress(result),
             "partner_name": ifNRE(result.get("parcelinfo__owner__partner_uid__name", "")),
             "partner_firstname": ifNRE(result.get("parcelinfo__owner__partner_uid__firstname", "")),
             "partner_birthdate": ifNRE(result.get("parcelinfo__owner__partner_uid__birthdate", "")),

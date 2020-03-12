@@ -429,5 +429,21 @@
         "identifiable": true,
         "toLoad": true
       }]
+  },
+  {
+    "code" : "INSPIRE FGOV",
+    "label" : "Limites administratives",
+    "mapServices" :[{
+        "serviceId": "INSPIRE",
+        "label": "Limites administratives",
+        "type": "AGS_DYNAMIC",
+        "url" : "http://ccff02.minfin.fgov.be/geoservices/arcgis/services/INSPIRE/AU_wms/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
   }
+
 ]

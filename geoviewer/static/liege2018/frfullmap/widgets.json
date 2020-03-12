@@ -257,6 +257,7 @@
             "Ordre": "{order}",
             "righttrad": "{righttrad}",
             "Nom": "{owner_firstname} {owner_name} {owner_birthdate}",
+            "Adresse": "{owner_address}",
             "Partenaire": "{partner_firstname} {partner_name} {partner_birthdate}",
             "coowner": "{coowner}"
           }

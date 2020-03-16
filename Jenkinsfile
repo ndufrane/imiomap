@@ -3,9 +3,6 @@
 
 pipeline {
     agent none
-    triggers {
-        pollSCM('*/3 * * * *')
-    }
     options {
         buildDiscarder(logRotator(numToKeepStr:'50'))
     }

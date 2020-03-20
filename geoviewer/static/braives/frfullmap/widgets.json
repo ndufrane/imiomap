@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
       "urbanRestApiUrl" : "https://braives-carto.imio-app.be/y752h70k2pKTayQG9W7l69kp9l9d9P6t/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
       "urbanRestApiUrl" : "https://tournai-carto.imio-app.be/X3lGdbeEuteX2fV09lTY6PqbfHCoT7uY/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

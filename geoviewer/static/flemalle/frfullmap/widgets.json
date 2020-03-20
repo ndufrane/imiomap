@@ -182,6 +182,7 @@
       "right": "15px",
       "top": "85px",
       "urbanRestApiUrl" : "https://flemalle-carto.imio-app.be/Cheich1waih8shiejuwoh4fooZ7uupha/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

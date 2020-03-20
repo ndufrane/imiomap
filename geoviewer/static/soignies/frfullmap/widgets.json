@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
 	  "urbanRestApiUrl" : "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

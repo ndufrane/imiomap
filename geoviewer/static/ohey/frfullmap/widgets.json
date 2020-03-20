@@ -182,6 +182,7 @@
       "right": "15px",
       "top": "85px",
       "urbanRestApiUrl" : "https://ohey-carto.imio-app.be/ooQuewie1oo7thoothiezai9givung2v/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

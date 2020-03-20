@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
 	  "urbanRestApiUrl" : "https://lalouviere-carto.imio-app.be/lahx8ieMYoogoo4xKaef3fuzCeim7hiX/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
 	  "urbanRestApiUrl" : "https://momignies-carto.imio-app.be/boocoo0ar3ii5eripoi2Uo7coithahG0/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

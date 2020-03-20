@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
 	  "urbanRestApiUrl" : "https://dison-carto.imio-app.be/ecgeedgefyecUlgogfaikCiciarmIjin/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

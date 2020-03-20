@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
 	  "urbanRestApiUrl" : "https://fleron-carto.imio-app.be/vuzo0ohshai1iu9pahf7kadeiku5wiev/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

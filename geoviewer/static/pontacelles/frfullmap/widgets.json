@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
       "urbanRestApiUrl" : "https://pontacelles-carto.imio-app.be/Eesiexevah6chaiKaech3ahPij6nu3pi/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

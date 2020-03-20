@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
 	  "urbanRestApiUrl" : "https://viroinvalcluster-carto.imio-test.be/UQPsWZB79Qqt7CHj2vGlaNpn4lLBLjaX/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

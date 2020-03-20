@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
       "urbanRestApiUrl" : "https://awans-carto.imio-app.be/sha6Ti0dohYoogh4Gahpie3Eia1Te7al/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

@@ -183,6 +183,7 @@
       "right": "15px",
       "top": "85px",
       "urbanRestApiUrl" : "https://ecaussinnes-carto.imio-app.be/eixushooyoo5eth4ain0oobooPiemaiz/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

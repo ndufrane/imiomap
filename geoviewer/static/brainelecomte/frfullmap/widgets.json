@@ -182,6 +182,7 @@
       "right": "15px",
       "top": "85px",
       "urbanRestApiUrl" : "https://brainelecomte-carto.imio-app.be/afoneSheigohcheequooquah7ahphut6/urbanmap",
+      "initBuffer": 50,
       "widgets": [
         {
           "className": "urbanmap/UrbanIdentifyResult",

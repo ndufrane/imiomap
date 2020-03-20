@@ -30,7 +30,7 @@ define(["dojo/_base/declare", 'dojo/on', 'dojo/request', "esri/geometry/geometry
                 style: 'esriSLSSolid'
             }
 		},
-		
+       		
 		onClickBtPoint: function () {
 			if (this._disableEvent) {
 				if(!this.btPoint.get("checked")) {

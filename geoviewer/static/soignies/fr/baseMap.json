@@ -34,7 +34,7 @@
         "checked": false
       }
     ],
-    "imagePath": "./FondCarte_100.png"
+    "imagePath": "https://soignies-carto.imio-app.be/static/FDC.jpg"
   },
   {
     "baseMapName": "Vue aérienne",
@@ -73,7 +73,7 @@
         "checked": false
       }
     ],
-    "imagePath": "./FondCarte_100.png"
+    "imagePath": "https://soignies-carto.imio-app.be/static/FondPhoto_100.png"
   },
   {
     "baseMapName": "Aucun",
@@ -86,7 +86,7 @@
         "url": "https://geoservices.wallonie.be/arcgis/rest/services/IGN/LIMITE_REGION/MapServer"
       }
     ],
-    "imagePath": "./FondCarte_100.png",
+    "imagePath": "https://soignies-carto.imio-app.be/static/FondNone.png",
     "selected": true
   }
 ]

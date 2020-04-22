@@ -87,6 +87,21 @@
       }]
   },
   {
+    "code" : "PROTECT_CAPT SPW",
+    "label" : "Protection des captages - Série",
+    "mapServices" :[{
+        "serviceId": "PROTECT_CAPT",
+        "label": "Protection des captages - Série",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/PROTECT_CAPT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "SDC",
     "label" : "CoDT - Schéma de Développement Communal (SDC)",
     "mapServices" :[{
@@ -174,6 +189,36 @@
       ]
 
     }]
+  },
+   {
+    "code" : "PAT_EXC SPW",
+    "label" : "Patrimoine - Biens exceptionnels - Série",
+    "mapServices" :[{
+        "serviceId": "PAT_EXC",
+        "label": "Patrimoine - Biens exceptionnels - Série",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/PAT_EXC/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BC_PAT SPW",
+    "label" : "Biens classés",
+    "mapServices" :[{
+        "serviceId": "BC_PAT",
+        "label": "Biens classés",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/BC_PAT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
   },
   {
     "code" : "LOTISSEMENTS SPW",
@@ -333,6 +378,21 @@
         "label": "Orthophotos Dernière disponible",
         "type": "AGS_DYNAMIC",
         "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_LAST/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "CAPTAGES SPW",
+    "label" : "Les captages",
+    "mapServices" :[{
+        "serviceId": "CAPTAGES",
+        "label": "Les captages",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/CAPTAGES/MapServer",
         "visible": false,
         "hasLegend": true,
         "legendOpen": true,

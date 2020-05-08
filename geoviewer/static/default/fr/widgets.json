@@ -255,7 +255,8 @@
           "properties": {
             "CapaKey": "{capakey}",
             "Revenu cadastral": "{cadastralincome} euros",
-            "Date situation": "{datesituation}"
+            "Date situation": "{datesituation}",
+            "Adresse": "{street}"
           }
         },
         {

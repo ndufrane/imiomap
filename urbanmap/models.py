@@ -86,6 +86,9 @@ class Parcelsstreets(models.Model):
         managed = False
         db_table = 'parcelsstreets'
 
+    def __str__(self):
+        return self.street_situation + ' ' + self.street_code
+
 class Parcels(models.Model):
     propertysituationid = models.BigIntegerField(primary_key=True)
     mukey = models.BigIntegerField(blank=True, null=True)
@@ -106,7 +109,7 @@ class Parcels(models.Model):
     matutil = models.CharField(max_length=60, blank=True, null=True)
     nottaxedmatutil = models.CharField(max_length=10, blank=True, null=True)
     niscom = models.BigIntegerField(blank=True, null=True)
-    street_uid = models.ForeignKey(Parcelsstreets, db_column='street_uid', on_delete=models.CASCADE)
+    street_uid = models.ForeignKey(Parcelsstreets, db_column='street_uid', on_delete=models.CASCADE, related_name="parcelinfo")
     number = models.CharField(max_length=20, blank=True, null=True)
     datesituation = models.DateField(blank=True, null=True)
     group_uid = models.BigIntegerField(blank=True, null=True)

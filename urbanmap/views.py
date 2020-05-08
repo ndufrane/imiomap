@@ -216,6 +216,8 @@ def identify_parcel(request, x, y):
     capa_qry = capa_qry.values(
         'the_geom',
         'capakey',
+        'parcelinfo__number',
+        'parcelinfo__street_uid__street_situation',
         'parcelinfo__rc__surfacenottaxable',
         'parcelinfo__rc__surfacetaxable',
         'parcelinfo__rc__surfaceverif',
@@ -232,6 +234,7 @@ def identify_parcel(request, x, y):
             "layerName": "matrice cadastrale",
             "displayFieldName": "",
             "capakey": result.get("capakey"),
+            "street": ifNRE(result.get("parcelinfo__street_uid__street_situation")) + " n° " + ifNRE(result.get("parcelinfo__number")),
             "cadastralincome": result.get("parcelinfo__rc__cadastralincome"),
             "datesituation": str(result.get("parcelinfo__rc__datesituation")),
             "geometry": result.get("the_geom").json
@@ -243,6 +246,12 @@ def identify_parcel(request, x, y):
     }
 
     return HttpResponse(json.dumps(infos), content_type='application/json')
+
+def ifNRE(data):
+    if data == None:
+        return ""
+    else:
+        return str(data)
 
 @csrf_exempt
 @require_GET
@@ -275,12 +284,6 @@ def identify_owners(request, x, y):
     )
     geos = []
     cpt = 0
-
-    def ifNRE(data):
-        if data == None:
-            return ""
-        else:
-            return str(data)
 
     def buildAddress(result):
         adr = ifNRE(result.get('parcelinfo__owner__owner_uid__country', "")) + " "

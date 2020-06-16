@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "https://seraing-carto.imio-app.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap"
+      "urbanRestApiUrl" : "https://seraing2-carto.imio-test.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap"
     }
   },
   {
@@ -19,7 +19,7 @@
       "widgetTitle": "Retour à urban",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://seraing-carto.imio-app.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap"
+      "urbanRestApiUrl" : "https://seraing2-carto.imio-test.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap"
     }
   },
   {
@@ -30,13 +30,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://seraing-carto.imio-app.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap"
+      "urbanRestApiUrl" : "https://seraing2-carto.imio-test.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://seraing-carto.imio-app.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap"
+      "urbanRestApiUrl" : "https://seraing2-carto.imio-test.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap"
     }
   },
   {
@@ -182,7 +182,7 @@
       "height": "50vh",
       "right": "15px",
       "top": "85px",
-	  "urbanRestApiUrl" : "https://seraing-carto.imio-app.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap",
+	  "urbanRestApiUrl" : "https://seraing2-carto.imio-test.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap",
       "initBuffer": 50,
       "widgets": [
         {
@@ -193,14 +193,14 @@
             "width": "400px",
             "height": "50vh",
             "top": "85px",
-            "exportCsvServerUrl": "https://seraing-carto.imio-app.be/aichoh7Ichiab6Onoop2aezaengich/spw/csv",
+            "exportCsvServerUrl": "https://seraing2-carto.imio-test.be/aichoh7Ichiab6Onoop2aezaengich/spw/csv",
             "resizable": true,
             "widgets": [
               {
                 "className": "urbanmap/UrbanIdentifyResultTable",
                 "config": {
                   "widgetId": "UrbanIdentifyResultTableId",
-                  "urbanRestApiUrl" : "https://seraing-carto.imio-app.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap",
+                  "urbanRestApiUrl" : "https://seraing2-carto.imio-test.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap",
                   "widgets": [
                     {
                       "className": "urbanmap/UrbanIdentifyResultRow",
@@ -231,7 +231,7 @@
       "additionalServices": [
         {
           "title" : "Matrice Cadastrale (Urban)",
-          "url": "https://seraing-carto.imio-app.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap/identify_parcel/{x}/{y}",
+          "url": "https://seraing2-carto.imio-test.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
@@ -244,7 +244,7 @@
         },
         {
           "title" : "Proriétaires (Urban)",
-          "url": "https://seraing-carto.imio-app.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap/identify_owners/{x}/{y}",
+          "url": "https://seraing2-carto.imio-test.be/aichoh7Ichiab6Onoop2aezaengich/urbanmap/identify_owners/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",

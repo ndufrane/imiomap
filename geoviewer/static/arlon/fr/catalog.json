@@ -508,20 +508,5 @@
         "identifiable": true,
         "toLoad": true
       }]
-  },
-  {
-    "code" : "IMIO",
-    "label" : "IMIO",
-    "mapServices" :[{
-        "serviceId": "CUSTOM_arlon",
-        "label": "IMIO arlon",
-        "type": "WMS",
-        "url" : "http://arlon-geonode.imio-app.be/geoserver/geonode/wms",
-        "visible": false,
-        "hasLegend": false,
-        "legendOpen": false,
-        "identifiable": true,
-        "toLoad": true
-      }]
   }
 ]

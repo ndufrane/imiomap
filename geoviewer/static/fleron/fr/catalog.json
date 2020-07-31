@@ -57,13 +57,13 @@
       }]
   },
   {
-    "code" : "Alea inondation SPW",
-    "label" : "Alea inondation",
+    "code" : "LIDAXE",
+    "label" : "Axes de ruissellement concentré (LIDAXE)",
     "mapServices" :[{
-        "serviceId": "EAU_ALEA",
-        "label": "EAU ALEA",
+        "serviceId": "LIDAXE",
+        "label": "Axes de ruissellement concentré (LIDAXE)",
         "type": "AGS_DYNAMIC",
-        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/ALEA_2016/MapServer",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/LIDAXES/MapServer",
         "visible": false,
         "hasLegend": true,
         "legendOpen": true,

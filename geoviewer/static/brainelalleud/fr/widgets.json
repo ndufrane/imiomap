@@ -346,6 +346,12 @@
           "widgetId": "SpwLegendId",
           "label":"Légende"
          },
+        {
+          "label":"Imprimer",
+          "widgetId": "SpwPrintId",
+          "className":"printMenuButton",
+          "popupClass": "printMenuPopup"
+        },
          {
           "label":"Instantanés",
           "widgetId": "SpwSnapshotsId"

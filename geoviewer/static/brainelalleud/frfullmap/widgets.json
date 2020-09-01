@@ -415,6 +415,12 @@
           "widgetId": "SpwSnapshotsId"
         },
         {
+          "label":"Imprimer",
+          "widgetId": "SpwPrintId",
+          "className":"printMenuButton",
+          "popupClass": "printMenuPopup"
+        },
+        {
           "widgetId": "QueryParcelId",
           "label":"Sélectionner une parcelle"
         },

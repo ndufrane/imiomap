@@ -53,6 +53,13 @@ define([
                             style: "width: 300px"
                         });
                         parcelIdentityDialog.show()
+                    }),lang.hitch(this, function(data){
+                        var parcelIdentityDialog = new Dialog({
+                            title: "Carte d'identité parcellaire",
+                            content: "<span>pas de données reçue d'urban</span>",
+                            style: "width: 300px"
+                        });
+                        parcelIdentityDialog.show()
                     }));
                 }
             }));

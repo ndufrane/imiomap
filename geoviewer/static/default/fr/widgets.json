@@ -193,7 +193,7 @@
     "config": {
       "widgetId": "UrbanIdentifyId",
       "widgetTitle": "Enquête",
-      "position": "panel-light",
+      "position": "right",
       "width": "400px",
       "height": "50vh",
       "right": "15px",
@@ -341,7 +341,7 @@
     "config": {
         "widgetId": "SpwMeasureId",
         "widgetTitle": "Mesurer",
-        "position": "panel-light",
+        "position": "right",
         "iconClass": "mesureIcon",
         "height": "auto",
         "right": "15px",
@@ -354,7 +354,7 @@
     "config": {
         "widgetId":"SpwDrawId",
         "widgetTitle":"Dessiner",
-        "position": "panel-light",
+        "position": "right",
         "iconClass": "drawIcon",
         "enableMyDrawings": true,
         "height":"auto",
@@ -384,7 +384,7 @@
         "style":{
           "padding": "8px"
         },
-        "position": "panel-light",
+        "position": "right",
         "height": "auto",
         "right": "15px",
         "top": "85px",

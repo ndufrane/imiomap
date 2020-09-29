@@ -205,7 +205,7 @@
           "className": "urbanmap/UrbanIdentifyResult",
           "config": {
             "widgetId": "UrbanIdentifyResultid",
-            "position": "panel-light",
+            "position": "bottom",
             "width": "400px",
             "height": "50vh",
             "top": "85px",

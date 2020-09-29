@@ -239,7 +239,7 @@
     "config": {
       "widgetId": "SpwInfosId",
       "widgetTitle": "Informations",
-      "position": "panel-light",
+      "position": "right",
       "iconClass": "infosIcon",
       "height": "auto",
       "right": "15px",

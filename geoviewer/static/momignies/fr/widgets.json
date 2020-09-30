@@ -57,7 +57,7 @@
       "style":{
         "padding": "8px"
       },
-      "position": "panel-light",
+      "position": "right",
       "height": "auto",
       "right": "15px",
       "top": "85px",

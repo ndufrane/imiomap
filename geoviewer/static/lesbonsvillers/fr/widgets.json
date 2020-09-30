@@ -249,7 +249,7 @@
     "config": {
         "widgetId": "SpwMeasureId",
         "widgetTitle": "Mesurer",
-        "position": "panel-light",
+        "position": "right",
         "iconClass": "mesureIcon",
         "height": "auto",
         "right": "15px",
@@ -262,7 +262,7 @@
     "config": {
         "widgetId":"SpwDrawId",
         "widgetTitle":"Dessiner",
-        "position": "panel-light",
+        "position": "right",
         "iconClass": "drawIcon",
         "enableMyDrawings": true,
         "height":"auto",

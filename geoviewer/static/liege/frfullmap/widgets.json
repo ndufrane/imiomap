@@ -181,7 +181,7 @@
     "config": {
       "widgetId": "UrbanIdentifyId",
       "widgetTitle": "Enquête",
-      "position": "panel-light",
+      "position": "right",
       "width": "400px",
       "height": "50vh",
       "right": "15px",
@@ -193,7 +193,7 @@
           "className": "urbanmap/UrbanIdentifyResult",
           "config": {
             "widgetId": "UrbanIdentifyResultid",
-            "position": "panel-light",
+            "position": "bottom",
             "width": "400px",
             "height": "50vh",
             "top": "85px",

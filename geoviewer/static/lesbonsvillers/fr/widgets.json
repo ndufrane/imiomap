@@ -51,7 +51,7 @@
     "config": {
         "widgetId":"SpwLegendId",
         "widgetTitle":"Légende",
-        "position": "panel-light",
+        "position": "right",
         
         "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
         "iconClass": "legendIcon",

@@ -240,6 +240,21 @@
       }]
   },
   {
+    "code" : "CAW SPW",
+    "label" : "CoPat – Carte archéologique",
+    "mapServices" :[{
+        "serviceId": "CAW",
+        "label": "CoPat – Carte archéologique",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/CAW/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
     "code" : "SAR SPW",
     "label" : "SAR",
     "mapServices" :[{

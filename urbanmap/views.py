@@ -136,9 +136,7 @@ def get_parcels_by_owner(request):
     if address != "":
         capa_qry = capa_qry.filter(parcelinfo__owner__owner_uid__street_fr__icontains=address)
 
-    logger.error(capa_qry.count())
-  
-    response_geojson = serialize('geojson', capa_qry.all()[:100],
+    response_geojson = serialize('geojson', capa_qry.all(),
             geometry_field='the_geom',
             srid=31370)
     

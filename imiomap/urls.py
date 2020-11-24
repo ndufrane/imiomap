@@ -15,13 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import re_path, path, include
-from proxy.views import proxy_view
 from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path('proxy/(?P<url>.*)', proxy_view),
     path('urbanmap/', include('urbanmap.urls')),
     path('spw/', include('geoviewer.urls')),
-    path('', include('djangomapstore.urls')),
 ]

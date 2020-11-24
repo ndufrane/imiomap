@@ -45,3 +45,78 @@
    box-sizing: initial;
 
 }
+
+.dijitToolbar .dijitToggleButton:first-of-type{
+    margin-right: 7px;
+}
+
+span[title="Point"] span[data-dojo-attach-point="containerNode"]{
+    visibility: hidden;
+    line-height: 0;
+}
+
+span[title="Point"] span[data-dojo-attach-point="containerNode"]:after {
+    content: 'Parcelle';
+    visibility: visible;
+    display: block;
+}
+
+.dijitDialog .dijitDialogPaneContent {
+    font-family: "Lato", Arial, sans-serif;
+
+    overflow: hidden;
+ 
+    color: #2F2F2F;
+ 
+    height: 100%;
+ 
+    width: 100%;
+ 
+    margin: 5;
+ 
+    padding: 5;
+ 
+    border-radius: 0;
+ 
+    box-shadow: none;
+ 
+    border: 1px solid #4f8fa5;
+ 
+    box-sizing: initial;  
+    background-color: white;
+}
+
+.dijitDialog .dijitDialogTitleBar{
+    font-family: "Lato", Arial, sans-serif;
+
+    overflow: hidden;
+ 
+    color: #2F2F2F;
+ 
+    height: 100%;
+ 
+    width: 100%;
+ 
+    margin: 5;
+ 
+    padding: 5;
+ 
+    border-radius: 0;
+ 
+    box-shadow: none;
+ 
+    border: 1px solid #4f8fa5;
+ 
+    box-sizing: initial;  
+    background-color: #75AEC1;
+}
+
+.homeIcon {
+    background-image: url('/static/urbanmap/styles/home-3-32.png');
+    background-repeat: no-repeat;
+}
+
+.publicSurveyIcon {
+    background-image: url('/static/urbanmap/styles/icons8-enquete-32.png');
+    background-repeat: no-repeat;
+}

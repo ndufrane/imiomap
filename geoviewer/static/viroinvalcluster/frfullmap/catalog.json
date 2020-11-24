@@ -1,0 +1,384 @@
+[
+  {
+    "code" : "LIMITES_ADMINISTRATIVES",
+    "label" : "Limites administratives",
+    "mapServices" :[{
+        "serviceId": "LIMITES_ADMINISTRATIVES",
+        "label": "Limites administratives IGN",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IGN/LIMITES_ADMINISTRATIVES/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SPW_CAD",
+    "label" : "Cadastre",
+    "mapServices" :[{
+        "serviceId": "SPWCAD",
+        "label": "Cadastre SPW",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/CADMAP_PARCELLES/MapServer",
+        "visible": true,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PICC",
+    "label" : "PICC",
+    "mapServices" :[{
+        "serviceId": "PICC",
+        "label": "PICC SPW",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/TOPOGRAPHIE/PICC_VDIFF/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "Alea inondation SPW",
+    "label" : "Alea inondation",
+    "mapServices" :[{
+        "serviceId": "EAU_ALEA",
+        "label": "EAU ALEA",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/ALEA_2016/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PLAN_SECTEUR",
+    "label" : "Plan de secteur",
+    "mapServices" :[{
+      "serviceId": "PDS",
+      "label": "Plan de secteur",
+      "type": "AGS_DYNAMIC",
+      "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/PDS/MapServer",
+      "inTOC" : true,
+      "toLoad": true,
+      "visible": false,
+      "hasLegend": true,
+      "legendOpen": true,
+      "identifiable": true,
+      "layers": [
+        {
+          "layerId": 0,
+          "defaultVisibility": true,
+          "identifiable": true
+        },
+        {
+          "layerId": 3,
+          "defaultVisibility": true,
+          "identifiable": true
+        },
+        {
+          "layerId": 8,
+          "defaultVisibility": true,
+          "identifiable": true
+        },
+        {
+          "layerId": 14,
+          "defaultVisibility": true,
+          "identifiable": true
+        },
+        {
+          "layerId": 22,
+          "defaultVisibility": true,
+          "identifiable": true
+        }
+      ]
+      
+    }]
+  },
+  {
+    "code" : "LOTISSEMENTS SPW",
+    "label" : "LOTISSEMENTS",
+    "mapServices" :[{
+        "serviceId": "LOTISSEMENTS",
+        "label": "LOTISSEMENTS",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/LOT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "AHREM SPW",
+    "label" : "AHREM",
+    "mapServices" :[{
+        "serviceId": "AHREM",
+        "label": "AHREM",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/AHREM/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "RHW_SIMPLE SPW",
+    "label" : "RHW_SIMPLE",
+    "mapServices" :[{
+        "serviceId": "RHW_SIMPLE",
+        "label": "RHW_SIMPLE",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/RHW_SIMPLE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "CONCESSIONS_MINES_SITUATION_ADMIN SPW",
+    "label" : "CONCESSIONS_MINES_SITUATION_ADMIN",
+    "mapServices" :[{
+        "serviceId": "CONCESSIONS_MINES_SITUATION_ADMIN",
+        "label": "CONCESSIONS_MINES_SITUATION_ADMIN",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/CONCESSIONS_MINES_SITUATION_ADMIN/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "KARST SPW",
+    "label" : "KARST",
+    "mapServices" :[{
+        "serviceId": "KARST",
+        "label": "KARST",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/KARST/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BC_PAT SPW",
+    "label" : "BC_PAT",
+    "mapServices" :[{
+        "serviceId": "BC_PAT",
+        "label": "BC_PAT",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/BC_PAT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SEVESO SPW",
+    "label" : "SEVESO",
+    "mapServices" :[{
+        "serviceId": "SEVESO",
+        "label": "SEVESO",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/SEVESO/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SAR SPW",
+    "label" : "SAR",
+    "mapServices" :[{
+        "serviceId": "SAR",
+        "label": "SAR",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/SAR/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ATLAS_VV_MODIF SPW",
+    "label" : "ATLAS_VV_MODIF",
+    "mapServices" :[{
+        "serviceId": "ATLAS_VV_MODIF",
+        "label": "ATLAS_VV_MODIF",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/ATLAS_VV_MODIF/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SOL SPW",
+    "label" : "SOL",
+    "mapServices" :[{
+        "serviceId": "SOL",
+        "label": "SOL",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/SOL/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BDES_INVENTAIRE SPW",
+    "label" : "BDES_INVENTAIRE",
+    "mapServices" :[{
+        "serviceId": "BDES_INVENTAIRE",
+        "label": "BDES_INVENTAIRE",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/BDES_INVENTAIRE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "CAW SPW",
+    "label" : "CAW",
+    "mapServices" :[{
+        "serviceId": "CAW",
+        "label": "CAW",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/CAW/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BASSINS__BASSINS_PG SPW",
+    "label" : "BASSINS__BASSINS_PG / PASH",
+    "mapServices" :[{
+        "serviceId": "BASSINS__BASSINS_PG",
+        "label": "BASSINS__BASSINS_PG",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/BASSINS__BASSINS_PG/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ZIP SPW",
+    "label" : "ZIP",
+    "mapServices" :[{
+        "serviceId": "ZIP",
+        "label": "ZIP",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/ZIP/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ISA SPW",
+    "label" : "ISA",
+    "mapServices" :[{
+        "serviceId": "ISA",
+        "label": "ISA",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/ISA/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ZDE SPW",
+    "label" : "ZDE",
+    "mapServices" :[{
+        "serviceId": "ZDE",
+        "label": "ZDE",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/ZDE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "IMIO",
+    "label" : "IMIO",
+    "mapServices" :[{
+        "serviceId": "CUSTOM_awans",
+        "label": "IMIO Awans",
+        "type": "WMS",
+        "url" : "http://awans-geonode.imio-app.be/geoserver/wms",
+        "visible": false,
+        "hasLegend": false,
+        "legendOpen": false,
+        "identifiable": true,
+        "toLoad": true,
+        "layers": [
+          {
+            "layerId": "geonode:zonagepashawans",
+            "defaultVisibility": true,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:zonagepashawans_1",
+            "defaultVisibility": true,
+            "identifiable": true
+          },
+          {
+            "layerId": "awans:sscawans",
+            "defaultVisibility": true,
+            "identifiable": true
+          },
+          {
+            "layerId": "geonode:ccue",
+            "defaultVisibility": true,
+            "identifiable": true
+          }
+        ]
+      }]
+  }
+]

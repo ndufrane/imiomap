@@ -13,6 +13,7 @@ services:
  #     #restart: on-failure:5
     django:
       build: .
+      image: iaurban/imiomap
       volumes:
         - '.:/usr/src/app'
         - static-volume:/usr/src/app/static_root

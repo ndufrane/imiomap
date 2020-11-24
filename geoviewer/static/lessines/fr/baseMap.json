@@ -6,9 +6,9 @@
         "serviceId": "b1",
         "label": "Fond de plan 2012",
         "type": "AGS_TILED",
-        "url": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_CARTE_2012_v1_RW/MapServer",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_CARTE_RW/MapServer",
         "resampling": true,
-        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_CARTE_2012_v1_RW_NB/MapServer"
+        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_CARTE_RW_NB/MapServer"
       }
     ],
     "activateTransparency": true,
@@ -20,8 +20,8 @@
         "serviceId": "b11",
         "label": "Annotation",
         "type": "AGS_TILED",
-        "url": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_2012_RW/MapServer",
-        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_2012_RW_NB/MapServer",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_RW/MapServer",
+        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_RW_NB/MapServer",
         "checked": true
       },
       {
@@ -34,7 +34,7 @@
         "checked": false
       }
     ],
-    "imagePath": "./FondCarte_100.png",
+    "imagePath": "https://lessines-carto.imio-app.be/static/FDC.jpg",
     "selected": true
   },
   {
@@ -60,8 +60,8 @@
         "serviceId": "b31",
         "label": "Annotation",
         "type": "AGS_TILED",
-        "url": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_2012_RW/MapServer",
-        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_2012_RW_NB/MapServer",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_RW/MapServer",
+        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_RW_NB/MapServer",
         "checked": true
       },
       {
@@ -74,7 +74,7 @@
         "checked": false
       }
     ],
-    "imagePath": "./FondCarte_100.png"
+    "imagePath": "https://lessines-carto.imio-app.be/static/FondPhoto_100.png"
   },
   {
     "baseMapName": "Aucun",
@@ -87,6 +87,6 @@
         "url": "https://geoservices.wallonie.be/arcgis/rest/services/IGN/LIMITE_REGION/MapServer"
       }
     ],
-    "imagePath": "./FondCarte_100.png"
+    "imagePath": "https://lessines-carto.imio-app.be/static/FondNone.png"
   }
 ]

@@ -1,15 +1,15 @@
 {
   "initialExtent": [
-    105000,
-    120000,
-    150000,
-    160000
+    107241,
+    117858,
+    152756,
+    158921
   ],
   "fullExtent": [
-    105000,
-    120000,
-    150000,
-    160000
+    107241,
+    117858,
+    152756,
+    158921
   ],
   "fullExtentLabel": "Cadrer sur lessines",
   "spatialReference": 31370,
@@ -49,9 +49,14 @@
     "minimizeable": false
   },
   "loadingVerbosity": 1,
-  "proxyPageUrl": "proxy.jsp",
+  "proxyPageUrl": "https://lessines-carto.imio-app.be/vQkdHC1Kj1X1N16AOUA5EnqN4e6t665X/spw/proxy.jsp",
   "mapLoaderPosition": {
     "top": "35px",
     "right": "5px"
-  }
+  },
+  "corsEnabledServers": [
+    "localhost:8000",
+    "localhost",
+    "lessines-carto.imio-app.be"
+  ]
 }

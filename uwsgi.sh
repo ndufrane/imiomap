@@ -12,4 +12,7 @@ exec /usr/local/bin/uwsgi --chdir=/usr/src/app \
     --processes=5 \
     --harakiri=20 \
     --max-requests=5000 \
-    --vacuum
+    --vacuum \
+    --manage-script-name \
+    --mount=/${hash}=/usr/src/app/imiomap/wsgi.py
+

@@ -1,0 +1,62 @@
+{
+  "initialExtent": [
+    239365,
+    249981,
+    142903,
+    149068
+  ],
+  "fullExtent": [
+    239365,
+    249981,
+    142903,
+    149068
+  ],
+  "placementNode": "spwViewerDiv",
+  "fullExtentLabel": "Cadrer sur fleron",
+  "spatialReference": 31370,
+  "geometryServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+  "notificationPosition": "center-down",
+  "zoomMinLimit": 250,
+  "errorMailToAdress": "helpdesk.carto@spw.wallonie.be",
+  "errorMailSubject": "[INCIDENT] API Geoviewer",
+  "mobile": false,
+  "leftRegion": {
+    "width": "310px",
+    "resizable": true,
+    "minimizeable": false,
+    "collapser": {
+      "imageUrl": "/geoviewer/spw/widgets/images/close-arrow.png",
+      "className": "closeArrowWalonmap",
+      "style": {
+        "position": "absolute",
+        "top": 0,
+        "right": 0
+      }
+    }
+  },
+  "rightRegion": {
+    "width": "245px",
+    "resizable": true,
+    "minimizeable": true
+  },
+  "topRegion": {
+    "height": "70px",
+    "minimizeable": false
+  },
+  "bottomRegion": {
+    "height": "380px",
+    "resizable": true,
+    "minimizeable": false
+  },
+  "loadingVerbosity": 1,
+  "proxyPageUrl": "https://fleron-carto.imio-app.be/vuzo0ohshai1iu9pahf7kadeiku5wiev/spw/proxy.jsp",
+  "mapLoaderPosition": {
+    "top": "35px",
+    "right": "5px"
+  },
+  "corsEnabledServers": [
+    "localhost:8000",
+    "localhost",
+    "fleron-carto.imio-app.be"
+  ]
+}

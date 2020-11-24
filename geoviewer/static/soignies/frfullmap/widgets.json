@@ -1,0 +1,452 @@
+[
+  {
+    "className": "urbanmap/OwnerSearch",
+    "config": {
+      "widgetId": "OwnerSearchId",
+      "widgetTitle": "Recherche par propriétaire",
+      "activated": false,
+      "position": "none",
+      "width": "400px",
+      "height": "auto",
+      "className" : "claro",
+      "urbanRestApiUrl" : "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/urbanmap"
+    }
+  },
+  {
+    "className": "urbanmap/UrbanHome",
+    "config": {
+      "widgetId": "UrbanHomeId",
+      "widgetTitle": "Retour à urban",
+      "activated": false,
+      "className" : "claro",
+      "urbanRestApiUrl" : "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/urbanmap"
+    }
+  },
+  {
+    "className": "urbanmap/ParcelIdentity",
+    "config": {
+      "widgetId": "ParcelIdentityId",
+      "widgetTitle": "Carte d'identité parcellaire",
+      "position": "none",
+      "activated": false,
+      "className" : "claro",
+      "urbanRestApiUrl" : "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/urbanmap"
+    }
+  },
+  {
+    "className": "urbanmap/ZoomOnParcelAtStartup",
+    "config": {
+      "urbanRestApiUrl" : "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/urbanmap"
+    }
+  },
+  {
+    "className":"spw/widgets/SpwMapDataController",
+    "config": {
+        "activated": true,
+        "position": "left",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "style": {
+            "width":"100%",
+            "height": "100%",
+            "backgroundColor": "white"
+        },
+        "simplifiedQuery": false,
+        "launcher": {
+          "items": []
+        }
+    }
+},
+  {
+    "className":"spw/widgets/SpwLegend",
+    "config": {
+        "widgetId":"SpwLegendId",
+        "widgetTitle":"Légende",
+        "position": "panel-light",
+        
+        "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
+        "iconClass": "legendIcon",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "width": "400px",
+        "height": "50vh",
+        "right": "15px",
+        "top": "85px",
+        "resizable": true
+    }
+},
+
+  {
+    "className": "spw/widgets/SpwScaleBar",
+    "config": {
+      "widgetId": "idScaleBar",
+      "activated": true,
+      "inToolbar": false,
+      "solitary": false,
+      "position": "map",
+      "mapPosition": {
+        "bottom": "10px",
+        "left": "45px"
+      }
+    }
+  },
+  {
+    "className":"spw/widgets/SpwPrint",
+    "config": {
+        "widgetId":"SpwPrintId",
+        "widgetTitle":"Imprimer cette vue",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "useCors": true,
+        "iconClass": "printIcon",
+        "style":{
+          "padding": "8px"
+        },
+        "position": "panel-light",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "width": "350px"
+    }
+  },
+  {
+    "className":"spw/widgets/SpwSnapshots",
+    "config": {
+        "widgetId":"SpwSnapshotsId",
+        "widgetTitle":"Instantanés",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "useCors": true,
+        "iconClass": "contextsIcon",
+        "style":{
+          "margin": "7px"
+        },
+        "position": "panel-light",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "width": "450px"
+    }
+  },
+  {
+    "className": "spw/widgets/SpwNavigation",
+    "config": {
+      "widgetId": "idNavigation",
+      "activated": true,
+      "inToolbar": false,
+      "solitary": false,
+      "position": "map",
+      "tooltipDuration": 2500,
+      "tooltipShowDelay": 300,
+      "mapPosition": {
+        "bottom": "10px",
+        "left": "10px"
+      },
+      "scaleLabels": [{
+        "maxScale": 500,
+        "label": "Maison"
+        },
+        {
+          "maxScale": 10000,
+          "label": "Rue"
+        },
+        {
+          "minScale": 10001,
+          "maxScale": 140000,
+          "label": "Commune"
+        },
+        {
+          "minScale": 140001,
+          "maxScale": 1150000,
+          "label": "Province"
+        },
+        {
+          "minScale": 1150001,
+          "label": "Pays"
+        }
+      ]
+    }
+  },
+  {
+    "className": "spw/widgets/SpwQuickAddressSearch",
+    "config": {
+      "widgetId": "SpwQuickAddressSearchId",
+      "widgetTitle": "Localiser",
+      "className": "SpwQuickAddressSearchV3",
+      "position": "none"
+    }
+  },
+  {
+    "className": "urbanmap/UrbanIdentify",
+    "config": {
+      "widgetId": "UrbanIdentifyId",
+      "widgetTitle": "Enquête",
+      "position": "right",
+      "width": "400px",
+      "height": "50vh",
+      "right": "15px",
+      "top": "85px",
+	  "urbanRestApiUrl" : "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/urbanmap",
+      "initBuffer": 50,
+      "widgets": [
+        {
+          "className": "urbanmap/UrbanIdentifyResult",
+          "config": {
+            "widgetId": "UrbanIdentifyResultid",
+            "position": "bottom",
+            "width": "400px",
+            "height": "50vh",
+            "top": "85px",
+            "exportCsvServerUrl": "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/spw/csv",
+            "resizable": true,
+            "widgets": [
+              {
+                "className": "urbanmap/UrbanIdentifyResultTable",
+                "config": {
+                  "widgetId": "UrbanIdentifyResultTableId",
+                  "urbanRestApiUrl" : "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/urbanmap",
+                  "widgets": [
+                    {
+                      "className": "urbanmap/UrbanIdentifyResultRow",
+                      "config": {
+                        "widgetId": "UrbanIdentifyResultRowId",
+                        "help": true
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "className": "spw/widgets/SpwIdentify",
+    "config": {
+      "widgetId": "SpwInfosId",
+      "widgetTitle": "Informations",
+      "position": "panel-light",
+      "iconClass": "infosIcon",
+      "height": "auto",
+      "right": "15px",
+      "top": "85px",
+      "additionalServices": [
+        {
+          "title" : "Matrice Cadastrale (Urban)",
+          "url": "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/urbanmap/identify_parcel/{x}/{y}",
+          "type": "rest",
+          "geometryFormat" : "geojson",
+          "resultProperty" : "results",
+          "geometryProperty": "geometry",
+          "properties": {
+            "CapaKey": "{capakey}",
+            "Revenu cadastral": "{cadastralincome} euros",
+            "Date situation": "{datesituation}"
+          }
+        },
+        {
+          "title" : "Proriétaires (Urban)",
+          "url": "https://soignies-carto.imio-app.be/thiengio6Pa6uikieteicedaexahlu8B/urbanmap/identify_owners/{x}/{y}",
+          "type": "rest",
+          "geometryFormat" : "geojson",
+          "resultProperty" : "results",
+          "geometryProperty": "geometry",
+          "properties": {
+            "ownerright": "{ownerright}",
+            "Ordre": "{order}",
+            "righttrad": "{righttrad}",
+            "Nom": "{owner_firstname} {owner_name} {owner_birthdate}",
+            "Adresse": "{owner_address}",
+            "Partenaire": "{partner_firstname} {partner_name} {partner_birthdate}",
+            "coowner": "{coowner}"
+          }
+        }
+      ]
+    }
+  },
+  {
+      "className": "spw/widgets/SpwCoordinatesSearch",
+      "config": {
+          "widgetId":"SpwCoordinatesSearchId",
+    "widgetTitle":"Localiser des coordonnées",
+          "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
+          "position": "none",
+          "projections": [
+              {
+                  "SRID": 31370,
+                  "name": "lambert72",
+                  "type": "decimal",
+                  "exampleX": "263873,6",
+        "exampleY": "143206,8",
+                  "checked": true
+              },
+              {
+                  "SRID": 3812,
+                  "name": "lambert2008",
+                  "type": "decimal",
+                  "exampleX": "763875,1",
+        "exampleY": "643212,2"
+              },
+              {
+                  "SRID": 4326,
+                  "name": "wg84",
+                  "type": "decimal",
+                  "exampleX": "5,977",
+        "exampleY": "50,588"
+              },
+      {
+        "SRID": 4326,
+        "name": "dms",
+        "type": "dms",
+        "exampleX": "5Â° 58' 36,839\"E",
+        "exampleY": "50Â° 35' 17,998\"N"
+      }
+          ],
+
+          "style": {
+              "width": "500px"
+          }
+      }
+  },
+  {
+    "className": "spw/widgets/SpwCadmapSearch",
+    "config": {
+        "widgetId":"SpwCadmapSearchId",
+        "widgetTitle": "Localiser une parcelle",
+        "cadmapApiUrl": "https://geoservices.wallonie.be/cadmap/js/SpwCadmapApi.js",
+        "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
+        "position": "none",
+        "style": {
+            "width": "400px"
+        }
+    }
+  },
+  {
+    "className":"spw/widgets/SpwMeasure",
+    "config": {
+        "widgetId": "SpwMeasureId",
+        "widgetTitle": "Mesurer",
+        "position": "panel-light",
+        "iconClass": "mesureIcon",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "profileServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/GEOTRAITEMENT/Profil/GPServer/Profil"
+    }
+  },
+  {
+      "className":"spw/widgets/SpwDraw",
+      "config": {
+          "widgetId":"SpwDrawId",
+          "widgetTitle":"Dessiner",
+          "position": "panel-light",
+          "iconClass": "drawIcon",
+          "enableMyDrawings": true,
+          "height":"auto",
+          "right": "15px",
+          "top": "85px",
+          "width":"320px"
+      }
+  },
+  {
+    "className": "spw/widgets/SpwBaseMapChooser",
+    "config": {
+      "widgetId": "SpwBaseMapChooserId",
+      "position": "none",
+      "style": {
+        "width": "390px"
+      }
+    }
+  },
+  {
+    "className": "spw/widgets/SpwAdvancedToolBar",
+    "config": {
+      "className": "SpwAdvancedToolBar",
+      "hideOnPrint": true,
+      "position": "map",
+      "mapPosition": {
+        "top": "5px",
+        "left": "5px"
+      },
+      "activated": true,
+      "buttonStyle": {
+        "fontSize": "10px"
+      },
+      "labelPosition": "top",
+      "showLabel": true,
+      "content": [
+        {
+          "widgetId": "UrbanHomeId",
+          "label":"Urban"
+        },
+        {
+          "widgetId": "SpwQuickAddressSearchId",
+          "integrated": true
+        },
+        {
+          "label":"+",
+          "content": [
+              {
+                "label": "Propriétaire",
+                "content": [{"widgetId":"OwnerSearchId","integrated": true}]
+              },
+              {
+                  "label": "Parcelle cadastrale",
+                  "content": [{"widgetId":"SpwCadmapSearchId","integrated": true}]
+              },
+              {
+                "label": "Coordonnées",
+                "content": [{"widgetId":"SpwCoordinatesSearchId","integrated": true}]
+              }
+          ],
+          "className":"otherLocalizeButton"
+        },
+        {
+          "widgetId": "SpwInfosId",
+          "label": "Infos"
+        },
+        {
+          "widgetId": "UrbanIdentifyId",
+          "label": "Enquête"
+        },
+        {
+          "widgetId": "SpwLegendId",
+          "label":"Légende"
+         },
+         {
+          "label":"Imprimer",
+          "widgetId": "SpwPrintId",
+          "className":"printMenuButton",
+          "popupClass": "printMenuPopup"
+          },
+         {
+          "label":"Instantanés",
+          "widgetId": "SpwSnapshotsId"
+        },
+        {
+          "widgetId": "QueryParcelId",
+          "label":"Sélectionner une parcelle"
+        },
+         {
+           "widgetId": "ParcelIdentityId",
+           "label": "Carte d'identité parcellaire"
+         },
+         {
+          "widgetId": "SpwMeasureId",
+          "label":"Mesurer"
+         },
+        {
+          "widgetId": "SpwDrawId",
+          "label":"Dessiner"
+        },
+        {
+          "label": "Fonds de plan",
+          "content": [
+            {
+              "widgetId": "SpwBaseMapChooserId",
+              "integrated": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "default",
+    "label": "Défaut"
+  },
+  {
+    "name": "default_th1",
+    "label": "Les aînés"
+  },
+  {
+    "separator": true
+  },
+  {
+    "name": "walonmap",
+    "label": "WalOnMap",
+    "url": "https://geoportail.valid.wallonie.be/walonmap/#BBOX=${xmin},${xmax},${ymin},${ymax}"
+  }
+]

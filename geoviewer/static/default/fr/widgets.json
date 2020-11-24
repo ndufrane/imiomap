@@ -13,6 +13,16 @@
     }
   },
   {
+    "className": "urbanmap/UrbanHome",
+    "config": {
+      "widgetId": "UrbanHomeId",
+      "widgetTitle": "Retour à urban",
+      "activated": false,
+      "className" : "claro",
+      "urbanRestApiUrl" : "http://localhost/urbanmap"
+    }
+  },
+  {
     "className": "urbanmap/ParcelIdentity",
     "config": {
       "widgetId": "ParcelIdentityId",
@@ -78,6 +88,24 @@
     }
   },
   {
+    "className":"spw/widgets/SpwSnapshots",
+    "config": {
+        "widgetId":"SpwSnapshotsId",
+        "widgetTitle":"Instantanés",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "useCors": true,
+        "iconClass": "contextsIcon",
+        "style":{
+          "margin": "7px"
+        },
+        "position": "panel-light",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "width": "450px"
+    }
+  },
+  {
     "className": "spw/widgets/SpwNavigation",
     "config": {
       "widgetId": "idNavigation",
@@ -115,6 +143,41 @@
         }
       ]
     }
+  }, {
+    "className": "spw/widgets/SpwReport",
+    "config": {
+        "widgetId": "SpwReportId",
+        "widgetTitle": "Créer un rapport",
+        "position": "panel-light",
+        "iconClass": "reportIcon",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "addressLabel": "Adresse approximative",
+        "ignoreFields": ["OBJECTID", "SHAPE","GEOM","GEOM.AREA","GEOM.LEN","SHAPE.LEN","SHAPE.AREA"],
+        "geolocalisationApiUrl": "//geoservices.wallonie.be/geolocalisation/js/SpwGeolocalisationApi.js",
+        "cadmapApiUrl": "//geoservices.wallonie.be/cadmap/js/SpwCadmapApi.js",
+        "reportParams": {
+            "reportTitle": "Géoportail de la Wallonie",
+            "url": "//geoservices.wallonie.be/geoviewer/templates/JasperTemplate.jrxml",
+            "jasperServerUrl" : "//geoservices.wallonie.be/geoviewer/Report"
+        },
+        "rosaceUrl": "images/templates/rosaces.png",
+        "identificationMethods": [
+            {
+                "type": "point",
+                "label": "A partir d'un point (cliquez sur un point ou un objet de la carte)"
+            },{
+                "type": "polygon",
+                "label": "A partir d'un polygone (cliquez pour commencer à tracer)"
+            },{
+                "type": "layer",
+                "url": "//geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/CADMAP_PARCELLES/MapServer",
+                "layerId": 0,
+                "label": "A partir d'une parcelle cadastrale (cliquez sur un point de la parcelle voulue)"
+            }
+        ]
+    }
   },
   {
     "className": "spw/widgets/SpwQuickAddressSearch",
@@ -126,11 +189,57 @@
     }
   },
   {
+    "className": "urbanmap/UrbanIdentify",
+    "config": {
+      "widgetId": "UrbanIdentifyId",
+      "widgetTitle": "Enquête",
+      "position": "right",
+      "width": "400px",
+      "height": "50vh",
+      "right": "15px",
+      "top": "85px",
+      "urbanRestApiUrl" : "http://localhost/urbanmap",
+      "initBuffer": 50,
+      "widgets": [
+        {
+          "className": "urbanmap/UrbanIdentifyResult",
+          "config": {
+            "widgetId": "UrbanIdentifyResultid",
+            "position": "bottom",
+            "width": "400px",
+            "height": "50vh",
+            "top": "85px",
+            "exportCsvServerUrl": "//localhost/spw/csv",
+            "resizable": true,
+            "widgets": [
+              {
+                "className": "urbanmap/UrbanIdentifyResultTable",
+                "config": {
+                  "widgetId": "UrbanIdentifyResultTableId",
+                  "urbanRestApiUrl" : "http://localhost/urbanmap",
+                  "widgets": [
+                    {
+                      "className": "urbanmap/UrbanIdentifyResultRow",
+                      "config": {
+                        "widgetId": "UrbanIdentifyResultRowId",
+                        "help": true
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }        
+      ]
+    }
+  }, 
+  {
     "className": "spw/widgets/SpwIdentify",
     "config": {
       "widgetId": "SpwInfosId",
       "widgetTitle": "Informations",
-      "position": "panel-light",
+      "position": "right",
       "iconClass": "infosIcon",
       "height": "auto",
       "right": "15px",
@@ -146,7 +255,8 @@
           "properties": {
             "CapaKey": "{capakey}",
             "Revenu cadastral": "{cadastralincome} euros",
-            "Date situation": "{datesituation}"
+            "Date situation": "{datesituation}",
+            "Adresse": "{street}"
           }
         },
         {
@@ -161,6 +271,7 @@
             "Ordre": "{order}",
             "righttrad": "{righttrad}",
             "Nom": "{owner_firstname} {owner_name} {owner_birthdate}",
+            "Adresse": "{owner_address}",
             "Partenaire": "{partner_firstname} {partner_name} {partner_birthdate}",
             "coowner": "{coowner}"
           }
@@ -172,7 +283,7 @@
       "className": "spw/widgets/SpwCoordinatesSearch",
       "config": {
           "widgetId":"SpwCoordinatesSearchId",
-    "widgetTitle":"Localiser des coordonnées",
+          "widgetTitle":"Localiser des coordonnées",
           "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
           "position": "none",
           "projections": [
@@ -226,6 +337,33 @@
     }
   },
   {
+    "className":"spw/widgets/SpwMeasure",
+    "config": {
+        "widgetId": "SpwMeasureId",
+        "widgetTitle": "Mesurer",
+        "position": "right",
+        "iconClass": "mesureIcon",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "profileServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/GEOTRAITEMENT/Profil/GPServer/Profil"
+    }
+  },
+  {
+    "className":"spw/widgets/SpwDraw",
+    "config": {
+        "widgetId":"SpwDrawId",
+        "widgetTitle":"Dessiner",
+        "position": "right",
+        "iconClass": "drawIcon",
+        "enableMyDrawings": true,
+        "height":"auto",
+        "right": "15px",
+        "top": "85px",
+        "width":"320px"
+    }
+  },
+  {
     "className": "spw/widgets/SpwBaseMapChooser",
     "config": {
       "widgetId": "SpwBaseMapChooserId",
@@ -236,9 +374,28 @@
     }
   },
   {
+    "className":"spw/widgets/SpwPrint",
+    "config": {
+        "widgetId":"SpwPrintId",
+        "widgetTitle":"Imprimer cette vue",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "useCors": true,
+        "iconClass": "printIcon",
+        "style":{
+          "padding": "8px"
+        },
+        "position": "right",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "width": "350px"
+    }
+  },
+  {
     "className": "spw/widgets/SpwAdvancedToolBar",
     "config": {
       "className": "SpwAdvancedToolBar",
+      "hideOnPrint": true,
       "position": "map",
       "mapPosition": {
         "top": "5px",
@@ -254,6 +411,10 @@
         {
           "widgetId": "SpwQuickAddressSearchId",
           "integrated": true
+        },
+        {
+          "widgetId": "UrbanHomeId",
+          "label":"Urban"
         },
         {
           "label":"+",
@@ -278,18 +439,46 @@
           "label": "Infos"
         },
         {
+          "widgetId": "UrbanIdentifyId",
+          "label": "Enquête"
+        },
+        {
           "widgetId": "SpwLegendId",
           "label":"Légende"
          },
          {
+          "label":"Imprimer",
+          "widgetId": "SpwPrintId",
+          "className":"printMenuButton",
+          "popupClass": "printMenuPopup"
+          },
+         {
+          "label":"Instantanés",
+          "widgetId": "SpwSnapshotsId"
+        },
+        {
           "widgetId": "QueryParcelId",
           "label":"Sélectionner une parcelle"
-         },
+        },
          {
            "widgetId": "ParcelIdentityId",
            "label": "Carte d'identité parcellaire"
          },
+         {
+          "widgetId": "SpwMeasureId",
+          "label":"Mesurer"
+         },
         {
+          "widgetId": "SpwDrawId",
+          "label":"Dessiner"
+        },
+        {
+          "label":"Créer un rapport",
+          "widgetId": "SpwReportId",
+          "className":"reportMenuButton",
+          "popupClass": "printMenuPopup"
+        },
+         {
           "label": "Fonds de plan",
           "content": [
             {
@@ -297,7 +486,7 @@
               "integrated": true
             }
           ]
-        }
+         }
       ]
     }
   }

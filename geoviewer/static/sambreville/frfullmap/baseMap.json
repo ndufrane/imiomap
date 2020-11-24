@@ -1,0 +1,92 @@
+[
+  {
+    "baseMapName": "Plan",
+    "services": [
+      {
+        "serviceId": "b1",
+        "label": "Fond de plan 2012",
+        "type": "AGS_TILED",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_CARTE_RW/MapServer",
+        "resampling": true,
+        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_CARTE_RW_NB/MapServer"
+      }
+    ],
+    "activateTransparency": true,
+    "alpha": 100,
+    "activateBlackAndWhite": true,
+    "blackAndWhiteByDefault": false,
+    "optionalServices": [
+      {
+        "serviceId": "b11",
+        "label": "Annotation",
+        "type": "AGS_TILED",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_RW/MapServer",
+        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_RW_NB/MapServer",
+        "checked": true
+      },
+      {
+        "serviceId": "b12",
+        "label": "Relief",
+        "type": "AGS_TILED",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2006_2007_HILLSHADE/MapServer",
+        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2006_2007_HILLSHADE/MapServer",
+        "alpha": 45,
+        "checked": false
+      }
+    ],
+    "imagePath": "https://sambreville-carto.imio-app.be/static/FDC.jpg",
+    "selected": true
+  },
+  {
+    "baseMapName": "Vue aérienne",
+    "services": [
+      {
+        "serviceId": "b3",
+        "label": "2009 / 2010",
+        "type": "AGS_TILED",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_LAST/MapServer"
+      }
+    ],
+    "activateTransparency": true,
+    "activateBlackAndWhite": false,
+    "metadataUrl": "https://geoportail.wallonie.be/cms/render/live/fr/sites/geoportail/home/geocatalogue.html?mdUUID=78bebbe4-dffd-431a-83d2-3460c40b92ff",
+    "metadataPopup": {
+      "width": "1000px",
+      "height": "700px"
+    },
+    "blackAndWhiteByDefault": false,
+    "optionalServices": [
+      {
+        "serviceId": "b31",
+        "label": "Annotation",
+        "type": "AGS_TILED",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_RW/MapServer",
+        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/DONNEES_BASE/FOND_PLAN_ANNOTATIONS_RW_NB/MapServer",
+        "checked": true
+      },
+      {
+        "serviceId": "b32",
+        "label": "Relief",
+        "type": "AGS_TILED",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2006_2007_HILLSHADE/MapServer",
+        "urlBlackAndWhite": "https://geoservices.wallonie.be/arcgis/rest/services/IMAGERIE/ORTHO_2006_2007_HILLSHADE/MapServer",
+        "alpha": 45,
+        "checked": false
+      }
+    ],
+    "imagePath": "https://sambreville-carto.imio-app.be/static/FondPhoto_100.png"
+  },
+  {
+    "baseMapName": "Aucun",
+    "activateTransparency": false,
+    "services": [
+      {
+        "serviceId": "b4",
+        "label": "LIMITE REGIONS",
+        "type": "AGS_DYNAMIC",
+        "url": "https://geoservices.wallonie.be/arcgis/rest/services/IGN/LIMITE_REGION/MapServer"
+      }
+    ],
+    "imagePath": "https://sambreville-carto.imio-app.be/static/FondNone.png"
+  }
+]

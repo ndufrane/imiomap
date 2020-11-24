@@ -11,4 +11,5 @@ urlpatterns = [
     path('parcels/owner_search', views.get_parcels_by_owner, name='get_parcels_by_owner'),
     path('identify_parcel/<str:x>/<str:y>', views.identify_parcel, name='identify'),
     path('identify_owners/<str:x>/<str:y>', views.identify_owners, name='identifyo'),
+    re_path('identify_advanced/capakeys/(?P<capakeys>.*)', views.identify_parcel_advanced, name='identifyadvanced'),
 ]

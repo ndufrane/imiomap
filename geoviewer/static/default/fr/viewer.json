@@ -1,15 +1,15 @@
 {
   "initialExtent": [
-    28113,
-    293222,
-    9253,
-    174613
+    112827,
+    140820,
+    115735,
+    136928
   ],
   "fullExtent": [
-    28113,
-    293222,
-    9253,
-    174613
+    112827,
+    140820,
+    115735,
+    136928
   ],
   "fullExtentLabel": "Cadrer sur la Wallonie",
   "spatialReference": 31370,
@@ -18,6 +18,7 @@
   "zoomMinLimit": 250,
   "errorMailToAdress": "helpdesk.carto@spw.wallonie.be",
   "errorMailSubject": "[INCIDENT] API Geoviewer",
+  "placementNode": "spwViewerDiv",
   "mobile": false,
   "leftRegion": {
     "width": "310px",
@@ -57,6 +58,9 @@
   "corsEnabledServers": [
     "localhost:8000",
     "localhost",
-    "imiomap.imio-test.be"
+    "imiomap.imio-test.be",
+    "geoservices.wallonie.be",
+    "tournai-geonode.imio-app.be",
+    "e-services.liege.be"
   ]
 }

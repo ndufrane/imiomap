@@ -9,7 +9,7 @@
       "width": "400px",
       "height": "auto",
       "className" : "claro",
-      "urbanRestApiUrl" : "http://localhost/urbanmap"
+      "urbanRestApiUrl" : "https://lessines-carto.imio-app.be/vQkdHC1Kj1X1N16AOUA5EnqN4e6t665X/urbanmap"
     }
   },
   {
@@ -20,27 +20,13 @@
       "position": "none",
       "activated": false,
       "className" : "claro",
-      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
-    }
-  },
- {
-    "className": "urbanmap/QueryParcel",
-    "config": {
-      "widgetId": "QueryParcelId",
-      "widgetTitle": "Sélectionner une parcelle",
-      "position": "panel-light",
-      "top": "150px",
-      "left": "150px",
-      "activated": false,
-      "width": "300px",
-      "height": "auto",
-      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
+      "urbanRestApiUrl" : "https://lessines-carto.imio-app.be/vQkdHC1Kj1X1N16AOUA5EnqN4e6t665X/urbanmap"
     }
   },
   {
     "className": "urbanmap/ZoomOnParcelAtStartup",
     "config": {
-      "urbanRestApiUrl" : "https://imiomap.imio-test.be/urbanmap"
+      "urbanRestApiUrl" : "https://lessines-carto.imio-app.be/vQkdHC1Kj1X1N16AOUA5EnqN4e6t665X/urbanmap"
     }
   },
   {
@@ -48,7 +34,7 @@
     "config": {
         "activated": true,
         "position": "left",
-        "reportUrl":"//geoservices.wallonie.be/geoviewer/Report",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
         "style": {
             "width":"100%",
             "height": "100%",
@@ -60,16 +46,34 @@
         }
     }
 },
+{
+  "className":"spw/widgets/SpwPrint",
+  "config": {
+      "widgetId":"SpwPrintId",
+      "widgetTitle":"Imprimer cette vue",
+      "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+      "useCors": true,
+      "iconClass": "printIcon",
+      "style":{
+        "padding": "8px"
+      },
+      "position": "right",
+      "height": "auto",
+      "right": "15px",
+      "top": "85px",
+      "width": "350px"
+  }
+},
   {
     "className":"spw/widgets/SpwLegend",
     "config": {
         "widgetId":"SpwLegendId",
         "widgetTitle":"Légende",
-        "position": "panel-light",
+        "position": "right",
         
         "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
         "iconClass": "legendIcon",
-        "reportUrl":"//geoservices.wallonie.be/geoviewer/Report",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
         "width": "400px",
         "height": "50vh",
         "right": "15px",
@@ -89,6 +93,24 @@
         "bottom": "10px",
         "left": "45px"
       }
+    }
+  },
+  {
+    "className":"spw/widgets/SpwSnapshots",
+    "config": {
+        "widgetId":"SpwSnapshotsId",
+        "widgetTitle":"Instantanés",
+        "reportUrl":"https://geoservices.wallonie.be/geoviewer/Report",
+        "useCors": true,
+        "iconClass": "contextsIcon",
+        "style":{
+          "margin": "7px"
+        },
+        "position": "right",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "width": "450px"
     }
   },
   {
@@ -144,23 +166,40 @@
     "config": {
       "widgetId": "SpwInfosId",
       "widgetTitle": "Informations",
-      "position": "panel-light",
+      "position": "right",
       "iconClass": "infosIcon",
       "height": "auto",
       "right": "15px",
       "top": "85px",
       "additionalServices": [
         {
-          "title" : "Matrice Cadastrale",
-          "url": "//localhost/urbanmap/identify_parcel/{x}/{y}",
+          "title" : "Matrice Cadastrale (Urban)",
+          "url": "https://lessines-carto.imio-app.be/vQkdHC1Kj1X1N16AOUA5EnqN4e6t665X/urbanmap/identify_parcel/{x}/{y}",
           "type": "rest",
           "geometryFormat" : "geojson",
           "resultProperty" : "results",
           "geometryProperty": "geometry",
           "properties": {
-            "CapaKey": "capakey",
+            "CapaKey": "{capakey}",
             "Revenu cadastral": "{cadastralincome} euros",
             "Date situation": "{datesituation}"
+          }
+        },
+        {
+          "title" : "Proriétaires (Urban)",
+          "url": "https://lessines-carto.imio-app.be/vQkdHC1Kj1X1N16AOUA5EnqN4e6t665X/urbanmap/identify_owners/{x}/{y}",
+          "type": "rest",
+          "geometryFormat" : "geojson",
+          "resultProperty" : "results",
+          "geometryProperty": "geometry",
+          "properties": {
+            "ownerright": "{ownerright}",
+            "Ordre": "{order}",
+            "righttrad": "{righttrad}",
+            "Nom": "{owner_firstname} {owner_name} {owner_birthdate}",
+            "Adresse": "{owner_address}",
+            "Partenaire": "{partner_firstname} {partner_name} {partner_birthdate}",
+            "coowner": "{coowner}"
           }
         }
       ]
@@ -215,12 +254,39 @@
     "config": {
         "widgetId":"SpwCadmapSearchId",
         "widgetTitle": "Localiser une parcelle",
-        "cadmapApiUrl": "//geoservices.wallonie.be/cadmap/js/SpwCadmapApi.js",
+        "cadmapApiUrl": "https://geoservices.wallonie.be/cadmap/js/SpwCadmapApi.js",
         "helpContent": "http://geoportail.wallonie.be/aideWalOnMap",
         "position": "none",
         "style": {
             "width": "400px"
         }
+    }
+  },
+  {
+    "className":"spw/widgets/SpwMeasure",
+    "config": {
+        "widgetId": "SpwMeasureId",
+        "widgetTitle": "Mesurer",
+        "position": "right",
+        "iconClass": "mesureIcon",
+        "height": "auto",
+        "right": "15px",
+        "top": "85px",
+        "profileServiceUrl": "//geoservices.wallonie.be/arcgis/rest/services/GEOTRAITEMENT/Profil/GPServer/Profil"
+    }
+  },
+  {
+    "className":"spw/widgets/SpwDraw",
+    "config": {
+        "widgetId":"SpwDrawId",
+        "widgetTitle":"Dessiner",
+        "position": "right",
+        "iconClass": "drawIcon",
+        "enableMyDrawings": true,
+        "height":"auto",
+        "right": "15px",
+        "top": "85px",
+        "width":"320px"
     }
   },
   {
@@ -237,6 +303,7 @@
     "className": "spw/widgets/SpwAdvancedToolBar",
     "config": {
       "className": "SpwAdvancedToolBar",
+      "hideOnPrint": true,
       "position": "map",
       "mapPosition": {
         "top": "5px",
@@ -261,12 +328,12 @@
                 "content": [{"widgetId":"OwnerSearchId","integrated": true}]
               },
               {
-                  "label": "Coordonnées",
-                  "content": [{"widgetId":"SpwCoordinatesSearchId","integrated": true}]
-              },
-              {
                   "label": "Parcelle cadastrale",
                   "content": [{"widgetId":"SpwCadmapSearchId","integrated": true}]
+              },
+              {
+                "label": "Coordonnées",
+                "content": [{"widgetId":"SpwCoordinatesSearchId","integrated": true}]
               }
           ],
           "className":"otherLocalizeButton"
@@ -280,13 +347,31 @@
           "label":"Légende"
          },
          {
+          "label":"Imprimer",
+          "widgetId": "SpwPrintId",
+          "className":"printMenuButton",
+          "popupClass": "printMenuPopup"
+          },
+         {
+          "label":"Instantanés",
+          "widgetId": "SpwSnapshotsId"
+        },
+        {
           "widgetId": "QueryParcelId",
           "label":"Sélectionner une parcelle"
-         },
+        },
          {
            "widgetId": "ParcelIdentityId",
            "label": "Carte d'identité parcellaire"
          },
+         {
+          "widgetId": "SpwMeasureId",
+          "label":"Mesurer"
+         },
+        {
+          "widgetId": "SpwDrawId",
+          "label":"Dessiner"
+        },
         {
           "label": "Fonds de plan",
           "content": [

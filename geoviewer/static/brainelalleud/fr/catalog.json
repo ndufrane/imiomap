@@ -1,0 +1,603 @@
+[
+  {
+    "code" : "LIMITES_ADMINISTRATIVES",
+    "label" : "Limites administratives",
+    "mapServices" :[{
+        "serviceId": "LIMITES_ADMINISTRATIVES",
+        "label": "Limites administratives IGN",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/IGN/LIMITES_ADMINISTRATIVES/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BRUIT_MROAD_2017 SPW",
+    "label" : "Bruit des axes routiers principaux en Wallonie - Rapportage 2017 – Série",
+    "mapServices" :[{
+        "serviceId": "BRUIT_MROAD_2017",
+        "label": "Bruit des axes routiers principaux en Wallonie - Rapportage 2017 – Série",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/BRUIT_MROAD_2017/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BRUIT_2006_RAIL SPW",
+    "label" : "Bruit des grands axes ferroviaires (plus de 60.000 passages par an) en 2006",
+    "mapServices" :[{
+        "serviceId": "BRUIT_2006_RAIL",
+        "label": "Bruit des grands axes ferroviaires (plus de 60.000 passages par an) en 2006",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/BRUIT_2006_RAIL/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BRUIT_MRAIL_2017 SPW",
+    "label" : "Bruit des axes ferroviaires principaux - Rapportage 2017",
+    "mapServices" :[{
+        "serviceId": "BRUIT_MRAIL_2017",
+        "label": "Bruit des axes ferroviaires principaux - Rapportage 2017",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/BRUIT_MRAIL_2017/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BRUIT_2006_ROAD SPW",
+    "label" : "Données du bruit des grands axes routiers en 2006",
+    "mapServices" :[{
+        "serviceId": "BRUIT_2006_ROAD",
+        "label": "Données du bruit des grands axes routiers en 2006",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/BRUIT_2006_ROAD/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "TISSU_URBANISE SPW",
+    "label" : "CODT - Carte des typologies des tissus urbanisés résidentiels wallons (2014)",
+    "mapServices" :[{
+        "serviceId": "TISSU_URBANISE",
+        "label": "CODT - Carte des typologies des tissus urbanisés résidentiels wallons (2014)",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/HABITAT/TISSU_URBANISE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "L_ECOLO SPW",
+    "label" : "Liaisons écologiques",
+    "mapServices" :[{
+        "serviceId": "L_ECOLO",
+        "label": "Liaisons écologiques",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/L_ECOLO/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ATLAS_VV_MODIF SPW",
+    "label" : "Atlas des voiries vicinales",
+    "mapServices" :[{
+        "serviceId": "ATLAS_VV_MODIF",
+        "label": "Atlas des voiries vicinales",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/ATLAS_VV_MODIF/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PICC",
+    "label" : "PICC",
+    "mapServices" :[{
+        "serviceId": "PICC",
+        "label": "PICC SPW",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/TOPOGRAPHIE/PICC_VDIFF/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "RHW_SIMPLE SPW",
+    "label" : "Réseau hydrographique",
+    "mapServices" :[{
+        "serviceId": "RHW_SIMPLE",
+        "label": "Réseau hydrographique",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/RHW_SIMPLE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SEVESO SPW",
+    "label" : "SEVESO",
+    "mapServices" :[{
+        "serviceId": "SEVESO",
+        "label": "SEVESO",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/INDUSTRIES_SERVICES/SEVESO/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PLAN_SECTEUR",
+    "label" : "Plan de secteur",
+    "mapServices" :[{
+      "serviceId": "PDS",
+      "label": "Plan de secteur",
+      "type": "AGS_DYNAMIC",
+      "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/PDS/MapServer",
+      "inTOC" : true,
+      "toLoad": true,
+      "visible": false,
+      "hasLegend": true,
+      "legendOpen": true,
+      "identifiable": true,
+      "layers": [
+        {
+          "layerId": 0,
+          "defaultVisibility": true,
+          "identifiable": true
+        },
+        {
+          "layerId": 3,
+          "defaultVisibility": true,
+          "identifiable": true
+        },
+        {
+          "layerId": 8,
+          "defaultVisibility": true,
+          "identifiable": true
+        },
+        {
+          "layerId": 14,
+          "defaultVisibility": true,
+          "identifiable": true
+        },
+        {
+          "layerId": 22,
+          "defaultVisibility": true,
+          "identifiable": true
+        }
+      ]
+
+    }]
+  },
+  {
+    "code" : "PRE SPW",
+    "label" : "Périmètres de reconnaissance économique (PRE)",
+    "mapServices" :[{
+        "serviceId": "PRE",
+        "label": "Périmètres de reconnaissance économique (PRE)",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/PRE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "NATURA2000 SPW",
+    "label" : "Réseau Natura 2000 en vigueur",
+    "mapServices" :[{
+        "serviceId": "NATURA2000",
+        "label": "Réseau Natura 2000 en vigueur",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "RENOV_URB SPW",
+    "label" : "Rénovation urbaine",
+    "mapServices" :[{
+        "serviceId": "RENOV_URB",
+        "label": "Rénovation urbaine",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/RENOV_URB/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "REVIT_URB SPW",
+    "label" : "Revitalisation urbaine",
+    "mapServices" :[{
+        "serviceId": "REVIT_URB",
+        "label": "Revitalisation urbaine",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/REVIT_URB/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PAT_EXC SPW",
+    "label" : "Patrimoine - Biens exceptionnels - Série",
+    "mapServices" :[{
+        "serviceId": "PAT_EXC",
+        "label": "Patrimoine - Biens exceptionnels - Série",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/PAT_EXC/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BC_PAT SPW",
+    "label" : "Biens classés",
+    "mapServices" :[{
+        "serviceId": "BC_PAT",
+        "label": "Biens classés",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/BC_PAT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "IPIC",
+    "label" : "Inventaire du Patrimoine Immobilier Culturel",
+    "mapServices" :[{
+        "serviceId": "IPIC",
+        "label": "Inventaire du Patrimoine Immobilier Culturel",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/IPIC/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "CAW SPW",
+    "label" : "Carte archéologique",
+    "mapServices" :[{
+        "serviceId": "CAW",
+        "label": "Carte archéologique",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/CAW/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "AHREM SPW",
+    "label" : "Arbres et haies remarquables",
+    "mapServices" :[{
+        "serviceId": "AHREM",
+        "label": "Arbres et haies remarquables",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/AHREM/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ISA SPW",
+    "label" : "ISA inventaire des SAR",
+    "mapServices" :[{
+        "serviceId": "ISA",
+        "label": "ISA inventaire des SAR",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/ISA/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SAR SPW",
+    "label" : "SAR",
+    "mapServices" :[{
+        "serviceId": "SAR",
+        "label": "SAR",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/SAR/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "CONSULT_SSOL SPW",
+    "label" : "Zones de consultation de la DRIGM",
+    "mapServices" :[{
+        "serviceId": "CONSULT_SSOL",
+        "label": "Zones de consultation de la DRIGM",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/CONSULT_SSOL/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BDES_INVENTAIRE SPW",
+    "label" : "BDES_INVENTAIRE",
+    "mapServices" :[{
+        "serviceId": "BDES_INVENTAIRE",
+        "label": "BDES_INVENTAIRE",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/BDES_INVENTAIRE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ZonagePASH_Pro SPW",
+    "label" : "Zonage PASH Pro",
+    "mapServices" :[{
+        "serviceId": "ZonagePASH_Pro",
+        "label": "Zonage PASH Pro",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://sig.spge.be/server/rest/services/WebPash/ZonagePASH_Pro/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "STPOMP_GP SPW",
+    "label" : "PASH Stations de pompage et stations de démergement",
+    "mapServices" :[{
+        "serviceId": "STPOMP_GP",
+        "label": "PASH Stations de pompage et stations de démergement",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://sig.spge.be/server/rest/services/WebPash/STPOMP_GP/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "STATION_GP SPW",
+    "label" : "PASH Stations d'épuration",
+    "mapServices" :[{
+        "serviceId": "STATION_GP",
+        "label": "PASH Stations d'épuration",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://sig.spge.be/server/rest/services/WebPash/STATION_GP/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "RESTOT_GP SPW",
+    "label" : "Le réseau d'assainissement est repris au PASH",
+    "mapServices" :[{
+        "serviceId": "RESTOT_GP",
+        "label": "Le réseau d'assainissement est repris au PASH",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://sig.spge.be/server/rest/services/WebPash/RESTOT_GP/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "BASSIN_ORAGE_GP SPW",
+    "label" : "PASH  Bassins d'orage",
+    "mapServices" :[{
+        "serviceId": "BASSIN_ORAGE_GP",
+        "label": "PASH  Bassins d'orage",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://sig.spge.be/server/rest/services/WebPash/BASSIN_ORAGE_GP/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "Hors_zonage_PASH SPW",
+    "label" : "PASH  Hors Zonage",
+    "mapServices" :[{
+        "serviceId": "Hors_zonage_PASH",
+        "label": "PASH  Hors Zonage",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://sig.spge.be/server/rest/services/WebPash/Hors_zonage_PASH/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "PROTECT_CAPT SPW",
+    "label" : "Protection des captages - Série",
+    "mapServices" :[{
+        "serviceId": "PROTECT_CAPT",
+        "label": "Protection des captages - Série",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/PROTECT_CAPT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "LIDAXE",
+    "label" : "Axes de ruissellement concentré (LIDAXE)",
+    "mapServices" :[{
+        "serviceId": "LIDAXE",
+        "label": "Axes de ruissellement concentré (LIDAXE)",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/LIDAXES/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "ERRUISSOL__RUISSELLEMENT_CONCENTRE",
+    "label" : "ERRUISSOL - Risque de ruissellement concentré",
+    "mapServices" :[{
+        "serviceId": "ERRUISSOL__RUISSELLEMENT_CONCENTRE",
+        "label": "ERRUISSOL - Risque de ruissellement concentré",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/ERRUISSOL__RUISSELLEMENT_CONCENTRE/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "Alea inondation SPW",
+    "label" : "Alea inondation",
+    "mapServices" :[{
+        "serviceId": "EAU_ALEA",
+        "label": "EAU ALEA",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/EAU/ALEA_2016/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SOL SPW",
+    "label" : "SOL",
+    "mapServices" :[{
+        "serviceId": "SOL",
+        "label": "SOL",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/SOL/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "LOTISSEMENTS SPW",
+    "label" : "LOTISSEMENTS",
+    "mapServices" :[{
+        "serviceId": "LOTISSEMENTS",
+        "label": "LOTISSEMENTS",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/LOT/MapServer",
+        "visible": false,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+        "toLoad": true
+      }]
+  },
+  {
+    "code" : "SPW_CAD",
+    "label" : "Cadastre",
+    "mapServices" :[{
+        "serviceId": "SPWCAD",
+        "label": "Cadastre SPW",
+        "type": "AGS_DYNAMIC",
+        "url" : "https://geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/CADMAP_PARCELLES/MapServer",
+        "visible": true,
+        "hasLegend": true,
+        "legendOpen": true,
+        "identifiable": true,
+
+        "toLoad": true
+      }]
+  }
+  
+]

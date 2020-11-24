@@ -86,6 +86,9 @@ class Parcelsstreets(models.Model):
         managed = False
         db_table = 'parcelsstreets'
 
+    def __str__(self):
+        return self.street_situation + ' ' + self.street_code
+
 class Parcels(models.Model):
     propertysituationid = models.BigIntegerField(primary_key=True)
     mukey = models.BigIntegerField(blank=True, null=True)
@@ -97,7 +100,7 @@ class Parcels(models.Model):
     exponentnumber = models.CharField(max_length=6, blank=True, null=True)
     partnumber = models.CharField(max_length=10, blank=True, null=True)
     capakey = models.ForeignKey('Capa', db_column='capakey', on_delete=models.CASCADE, related_name="parcelinfo")
-    nature = models.IntegerField(blank=True, null=True)
+    nature = models.ForeignKey(GlobalNatures, db_column='nature', on_delete=models.CASCADE, related_name="parcelinfo")
     descriptprivate = models.CharField(max_length=100, blank=True, null=True)
     block = models.CharField(max_length=20, blank=True, null=True)
     floor = models.CharField(max_length=20, blank=True, null=True)
@@ -106,7 +109,7 @@ class Parcels(models.Model):
     matutil = models.CharField(max_length=60, blank=True, null=True)
     nottaxedmatutil = models.CharField(max_length=10, blank=True, null=True)
     niscom = models.BigIntegerField(blank=True, null=True)
-    street_uid = models.ForeignKey(Parcelsstreets, db_column='street_uid', on_delete=models.CASCADE)
+    street_uid = models.ForeignKey(Parcelsstreets, db_column='street_uid', on_delete=models.CASCADE, related_name="parcelinfo")
     number = models.CharField(max_length=20, blank=True, null=True)
     datesituation = models.DateField(blank=True, null=True)
     group_uid = models.BigIntegerField(blank=True, null=True)
@@ -134,6 +137,8 @@ class Ownersnames(models.Model):
         managed = False
         db_table = 'ownersnames'
 
+    def __str__(self):
+        return self.firstname + ' ' + self.name + ' (' + self.birthdate + ')'
 
 class Ownersproperties(models.Model):
     situation_uid = models.AutoField(primary_key=True)
